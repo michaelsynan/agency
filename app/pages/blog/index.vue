@@ -1,7 +1,7 @@
 <script setup lang="ts">
 const { data: blogs } = await useAsyncData('documents-list', () => {
   return queryCollection('blogs')
-    .select('title', 'path', 'description', 'date', 'tags', 'image', 'category')
+    .select('title', 'path', 'description', 'date', 'tags', 'image', 'category', 'time')
     .all()
 })
 </script>
@@ -13,7 +13,7 @@ const { data: blogs } = await useAsyncData('documents-list', () => {
       <div v-for="blog in blogs" :key="blog.path">
         <nuxt-link :to="blog.path" class="flex flex-col gap-2">
           <div class="relative">
-            <NuxtImg :src="blog.image" :alt="blog.title" class="rounded-lg" />
+            <NuxtImg prerender :src="blog.image" :alt="blog.title" class="rounded-lg" />
             <span
               class="border-2 border-juju-700 px-3 py-1.5 rounded-sm text-sm font-bold absolute top-2 left-2 bg-stone-950 bg-opacity-70">{{
                 blog.category
@@ -27,6 +27,8 @@ const { data: blogs } = await useAsyncData('documents-list', () => {
                 year:
                   'numeric', month: 'long', day: 'numeric'
               }) }}</time>
+              <div class="mx-1">/</div>
+              <div>about {{ blog.time }} minutes</div>
             </div>
           </div>
         </nuxt-link>

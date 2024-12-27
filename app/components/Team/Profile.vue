@@ -18,7 +18,7 @@ onMounted(() => {
 
 <template>
   <div class="flex flex-col md:flex-row py-6 my-2 gap-6">
-    <NuxtImg :src="props.image" class="rounded object-cover" />
+    <NuxtImg :src="props.image" :alt="props.name" class="rounded object-cover" />
     <div class="max-w-max flex flex-col gap-4">
       <div class="text-2xl font-bold">
         {{ props.name }}
@@ -26,7 +26,7 @@ onMounted(() => {
       <p class="text-stone-500">
         {{ props.text }}
       </p>
-      <ULink to="props.website">{{ props.website }}</ULink>
+      <ULink :to="props.website">{{ props.website }}</ULink>
       <div v-if="props.socials" class="text-stone-500 flex flex-row gap-2">
         <p v-for="(social, index) in props.socials" :key="index">
           <ULink :to="social.url" target="_blank">

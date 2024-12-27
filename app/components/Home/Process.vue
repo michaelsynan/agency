@@ -1,7 +1,13 @@
 <script setup lang="ts"></script>
 
 <template>
-  <UContainer class="flex flex-row gap-10 w-full justify-center">
+  <UContainer class="flex flex-row gap-10 w-full justify-center relative">
+
+    <!-- Right Background Image -->
+    <div id="top-right "
+      class="absolute right-0 top-0 h-full w-[300px] translate-x-10 bg-no-repeat bg-contain bg-center"
+      style="background-image: url('top-right.png');"></div>
+
     <div class="flex flex-col gap-6">
       <h2>How Do I Get Started?</h2>
       <div class="flex flex-col md:flex-row gap-8 align-center items-center">

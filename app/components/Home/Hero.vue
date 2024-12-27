@@ -8,7 +8,7 @@
     <!-- Gradient Strip -->
     <div class="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-b from-transparent via-stone-950 to-stone-950" />
     <UContainer class="relative z-10 flex flex-col items-start justify-center h-full gap-4">
-      <UBadge variant="outline" class="font-bold rounded-full border-none ">
+      <UBadge variant="outline" class="font-bold rounded-full border-none bg-white !text-stone-900">
         Expert Guidance Every Step of the Way
       </UBadge>
       <div class="font-bold flex flex-col gap-4">
