@@ -36,12 +36,12 @@ const resetHoverPosition = (index) => {
             <h2 class="header">
               The Simple Solution You're Looking For
             </h2>
-            <p class="max-w-xl text-center text-stone-300">
+            <p class="max-w-xl text-left md:text-center text-stone-300">
               We help you cancel out the noise and focus on how to reach your goal as quickly and efficiently as
               possible.
             </p>
           </div>
-          <div class="flex flex-col md:flex-row justify-center items-stretch gap-10 mx-10">
+          <div class="flex flex-col md:flex-row justify-center items-stretch gap-10 mx-0 md:mx-10">
             <div v-for="(card, index) in cards" :key="index" class="p-0.5 rounded-lg relative overflow-hidden"
               style="position: relative; z-index: 0;" @mousemove="updateHoverPosition($event, index)"
               @mouseleave="resetHoverPosition(index)">

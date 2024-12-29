@@ -19,34 +19,22 @@
       <!-- Bullet Points Section -->
       <ul class="space-y-3 text-lg">
         <li class="flex items-center">
-          <UIcon
-            name="i-mdi-alert-circle"
-            class="w-6 h-6 mr-2 text-dino-400"
-          />
+          <UIcon name="i-mdi-alert-circle" class="w-6 h-6 mr-2 text-dino-400" />
           <span>Too many high-cost subscriptions</span>
         </li>
         <li class="flex items-center">
-          <UIcon
-            name="i-mdi-alert-circle"
-            class="w-6 h-6 mr-2 text-dino-400"
-          />
+          <UIcon name="i-mdi-alert-circle" class="w-6 h-6 mr-2 text-dino-400" />
           <span>Unclear way to measure results</span>
         </li>
         <li class="flex items-center">
-          <UIcon
-            name="i-mdi-alert-circle"
-            class="w-6 h-6 mr-2 text-dino-400"
-          />
+          <UIcon name="i-mdi-alert-circle" class="w-6 h-6 mr-2 text-dino-400" />
           <span>Unreliable & untrustworthy marketers</span>
         </li>
       </ul>
     </div>
 
     <div class="items-center align-middle mx-auto">
-      <NuxtImg
-        class="w-full max-w-xl rounded-2xl border-2 border-stone-200"
-        src="/nyc-subway-n-train.png"
-      />
+      <NuxtImg class="w-full max-w-xl rounded-lg" src="/nyc-subway-n-train.png" />
     </div>
   </UContainer>
 </template>
