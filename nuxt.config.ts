@@ -7,6 +7,7 @@ export default defineNuxtConfig({
     '@nuxt/eslint',
     '@nuxthub/core',
     '@nuxt/content',
+    '@vueuse/nuxt',
   ],
   ssr: true,
   devtools: { enabled: true },
