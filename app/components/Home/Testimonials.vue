@@ -18,16 +18,16 @@ const testimonials: Testimonial[] = [
   <UContainer class="relative flex flex-col md:flex-row gap-16 md:gap-10 justify-center items-center w-full h-[600px]">
     <!-- Left Background Image -->
     <!-- Left Background Image -->
-    <div class="absolute left-0 h-[600px] w-[300px] -translate-x-10 bg-no-repeat bg-contain bg-center"
+    <div class="absolute left-0 h-[600px] w-auto -translate-x-10 bg-no-repeat bg-contain bg-left w-full"
       style="background-image: url('left.png');"></div>
 
     <!-- Right Background Image -->
-    <div class="absolute right-0 top-0 h-full w-[300px] translate-x-10 bg-no-repeat bg-contain bg-center"
+    <div class="absolute right-0 top-0 h-full h-[600px] translate-x-10 bg-no-repeat bg-contain bg-right w-full"
       style="background-image: url('right.png');"></div>
 
 
     <!-- Content -->
-    <div class="relative w-full flex flex-row ">
+    <div class="relative w-full flex flex-row justify-center">
       <HomeTestimonial v-for="(testimonial, index) in testimonials" :key="index" :name="testimonial.name"
         :text="testimonial.text" :image="testimonial.image" :profession="testimonial.profession"
         :stars="testimonial.stars" />

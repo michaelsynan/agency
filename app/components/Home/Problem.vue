@@ -2,7 +2,7 @@
 
 <template>
   <UContainer class="flex flex-col md:flex-row justify-center items-start gap-10 md:gap-20">
-    <div class="text-white flex flex-col max-w-md">
+    <div class="text-white flex flex-col max-w-md gap-4">
       <h2 class="flex flex-col mb-2">
         <div class="leading-normal">
           Choosing the Right<br>
