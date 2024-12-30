@@ -15,7 +15,7 @@ const testimonials: Testimonial[] = [
 </script>
 
 <template>
-  <UContainer class="relative flex flex-col md:flex-row gap-16 md:gap-10 justify-center items-center w-full h-[600px]">
+  <UContainer class="relative flex flex-col gap-20 justify-center items-center w-full h-[600px]">
     <!-- Left Background Image -->
     <!-- Left Background Image -->
     <div class="absolute left-0 h-[600px] w-auto -translate-x-10 bg-no-repeat bg-contain bg-left w-full"
@@ -25,7 +25,7 @@ const testimonials: Testimonial[] = [
     <div class="absolute right-0 top-0 h-full h-[600px] translate-x-10 bg-no-repeat bg-contain bg-right w-full"
       style="background-image: url('right.png');"></div>
 
-
+    <h2>What They're Saying</h2>
     <!-- Content -->
     <div class="relative w-full flex flex-row justify-center">
       <HomeTestimonial v-for="(testimonial, index) in testimonials" :key="index" :name="testimonial.name"

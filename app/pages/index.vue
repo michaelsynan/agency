@@ -32,18 +32,6 @@
           '/yoga-pilates.webp',
           '/michael.webp',
         ]" />
-        <HomeCarousel :direction="'right'" :items="[
-          '/video-photography-website.webp',
-          '/dashboard.webp',
-          '/hero-image.webp',
-          '/facial-serum-website.webp',
-          '/daily-grind.webp',
-          '/mobile-app.webp',
-          '/jazz.webp',
-          '/coding-nurse.webp',
-          '/yoga-pilates.webp',
-          '/michael.webp',
-        ]" />
       </div>
       <HomeLeads class="flex-none w-full" />
       <HomeTestimonials class="flex-none w-full" />

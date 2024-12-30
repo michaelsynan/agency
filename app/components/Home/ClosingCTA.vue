@@ -1,9 +1,10 @@
 <template>
-  <UContainer class="flex flex-col justify-center items-start md:items-center gap-6 max-w-2xl">
+  <UContainer
+    class="flex flex-col justify-center items-start md:items-center gap-6 max-w-4xl bg-stone-800/20 px-20 py-20 rounded-lg border border-stone-600">
     <h2 class="">
       So, ready to get started?
     </h2>
-    <p class="text-left md:text-center text-stone-300">
+    <p class="text-left md:text-center text-stone-300 max-w-2xl">
       Schedule your free consultation now—receive invaluable feedback
       to help your
       business grow, with zero obligation.
