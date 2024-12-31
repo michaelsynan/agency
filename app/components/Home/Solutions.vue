@@ -56,7 +56,7 @@ const resetHoverPosition = (index) => {
                 }"></div>
               </transition>
               <UCard class="flex-1 basis-1/3 bg-stone-900 !hover:bg-stone-500 text-white mx-auto transition-all" :ui="{
-                background: 'bg-white dark:bg-stone-900 hover:bg-stone-600',
+                background: 'bg-white dark:bg-stone-900 dark:hover:bg-stone-800',
                 divide: 'divide-y divide-stone-200 dark:divide-stone-700',
                 ring: 'ring-0',
                 rounded: 'rounded-lg',

@@ -7,6 +7,7 @@
 
 
     <div class="text-white flex flex-col gap-2 max-w-md">
+      <div class="text-sm font-bold">Made for Small Businesses</div>
       <h2 class="flex flex-col gap-1.5 mb-4 leading-snug">
         <div>
           Download Our <br>Free Guide to Using AI &
@@ -33,7 +34,7 @@
         <span>We do not share your personal information</span>
       </div>
     </div>
-    <div class="flex items-center justify-center">
+    <div class="flex items-center justify-center ipad-mockup">
       <NuxtImg class="max-w-[80%] md:max-w-lg" height="600" width="300" fit="contain" src="/mock-up.png" />
     </div>
   </UContainer>
@@ -57,5 +58,15 @@
   bottom: -200;
   /* Adjust to position the underline closer or into the text */
   z-index: -1;
+}
+
+.ipad-mockup {
+  transition: transform 0.3s ease-in-out;
+  display: inline-block;
+  /* Keeps the container tight to the image dimensions */
+}
+
+.ipad-mockup:hover {
+  transform: perspective(1000px) rotateY(10deg);
 }
 </style>

@@ -1,6 +1,6 @@
 <template>
   <UContainer
-    class="flex flex-col justify-center items-start md:items-center gap-6 max-w-4xl bg-stone-800/20 px-20 py-20 rounded-lg border border-stone-600">
+    class="flex flex-col justify-center items-start md:items-center gap-6 max-w-4xl bg-stone-900/30 px-20 py-20 rounded-lg border border-stone-600">
     <h2 class="">
       So, ready to get started?
     </h2>
