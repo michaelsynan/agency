@@ -49,20 +49,22 @@ const resetHoverPosition = (index) => {
                 <div v-if="hoverPositions[index].visible" class="absolute bg-dino-500/40 rounded-full" :style="{
                   left: `${hoverPositions[index].x}px`,
                   top: `${hoverPositions[index].y}px`,
-                  width: `250px`,
-                  height: `250px`,
+                  width: `275px`,
+                  height: `275px`,
                   zIndex: -1,
-                  filter: 'blur(20px)'
+                  filter: 'blur(30px)'
                 }"></div>
               </transition>
-              <UCard class="flex-1 basis-1/3 bg-stone-900 !hover:bg-stone-500 text-white mx-auto transition-all" :ui="{
-                background: 'bg-white dark:bg-stone-900 dark:hover:bg-stone-800',
-                divide: 'divide-y divide-stone-200 dark:divide-stone-700',
-                ring: 'ring-0',
-                rounded: 'rounded-lg',
-              }" :class="{
-                'hover:bg-stone-800': true,
-              }" style="transition: background-color 0.2s ease-in-out;">
+              <UCard
+                class="flex-1 basis-1/3 bg-stone-900 !hover:bg-stone-500 text-white mx-auto transition-all relative h-[300px] cursor-pointer group"
+                :ui="{
+                  background: 'bg-white dark:bg-stone-900 dark:hover:bg-stone-800',
+                  divide: 'divide-y divide-stone-200 dark:divide-stone-700',
+                  ring: 'ring-0',
+                  rounded: 'rounded-lg',
+                }" :class="{
+                  'hover:bg-stone-800': true,
+                }" style="transition: background-color 0.2s ease-in-out;">
 
                 <template #header>
                   <h3 class="h-8 p-2 rounded flex items-center gap-4 text-lg">
@@ -70,7 +72,8 @@ const resetHoverPosition = (index) => {
                     {{ card.header }}
                   </h3>
                 </template>
-                <div class="h-32 p-4 mb-4 break-words leading-relaxed text-stone-300">
+                <div :data-text="card.content"
+                  class="card-text m-4 mb-4 break-words leading-relaxed text-stone-500 relative group group-hover:text-stone-100">
                   {{ card.content }}
                 </div>
               </UCard>
@@ -92,4 +95,28 @@ const resetHoverPosition = (index) => {
 .fade-leave-to {
   opacity: 0;
 }
+
+.card-text {
+  position: relative;
+  display: inline-block;
+  /* Adjust width/height or wrapping if needed */
+}
+
+/* .card-text::before {
+  content: attr(data-text);
+  position: absolute;
+  inset: 0;
+  color: white;
+  white-space: pre-wrap;
+  overflow: hidden;
+  clip-path: inset(0 100% 0 0);
+  transition: clip-path 0.3s ease;
+  z-index: 100;
+}
+
+.group:hover .card-text::before {
+  clip-path: inset(0 0 0 0);
+}
+
+*/
 </style>

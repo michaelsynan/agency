@@ -6,7 +6,7 @@
     <div class="flex flex-col gap-6">
       <div class="flex flex-col md:flex-row gap-8 align-center items-center">
         <NuxtImg src="/formwork-studios-happy-cafe.jpg" class="w-full max-w-full md:max-w-lg rounded-lg" placeholder />
-        <div class="flex flex-col gap-4 max-w-max">
+        <div class="flex flex-col gap-4  w-full">
           <h2>How Do I Get Started?</h2>
 
           <p class="max-w-[50ch] hidden">

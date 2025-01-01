@@ -3,11 +3,14 @@
 <template>
 
 
-  <UContainer class="flex flex-col-reverse md:flex-row justify-center items-center gap-10 md:gap-40 ">
+  <UContainer class="group flex flex-col-reverse md:flex-row justify-center items-center gap-10 md:gap-40 ">
+    <SharedCursorFollow />
 
+    <div class="text-white flex flex-col gap-2 max-w-none md:max-w-md">
+      <UBadge variant="outline" class="font-bold rounded-full border-none text-sm font-bold px-4 max-w-max">
 
-    <div class="text-white flex flex-col gap-2 max-w-md">
-      <div class="text-sm font-bold">Made for Small Businesses</div>
+        Made for Small Businesses
+      </UBadge>
       <h2 class="flex flex-col gap-1.5 mb-4 leading-snug">
         <div>
           Download Our <br>Free Guide to Using AI &
@@ -61,12 +64,14 @@
 }
 
 .ipad-mockup {
-  transition: transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out, filter 0.3s ease-in-out;
   display: inline-block;
   /* Keeps the container tight to the image dimensions */
 }
 
-.ipad-mockup:hover {
-  transform: perspective(1000px) rotateY(10deg);
+/* Use :deep() so scoped styles can still see .group:hover */
+.group:hover .ipad-mockup {
+  transform: perspective(1000px) rotateY(12deg) !important;
+  filter: brightness(1.1);
 }
 </style>

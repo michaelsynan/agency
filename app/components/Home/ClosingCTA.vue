@@ -1,6 +1,6 @@
 <template>
   <UContainer
-    class="flex flex-col justify-center items-start md:items-center gap-6 max-w-4xl bg-stone-900/30 px-20 py-20 rounded-lg border border-stone-600">
+    class="flex flex-col justify-center items-start md:items-center gap-6 max-w-4xl bg-stone-900/30 px-8 md:px-20 py-8 md:py-20 rounded-lg border border-stone-600">
     <h2 class="">
       So, ready to get started?
     </h2>
@@ -9,7 +9,7 @@
       to help your
       business grow, with zero obligation.
     </p>
-    <SharedMainCTAButton />
+    <SharedMainCTAButton class="w-full md:w-auto !text-center" />
     <div class="font-bold flex flex-col gap-4">
       <div class="flex flex-row gap-4">
         <span class="text-sm flex items-center">
