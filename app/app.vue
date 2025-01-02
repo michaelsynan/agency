@@ -5,6 +5,6 @@
       <NuxtPage class="flex-grow" />
     </transition>
     <FooterWrapper />
-    <!-- SVG cursor follower -->
+    <SharedCursorFollow />
   </div>
 </template>

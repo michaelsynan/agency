@@ -1,64 +1,50 @@
 <template>
-  <div>
-    <img src="/cursor-circle.svg" :style="cursorStyle" class="cursor-follower" />
+  <div :class="{ 'cursor-follower': true, 'show-dot': isVisible }">
+    <img src="/cursor-circle.svg" :style="cursorStyle" />
   </div>
 </template>
-
 
 <script setup>
 import { ref, onMounted, computed } from 'vue';
 import { useMouse } from '@vueuse/core';
 
-const { x, y } = useMouse();
+// Using useMouse without a target to track the mouse across the entire document
+const { x: mouseX, y: mouseY } = useMouse();
 
-const cursorX = ref(0);
-const cursorY = ref(0);
-const speed = 0.05; // Reduced speed for more lag
+const cursorPosX = ref(mouseX.value);  // Initialize with current mouseX position
+const cursorPosY = ref(mouseY.value);  // Initialize with current mouseY position
+const isVisible = ref(true);           // Cursor is always visible
+const speed = ref(0.05);
 
 const cursorStyle = computed(() => ({
   position: 'absolute',
-  left: `${cursorX.value}px`,
-  top: `${cursorY.value}px`,
-  transform: 'translate(-50%, -50%)',
-  pointerEvents: 'none',
-  zIndex: '1000'
+  left: `${cursorPosX.value}px`,
+  top: `${cursorPosY.value}px`,
+  transform: 'translate(-50%, -50%)', // Centers the image on the cursor
+  pointerEvents: 'none',              // Ensures the image does not interfere with other mouse events
+  zIndex: '1000'                      // Ensures the cursor is visible above other elements
 }));
 
 const animate = () => {
-  const dx = x.value - cursorX.value;
-  const dy = y.value - cursorY.value;
-
-  cursorX.value += dx * speed;
-  cursorY.value += dy * speed;
+  const dx = mouseX.value - cursorPosX.value;
+  const dy = mouseY.value - cursorPosY.value;
+  cursorPosX.value += dx * speed.value;
+  cursorPosY.value += dy * speed.value;
 
   requestAnimationFrame(animate);
 };
 
 onMounted(() => {
-  animate();
+  requestAnimationFrame(animate);
 });
 </script>
 
-<style>
-/* Transition effects for fade animations */
-.fade-enter-active,
-.fade-leave-active {
-  transition: opacity 0.5s;
-}
-
-.fade-enter,
-.fade-leave-to
-
-/* Vue 2 compatibility */
-  {
-  opacity: 0;
-}
-
-/* Styles for the cursor follower */
+<style scoped>
 .cursor-follower {
-  width: 20px;
-  /* Adjust if necessary */
-  height: 20px;
-  /* Adjust if necessary */
+  display: none;
+}
+
+.show-dot {
+  display: block;
 }
 </style>

@@ -4,7 +4,7 @@
 
 
   <UContainer class="group flex flex-col-reverse md:flex-row justify-center items-center gap-10 md:gap-40 ">
-    <SharedCursorFollow />
+
 
     <div class="text-white flex flex-col gap-2 max-w-none md:max-w-md">
       <UBadge variant="outline" class="font-bold rounded-full border-none text-sm font-bold px-4 max-w-max">
