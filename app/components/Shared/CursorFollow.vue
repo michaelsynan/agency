@@ -1,50 +1,91 @@
-<template>
-  <div :class="{ 'cursor-follower': true, 'show-dot': isVisible }">
-    <img src="/cursor-circle.svg" :style="cursorStyle" />
-  </div>
-</template>
-
-<script setup>
-import { ref, onMounted, computed } from 'vue';
+<script setup lang="ts">
+import { ref, onMounted, onBeforeUnmount, computed } from 'vue';
 import { useMouse } from '@vueuse/core';
 
-// Using useMouse without a target to track the mouse across the entire document
-const { x: mouseX, y: mouseY } = useMouse();
+const props = defineProps<{ targetDiv: string }>();
 
-const cursorPosX = ref(mouseX.value);  // Initialize with current mouseX position
-const cursorPosY = ref(mouseY.value);  // Initialize with current mouseY position
-const isVisible = ref(true);           // Cursor is always visible
-const speed = ref(0.05);
+const { x, y } = useMouse();
+const cursorPosX = ref(0);
+const cursorPosY = ref(0);
+const isVisible = ref(false);
+const speed = ref(0.07);
 
-const cursorStyle = computed(() => ({
-  position: 'absolute',
-  left: `${cursorPosX.value}px`,
-  top: `${cursorPosY.value}px`,
-  transform: 'translate(-50%, -50%)', // Centers the image on the cursor
-  pointerEvents: 'none',              // Ensures the image does not interfere with other mouse events
-  zIndex: '1000'                      // Ensures the cursor is visible above other elements
-}));
-
-const animate = () => {
-  const dx = mouseX.value - cursorPosX.value;
-  const dy = mouseY.value - cursorPosY.value;
+function animate() {
+  const dx = x.value - cursorPosX.value;
+  const dy = y.value - cursorPosY.value;
   cursorPosX.value += dx * speed.value;
   cursorPosY.value += dy * speed.value;
-
   requestAnimationFrame(animate);
-};
+}
+
+const cursorStyle = computed(() => ({
+  left: `${cursorPosX.value}px`,
+  top: `${cursorPosY.value}px`
+}));
+
+function handleMouseMove(e: MouseEvent) {
+  const target = e.target as HTMLElement;
+  if (target?.closest(`.${props.targetDiv}`)) {
+    isVisible.value = true;
+  } else {
+    isVisible.value = false;
+  }
+}
 
 onMounted(() => {
+  cursorPosX.value = x.value;
+  cursorPosY.value = y.value;
   requestAnimationFrame(animate);
+  window.addEventListener('mousemove', handleMouseMove);
+});
+
+onBeforeUnmount(() => {
+  window.removeEventListener('mousemove', handleMouseMove);
 });
 </script>
 
+<template>
+  <div class="custom-cursor" :class="{ visible: isVisible }" :style="cursorStyle">
+    <img src="/cursor-circle.svg" />
+  </div>
+</template>
+
 <style scoped>
-.cursor-follower {
-  display: none;
+.custom-cursor {
+  position: absolute;
+  pointer-events: none;
+  z-index: 9999;
+  transform: translate(-50%, -50%) scale(0.9);
+  /* Initial small scale */
+  opacity: 0;
+  transition: opacity 0.2s ease;
 }
 
-.show-dot {
-  display: block;
+.custom-cursor.visible {
+  opacity: 1;
+  animation: pulse 0.6s ease-in-out forwards;
+  /* Smooth in and out animation */
+}
+
+@keyframes pulse {
+  0% {
+    transform: translate(-50%, -50%) scale(0.9);
+  }
+
+  50% {
+    transform: translate(-50%, -50%) scale(1.3);
+  }
+
+  /* Peak scale */
+  100% {
+    transform: translate(-50%, -50%) scale(1.1);
+  }
+
+  /* Settle back to normal scale */
+}
+
+.custom-cursor img {
+  width: 12px;
+  height: 12px;
 }
 </style>

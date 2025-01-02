@@ -10,18 +10,16 @@
       business grow, with zero obligation.
     </p>
     <SharedMainCTAButton class="w-full md:w-auto !text-center" />
-    <div class="font-bold flex flex-col gap-4 w-full">
-      <div class="flex flex-col md:flex-row gap-4 w-full">
-        <span class="text-sm flex justify-center">
-          <UIcon name="i-mdi-check-circle" class="mr-1 text-dino-500 w-5 h-5" /> no commitment
-        </span>
-        <span class="text-sm flex justify-center">
-          <UIcon name="i-mdi-check-circle" class="mr-1 text-dino-500 w-5 h-5" /> actionable guidance
-        </span>
-        <span class="text-sm flex justify-center">
-          <UIcon name="i-mdi-check-circle" class="mr-1 text-dino-500 w-5 h-5" /> reliable
-        </span>
-      </div>
+    <div class="font-bold flex flex-col md:flex-row gap-4 w-full justify-center items-center">
+      <span class="text-sm flex justify-center">
+        <UIcon name="i-mdi-check-circle" class="mr-1 text-dino-500 w-5 h-5" /> no commitment
+      </span>
+      <span class="text-sm flex justify-center">
+        <UIcon name="i-mdi-check-circle" class="mr-1 text-dino-500 w-5 h-5" /> actionable guidance
+      </span>
+      <span class="text-sm flex justify-center">
+        <UIcon name="i-mdi-check-circle" class="mr-1 text-dino-500 w-5 h-5" /> reliable
+      </span>
     </div>
   </UContainer>
 </template>

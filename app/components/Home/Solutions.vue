@@ -42,7 +42,7 @@ const resetHoverPosition = (index) => {
             </p>
           </div>
           <div class="flex flex-col md:flex-row justify-center items-stretch gap-10 mx-0 md:mx-10">
-            <div v-for="(card, index) in cards" :key="index" class="p-0.5 rounded-lg relative overflow-hidden"
+            <div v-for="(card, index) in cards" :key="index" class="p-0.5 rounded-lg relative overflow-hidden turtles"
               style="position: relative; z-index: 0;" @mousemove="updateHoverPosition($event, index)"
               @mouseleave="resetHoverPosition(index)">
               <transition name="fade" mode="out-in">
