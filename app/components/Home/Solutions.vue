@@ -31,8 +31,8 @@ const resetHoverPosition = (index) => {
         style="position: absolute; top: 0; right: 0; bottom: 0; left: 0; background-image: url('grid.png'); background-size: contain; background-repeat: no-repeat; background-position: center; opacity: 0.5;">
       </div>
       <div style="position: relative; width: 100%; height: 100%; overflow: hidden;">
-        <div class="" style="position: relative; z-index: 1; width: 100%; height: 100%;">
-          <div class="flex flex-col items-center gap-8 justify-center pb-10">
+        <div class="flex flex-col gap-6" style="position: relative; z-index: 1; width: 100%; height: 100%;">
+          <div class="flex flex-col items-start md:items-center justify-center pb-10">
             <h2 class="header">
               The Simple Solution You're Looking For
             </h2>

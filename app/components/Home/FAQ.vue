@@ -41,18 +41,10 @@ const items = [
     <h2 class="pb-16 w-full text-center">
       Frequently Asked Questions
     </h2>
-    <UAccordion
-      :truncate="false"
-      color="dino"
-      :items="items"
-      size="xl"
-      variant="soft"
-      class="!text-left"
-      :ui="{
-        default: {
-          class: 'mb-1.5 w-full !items-start !text-left',
-        },
-      }"
-    />
+    <UAccordion :truncate="false" color="none" :items="items" size="xl" variant="soft" class="!text-left" :ui="{
+      default: {
+        class: 'mb-1.5 w-full !items-start !text-left border-b rounded-none px-0',
+      },
+    }" />
   </UContainer>
 </template>

@@ -7,15 +7,12 @@
       <HomeProblem class="flex-none w-full" />
       <HomeSolutions class="flex-none w-full" />
       <HomeProcess class="flex-none w-full" />
-      <div class="flex flex-col gap-8 relative">
-        <!-- Gradient on the left -->
+      <div id="MainCarousel" class="flex flex-col gap-8 relative">
         <div
-          class="absolute inset-y-0 left-0 w-[40px] bg-gradient-to-r from-stone-950 via-stone-950 to-transparent z-10">
+          class="absolute inset-y-0 left-0 w-[20px] md:w-[40px] bg-gradient-to-r from-stone-950 via-stone-950 to-transparent z-10">
         </div>
-
-        <!-- Gradient on the right -->
         <div
-          class="absolute inset-y-0 right-0 w-[40px] bg-gradient-to-l from-stone-950 via-stone-950 to-transparent z-10">
+          class="absolute inset-y-0 right-0 w-[20px] md:w-[40px] bg-gradient-to-l from-stone-950 via-stone-950 to-transparent z-10">
         </div>
 
         <HomeCarousel :direction="'right'" :items="[
@@ -43,10 +40,10 @@
           '/michael.webp',
         ]" />
       </div>
-
       <HomeLeads class="flex-none w-full" />
       <HomeTestimonials class="flex-none w-full" />
       <HomeFAQ class="flex-none w-full" />
+      <SharedContactInfo />
       <HomeClosingCTA class="flex-none w-full" />
     </main>
   </div>
