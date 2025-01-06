@@ -38,9 +38,8 @@ const items = [
 
 <template>
   <UContainer class="max-w-4xl">
-    <h2 class="pb-16 w-full text-center">
-      Frequently Asked Questions
-    </h2>
+    <SharedAnimatedHeader class="pb-8" :text="`Frequently Asked Questions`" />
+
     <UAccordion :truncate="false" color="none" :items="items" size="xl" variant="soft" class="!text-left" :ui="{
       default: {
         class: 'mb-1.5 w-full !items-start !text-left border-b rounded-none px-0',
@@ -48,3 +47,35 @@ const items = [
     }" />
   </UContainer>
 </template>
+
+<style scoped>
+::v-deep button {
+  position: relative;
+  overflow: visible;
+  /* Ensure pseudo-elements are visible outside the button */
+}
+
+::v-deep button::before {
+  content: "";
+  position: absolute;
+  left: -40px;
+  /* 20px to the left of the button */
+  top: 50%;
+  transform: translateY(-50%);
+  width: 18px;
+  height: 18px;
+  background-color: white;
+  border-radius: 50%;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+::v-deep button:hover::before {
+  opacity: 1;
+}
+
+::v-deep button[aria-expanded="true"]::before {
+  opacity: 1;
+  /* Make it visible */
+}
+</style>

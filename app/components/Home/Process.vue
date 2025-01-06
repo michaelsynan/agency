@@ -7,8 +7,7 @@
       <div class="flex flex-col md:flex-row gap-8 align-center items-center">
         <NuxtImg src="/formwork-studios-happy-cafe.jpg" class="w-full max-w-full md:max-w-lg rounded-lg" placeholder />
         <div class="flex flex-col gap-4  w-full">
-          <h2>How Do I Get Started?</h2>
-
+          <SharedAnimatedHeader :text="`How Do I Get Started?`" />
           <p class="max-w-[50ch] hidden">
             Our process is simple. It involves 3 easy steps to get your project up and
             running.

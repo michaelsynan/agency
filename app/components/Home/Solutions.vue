@@ -32,17 +32,16 @@ const resetHoverPosition = (index) => {
       </div>
       <div style="position: relative; width: 100%; height: 100%; overflow: hidden;">
         <div class="flex flex-col gap-6" style="position: relative; z-index: 1; width: 100%; height: 100%;">
-          <div class="flex flex-col items-start md:items-center justify-center pb-10">
-            <h2 class="header">
-              The Simple Solution You're Looking For
-            </h2>
-            <p class="max-w-xl text-left md:text-center text-stone-300">
+          <div class="flex flex-row items-end md:items-center justify-between pb-10 w-full">
+            <SharedAnimatedHeader :text="`Solutions You Need`" />
+
+            <p class="max-w-xl text-left text-stone-300">
               We help you cancel out the noise and focus on how to reach your goal as quickly and efficiently as
               possible.
             </p>
           </div>
-          <div class="flex flex-col md:flex-row justify-center items-stretch gap-10 mx-0 md:mx-10">
-            <div v-for="(card, index) in cards" :key="index" class="p-0.5 rounded-lg relative overflow-hidden turtles"
+          <div class="flex flex-col md:flex-row justify-center items-stretch gap-10 mx-0">
+            <div v-for="(card, index) in cards" :key="index" class="p-0.5 rounded-none relative overflow-hidden turtles"
               style="position: relative; z-index: 0;" @mousemove="updateHoverPosition($event, index)"
               @mouseleave="resetHoverPosition(index)">
               <transition name="fade" mode="out-in">
@@ -61,7 +60,7 @@ const resetHoverPosition = (index) => {
                   background: 'bg-white dark:bg-stone-900 dark:hover:bg-stone-800',
                   divide: 'divide-y divide-stone-200 dark:divide-stone-700',
                   ring: 'ring-0',
-                  rounded: 'rounded-lg',
+                  rounded: 'rounded-none',
                 }" :class="{
                   'hover:bg-stone-800': true,
                 }" style="transition: background-color 0.2s ease-in-out;">

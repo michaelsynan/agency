@@ -28,7 +28,7 @@ const testimonials: Testimonial[] = [
       style="background-image: url('right.png');"></div>
 
 
-    <h2>What They're Saying</h2>
+    <SharedAnimatedHeader :text="`What They're Saying`" />
     <!-- Content -->
     <div class="relative w-full flex flex-col md:flex-row justify-center items-center md:items-start gap-10">
       <HomeTestimonial v-for="(testimonial, index) in testimonials" :key="index" :name="testimonial.name"
