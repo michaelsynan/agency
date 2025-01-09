@@ -2,11 +2,10 @@
 
 <template>
   <UContainer class="flex flex-col md:flex-row justify-center items-start gap-10 md:gap-20">
-    <div class="text-white flex flex-col max-w-md gap-4">
-      <h2 class="flex flex-col mb-2">
-        <SharedAnimatedHeader class="break-normal" :text="`Choose The Right Technology`" />
+    <div class="text-white flex flex-col max-w-md ">
 
-      </h2>
+      <SharedAnimatedHeader class="break-normal pb-4" :text="`The Struggle is Real`" />
+
       <p class="!leading-relaxed mb-4 ">
         <strong>There are many challenges that come with choosing the right technology
           for

@@ -32,10 +32,10 @@ const resetHoverPosition = (index) => {
       </div>
       <div style="position: relative; width: 100%; height: 100%; overflow: hidden;">
         <div class="flex flex-col gap-6" style="position: relative; z-index: 1; width: 100%; height: 100%;">
-          <div class="flex flex-row items-end md:items-center justify-between pb-10 w-full">
-            <SharedAnimatedHeader :text="`Solutions You Need`" />
+          <div class="flex flex-col md:flex-row items-start justify-between pb-10 w-full">
+            <SharedAnimatedHeader class="mb-4 md:mb-0" :text="`Solutions You Need`" />
 
-            <p class="max-w-xl text-left text-stone-300">
+            <p class="max-w-xl text-left text-stone-300 text-2xl">
               We help you cancel out the noise and focus on how to reach your goal as quickly and efficiently as
               possible.
             </p>

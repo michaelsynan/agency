@@ -1,39 +1,42 @@
-<template>
-  <div class="overflow-hidden" ref="revealContainer">
-    <template v-for="(char, i) in letters" :key="i">
-      <h2 class="letter pb-0 font-black text-4xl" :style="{ '--letter-index': i }"
-        v-html="char === ' ' ? '&nbsp;' : char"></h2>
-    </template>
-  </div>
-</template>
-
 <script setup lang="ts">
-import { defineProps, ref, onMounted, computed } from 'vue';
+import { defineProps, withDefaults, ref, onMounted, computed } from 'vue';
 
-const props = defineProps<{
-  text: string
-}>()
+const props = withDefaults(
+  defineProps<{
+    text: string
+    size?: string
+  }>(),
+  {
+    size: 'text-4xl'
+  }
+);
 
 const letters = computed(() => props.text.split(''));
 const revealContainer = ref<HTMLElement | null>(null);
 
 onMounted(() => {
-  const observer = new IntersectionObserver(
-    (entries) => {
-      entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add('animate');
-        }
-      });
-    },
-    { threshold: 0.5 }
-  );
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('animate');
+      }
+    });
+  }, { threshold: 0.5 });
 
   if (revealContainer.value) {
     observer.observe(revealContainer.value);
   }
 });
 </script>
+
+<template>
+  <div class="overflow-hidden" ref="revealContainer">
+    <template v-for="(char, i) in letters" :key="i">
+      <h2 class="letter pb-0 font-black" :class="props.size" :style="{ '--letter-index': i }"
+        v-html="char === ' ' ? '&nbsp;' : char"></h2>
+    </template>
+  </div>
+</template>
 
 <style scoped>
 .letter {

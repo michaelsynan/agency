@@ -12,10 +12,8 @@
         Expert Guidance Every Step of the Way
       </UBadge>
       <div class="font-bold flex flex-col gap-4">
-        <h1 class="text-white text-5xl md:!text-7xl !leading-2 max-w-none">
-          When We Build It, <br>
-          <span class="!text-5xl md:!text-7xl text-dino-500 header">They Will Come</span>
-        </h1>
+        <SharedAnimatedHeader class="!text-6xl" :size="`text-6xl`" :text="`When We Build it`" />
+        <SharedAnimatedHeader class="!text-6xl" :size="`text-6xl `" :text="`They Will Come`" />
       </div>
       <p class="text-stone-300 text-xl md:text-2xl mt-2 max-w-[40ch] !leading-relaxed">
         Your design, development,
