@@ -6,11 +6,11 @@
   body {
     @apply bg-stone-950;
   }
-  h1 {
-    @apply text-5xl md:text-6xl font-bold leading-normal;
-  }
+  /* h1 {
+    @apply text-5xl md:text-6xl leading-normal;
+  } */
   h2 {
-    @apply text-3xl md:text-4xl font-bold leading-normal pb-6;
+    @apply text-3xl md:text-4xl  leading-normal pb-6;
   }
   p {
     @apply text-base md:text-lg leading-relaxed;
@@ -21,6 +21,15 @@
   scroll-behavior: smooth;
 } */
 
+@font-face {
+  font-family: "BeingBlackInktraps";
+  src: url("/assets/Being-BlackInktraps.ttf") format("truetype");
+}
+
+.being {
+  font-family: "BeingBlackInktraps", sans-serif; /* Fallback font */
+}
+
 h1,
 h2,
 h3,
@@ -29,7 +38,8 @@ h5,
 h6,
 .header {
   /* font-family: "Work Sans", sans-serif; */
-  font-family: "Geist", sans-serif;
+  /* font-family: "Geist", sans-serif; */
+  font-family: "Switzer", sans-serif;
 }
 
 p,

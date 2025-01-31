@@ -1,17 +1,10 @@
-<script setup lang="ts"></script>
-
 <template>
-  <UContainer class="flex flex-row gap-10 w-full justify-center relative">
-
-    <div class="flex flex-col gap-6">
-      <div class="flex flex-col md:flex-row gap-8 align-center items-center">
-        <NuxtImg src="/formwork-studios-happy-cafe.jpg" class="w-full max-w-full md:max-w-lg rounded-lg" placeholder />
-        <div class="flex flex-col gap-4  w-full">
+  <UContainer class="flex flex-row gap-10 w-full justify-center relative py-40">
+    <div class="flex flex-col gap-10">
+      <div class="flex flex-col md:flex-row gap-16 align-center items-start">
+        <NuxtImg src="/formwork-studios-happy-cafe.jpg" class="w-full max-w-full md:max-w-lg" placeholder />
+        <div class="flex flex-col gap-4  w-full items-start">
           <SharedAnimatedHeader :text="`How Do I Get Started?`" />
-          <p class="max-w-[50ch] hidden">
-            Our process is simple. It involves 3 easy steps to get your project up and
-            running.
-          </p>
           <ul class="flex flex-col gap-4 text-lg">
             <li class="flex items-start rounded">
               <UIcon name="i-tabler-circle-number-1-filled" class="w-8 h-8 mr-2 text-dino-500 flex-shrink-0" />
@@ -33,11 +26,9 @@
             </li>
           </ul>
 
-          <SharedMainCTAButton class="max-w-max" />
+          <SharedMainCTAButton class="max-w-full md:max-w-max" />
         </div>
       </div>
     </div>
   </UContainer>
 </template>
-
-<style scoped></style>

@@ -15,25 +15,15 @@ const testimonials: Testimonial[] = [
 </script>
 
 <template>
-  <UContainer class="relative flex flex-col gap-20 justify-center items-center w-full h-auto md:h-[600px]">
-    <!-- Left Background Image -->
-    <!-- Left Background Image -->
-    <!-- Left Background Image -->
-    <div class="absolute left-0 h-[600px] w-auto -translate-x-10 bg-no-repeat bg-contain bg-left w-full hidden md:block"
-      style="background-image: url('left.png');"></div>
-
-    <!-- Right Background Image -->
-    <div
-      class="absolute right-0 top-0 h-full h-[600px] translate-x-10 bg-no-repeat bg-contain bg-right w-full hidden md:block"
-      style="background-image: url('right.png');"></div>
-
-
-    <SharedAnimatedHeader :text="`What They're Saying`" />
-    <!-- Content -->
-    <div class="relative w-full flex flex-col md:flex-row justify-center items-center md:items-start gap-10">
-      <HomeTestimonial v-for="(testimonial, index) in testimonials" :key="index" :name="testimonial.name"
-        :text="testimonial.text" :image="testimonial.image" :profession="testimonial.profession"
-        :stars="testimonial.stars" />
-    </div>
-  </UContainer>
+  <div class="w-full bg-juju-950">
+    <UContainer class="relative flex flex-col gap-20 justify-center items-center w-full h-auto md:h-[600px] my-40">
+      <SharedAnimatedHeader :text="`What They're Saying`" />
+      <!-- Content -->
+      <div class="relative w-full flex flex-col md:flex-row justify-center items-center md:items-start gap-10">
+        <HomeTestimonial v-for="(testimonial, index) in testimonials" :key="index" :name="testimonial.name"
+          :text="testimonial.text" :image="testimonial.image" :profession="testimonial.profession"
+          :stars="testimonial.stars" />
+      </div>
+    </UContainer>
+  </div>
 </template>

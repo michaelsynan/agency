@@ -6,14 +6,15 @@
     <!-- Black overlay -->
     <div class="absolute top-0 left-0 right-0 bottom-0 bg-black opacity-60" />
     <!-- Gradient Strip -->
-    <div class="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-b from-transparent via-stone-950 to-stone-950" />
-    <UContainer class="relative z-10 flex flex-col items-start justify-center h-full gap-4">
+    <!-- <div class="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-b from-transparent via-stone-950 to-stone-950" /> -->
+    <UContainer class="relative z-10 flex flex-col items-start justify-center h-full gap-2 md:gap-4">
       <UBadge variant="outline" class="font-bold rounded-full border-none">
         Expert Guidance Every Step of the Way
       </UBadge>
-      <div class="font-bold flex flex-col gap-4">
-        <SharedAnimatedHeader class="!text-6xl" :size="`text-6xl`" :text="`When We Build it`" />
-        <SharedAnimatedHeader class="!text-6xl" :size="`text-6xl `" :text="`They Will Come`" />
+      <div class="font-bold flex flex-col gap-0 md:gap-4">
+        <h1 class="text-8xl !font-black">WHEN WE BUILD IT</h1>
+        <!-- <SharedAnimatedHeader class="!text-xl md:!text-6xl" :size="`text-4xl md:text-6xl`" :text="`When We Build it`" />
+        <SharedAnimatedHeader class="!text-6xl" :size="`text-4xl md:text-6xl `" :text="`They Will Come`" /> -->
       </div>
       <p class="text-stone-300 text-xl md:text-2xl mt-2 max-w-[40ch] !leading-relaxed">
         Your design, development,

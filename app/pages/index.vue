@@ -1,5 +1,11 @@
+<script>
+definePageMeta({
+  colorMode: 'dark',
+})
+</script>
+
 <template>
-  <div id="home-page">
+  <div>
     <header>
       <HomeHero />
     </header>
@@ -44,8 +50,6 @@
       <HomeFAQ class="flex-none w-full" />
       <SharedContactInfo />
       <HomeClosingCTA class="flex-none w-full" />
-
-
     </main>
   </div>
 </template>
