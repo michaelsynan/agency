@@ -38,8 +38,7 @@ const items = [
 
 <template>
   <UContainer class="max-w-4xl">
-    <SharedAnimatedHeader class="pb-8" :text="`Frequently Asked Questions`" />
-
+    <h2 class="text-9xl font-delight font-black text-stone-800/50 mb-4">FAQ</h2>
     <UAccordion :truncate="false" color="none" :items="items" size="xl" variant="soft" class="!text-left" :ui="{
       default: {
         class: 'mb-1.5 w-full !items-start !text-left border-b rounded-none px-0',
@@ -64,7 +63,7 @@ const items = [
   transform: translateY(-50%);
   width: 18px;
   height: 18px;
-  background-color: white;
+  background-color: rgba(255, 255, 255, 0.321);
   border-radius: 50%;
   opacity: 0;
   transition: opacity 0.3s ease-in-out;

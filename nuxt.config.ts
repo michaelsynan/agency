@@ -11,6 +11,7 @@ export default defineNuxtConfig({
   ],
   ssr: true,
   devtools: { enabled: true },
+
   css: ["~/assets/css/main.css"],
   colorMode: {
     preference: "dark",
@@ -27,11 +28,6 @@ export default defineNuxtConfig({
       stylistic: true,
     },
   },
-  image: {
-    cloudflare: {
-      baseURL: "https://imagedelivery.net/q2nIRgCuWuc2K4JgVsWp8w/",
-    },
-  },
   fonts: {
     defaults: {
       weights: [400],
@@ -46,6 +42,11 @@ export default defineNuxtConfig({
         "latin-ext",
         "latin",
       ],
+    },
+  },
+  image: {
+    cloudflare: {
+      baseURL: "https://imagedelivery.net/q2nIRgCuWuc2K4JgVsWp8w/",
     },
   },
 });

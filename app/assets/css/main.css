@@ -9,9 +9,9 @@
   /* h1 {
     @apply text-5xl md:text-6xl leading-normal;
   } */
-  h2 {
+  /* h2 {
     @apply text-3xl md:text-4xl  leading-normal pb-6;
-  }
+  } */
   p {
     @apply text-base md:text-lg leading-relaxed;
   }
@@ -27,7 +27,7 @@
 }
 
 .being {
-  font-family: "BeingBlackInktraps", sans-serif; /* Fallback font */
+  font-family: "BeingBlackInktraps", sans-serif;
 }
 
 h1,
@@ -39,11 +39,17 @@ h6,
 .header {
   /* font-family: "Work Sans", sans-serif; */
   /* font-family: "Geist", sans-serif; */
+  /* font-family: "Switzer", sans-serif;
+  font-weight: 900; */
+}
+.switzer {
   font-family: "Switzer", sans-serif;
 }
-
 p,
-button,
+button {
+  font-family: Inter;
+}
+
 span {
   font-family: Inter;
 }
@@ -63,4 +69,68 @@ span {
   position: absolute;
   left: 0;
   bottom: -0.1rem;
+}
+
+/* assets/css/fonts.css */
+@font-face {
+  font-family: "Delight";
+  src: url("/assets/fonts/Delight-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Delight";
+  src: url("/assets/fonts/Delight-ExtraLight.ttf") format("truetype");
+  font-weight: 200;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Delight";
+  src: url("/assets/fonts/Delight-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Delight";
+  src: url("/assets/fonts/Delight-SemiBold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Delight";
+  src: url("/assets/fonts/Delight-Black.ttf") format("truetype");
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Delight";
+  src: url("/assets/fonts/Delight-ExtraBold.ttf") format("truetype");
+  font-weight: 800;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Delight";
+  src: url("/assets/fonts/Delight-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Delight";
+  src: url("/assets/fonts/Delight-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Delight";
+  src: url("/assets/fonts/Delight-Thin.ttf") format("truetype");
+  font-weight: 100;
+  font-style: normal;
 }

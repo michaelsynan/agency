@@ -4,7 +4,7 @@
     <transition name="fade" mode="out-in">
       <NuxtPage class="flex-grow" />
     </transition>
-    <FooterWrapper class="turtles" />
+    <FooterWrapper />
     <SharedCursorFollow :targetDiv="'turtles'" />
   </div>
 </template>
