@@ -6,7 +6,7 @@
     </div>
     <FooterWrapper />
     <SharedCursorFollow :targetDiv="'turtles'" />
-    <UNotifications />
+    <UNotifications :ui="{ background: 'bg-stone-900' }" class="toast" />
   </div>
 </template>
 

@@ -2,8 +2,15 @@ export default defineAppConfig({
   ui: {
     notifications: {
       position: "top-0 bottom-0",
+      background: "stone-900",
     },
     primary: "dino",
+    toast: {
+      slots: {
+        root: "rounded-none bg-stone-900",
+      },
+    },
+
     card: {
       slots: {
         root: "rounded-[calc(var(--ui-radius)*2)]",

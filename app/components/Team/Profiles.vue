@@ -14,7 +14,7 @@ const profiles: Profile[] = [
       { company: 'linkedin', url: 'https://linkedin.com' },
     ], website: 'https://michaelsynan.com',
   },
-  { name: 'Cecily Nicole Gaither', text: 'Cecily has led our marketing team to new heights with innovative strategies and strong leadership.', image: 'michael_synan.webp' },
+  { name: 'Cecily Nicole Gaither', text: 'Cecily has led our marketing team to new heights with innovative strategies and strong leadership.', image: 'cecily.jpeg' },
 ]
 </script>
 

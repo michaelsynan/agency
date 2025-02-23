@@ -44,7 +44,8 @@ const items = [
         class: 'mb-1.5 w-full !items-start !text-left border-b rounded-none px-0',
       },
 
-      body: '!text-4xl pb-3.5',
+      item: { color: 'text-stone-400' },
+
 
     }" />
   </UContainer>
