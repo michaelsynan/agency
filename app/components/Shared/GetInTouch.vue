@@ -4,7 +4,7 @@
       style="background-image: url('china-town-nyc.jpg'); background-size: cover; background-position: center;">
     </div>
     <div class="flex-1 flex flex-col px-10 py-32 gap-2">
-      <h3 class="text-4xl font-bold">Get in touch.</h3>
+      <h3 class="text-4xl font-black switzer">Get in touch.</h3>
       <p class="text-2xl">Let's get in touch.</p>
       <UButton class="max-w-max">Get in touch</UButton>
     </div>

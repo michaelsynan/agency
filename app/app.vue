@@ -1,10 +1,24 @@
 <template>
   <div id="page-wrapper" class="flex flex-col min-h-screen relative">
     <NavBar />
-    <transition name="fade" mode="out-in">
-      <NuxtPage class="flex-grow" />
-    </transition>
+    <div>
+      <NuxtPage />
+    </div>
     <FooterWrapper />
     <SharedCursorFollow :targetDiv="'turtles'" />
+    <UNotifications />
   </div>
 </template>
+
+<style scoped>
+.page-enter-active,
+.page-leave-active {
+  transition: all 0.4s;
+}
+
+.page-enter-from,
+.page-leave-to {
+  opacity: 0;
+  filter: blur(1rem);
+}
+</style>

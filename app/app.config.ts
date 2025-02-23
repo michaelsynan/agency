@@ -1,5 +1,8 @@
 export default defineAppConfig({
   ui: {
+    notifications: {
+      position: "top-0 bottom-0",
+    },
     primary: "dino",
     card: {
       slots: {

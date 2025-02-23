@@ -33,26 +33,28 @@ definePageMeta({
           '/michael.webp',
         ]" />
         <HomeCarousel :direction="'left'" :items="[
-          '/video-photography-website.webp',
           '/dashboard.webp',
           '/hero-image.webp',
           '/facial-serum-website.webp',
-          '/daily-grind.webp',
-          '/mobile-app.webp',
-          '/jazz.webp',
-          '/coding-nurse.webp',
+          '/primo.png',
+          '/gahs.png',
+          '/insure2.png',
+
+          '/video-photography-website.webp',
+
+          '/sauna.webp',
           '/yoga-pilates.webp',
+
+
+
           '/michael.webp',
         ]" />
       </div>
-      <SharedFinalCTA />
-            <SharedFinalCTA2 />
-      <!-- <HomeLeads class="flex-none w-full" />
-      <HomeTestimonials class="flex-none w-full" /> -->
+      <SharedFinalCTA2 />
+
       <HomeFAQ class="flex-none w-full py-48" />
 
       <SharedContactInfo />
-      <!-- <HomeClosingCTA class="flex-none w-full" /> -->
     </main>
   </div>
 </template>

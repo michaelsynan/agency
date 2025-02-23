@@ -43,6 +43,9 @@ const items = [
       default: {
         class: 'mb-1.5 w-full !items-start !text-left border-b rounded-none px-0',
       },
+
+      body: '!text-4xl pb-3.5',
+
     }" />
   </UContainer>
 </template>
@@ -51,22 +54,21 @@ const items = [
 ::v-deep button {
   position: relative;
   overflow: visible;
-  /* Ensure pseudo-elements are visible outside the button */
 }
 
 ::v-deep button::before {
   content: "";
   position: absolute;
   left: -40px;
-  /* 20px to the left of the button */
   top: 50%;
   transform: translateY(-50%);
   width: 18px;
   height: 18px;
-  background-color: rgba(255, 255, 255, 0.321);
+  background-color: rgba(128, 128, 128, 0.5);
+  /* Gray for hover */
   border-radius: 50%;
   opacity: 0;
-  transition: opacity 0.3s ease-in-out;
+  transition: opacity 0.3s ease-in-out, background-color 0.3s ease-in-out;
 }
 
 ::v-deep button:hover::before {
@@ -75,6 +77,7 @@ const items = [
 
 ::v-deep button[aria-expanded="true"]::before {
   opacity: 1;
-  /* Make it visible */
+  background-color: white;
+  /* White for active */
 }
 </style>
