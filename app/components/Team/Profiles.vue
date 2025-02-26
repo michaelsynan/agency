@@ -14,23 +14,23 @@ const profiles: Profile[] = [
       { company: 'linkedin', url: 'https://linkedin.com' },
     ], website: 'https://michaelsynan.com',
   },
-  { name: 'Cecily Nicole Gaither', text: 'Cecily has led our marketing team to new heights with innovative strategies and strong leadership.', image: 'cecily.jpeg' },
+  { name: 'Cecily Nicole Gaither', text: 'Cecily has led our marketing team to new heights with innovative strategies and strong leadership.', image: 'cecily.webp' },
 ]
 </script>
 
 <template>
   <UContainer class="flex flex-col !px-0">
-    <div class="my-20 w-full flex flex-col gap-4">
-      <h2>
-        Meet the Team
+    <div class="my-20 w-full flex flex-col md:flex-row gap-12">
+      <h2
+        class="text-4xl md:text-5xl font-delight font-black text-opacity-50 text-left max-w-4xl min-w-3xl mx-auto leading-loose uppercase">
+        <span class="whitespace-nowrap">We are built</span>
+        differently
       </h2>
-      <div>
-        Some explainer text in here
+
+      <div class="flex flex-row items-start gap-10">
+        <TeamProfile v-for="(profile, index) in profiles" :key="index" :name="profile.name" :text="profile.text"
+          :socials="profile.socials" :image="profile.image" :website="profile.website" />
       </div>
-    </div>
-    <div class="flex flex-col items-start gap-12">
-      <TeamProfile v-for="(profile, index) in profiles" :key="index" :name="profile.name" :text="profile.text"
-        :socials="profile.socials" :image="profile.image" :website="profile.website" />
     </div>
   </UContainer>
 </template>

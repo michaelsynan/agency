@@ -12,7 +12,7 @@
         <div class="content text-stone-100 text-center switzer font-bold !text-lg md:!text-2xl"
           @click="copyToClipboard(item.value, item.label)">
           <UIcon name="i-mdi-content-copy"
-            class="w-4 md:w-5 h-4 md:h-5 mr-2 mt-2 !text-stone-500 !text-lg md:!text-2xl" />{{
+            class="w-4 md:w-5 h-4 md:h-5 mr-2 mt-2 !text-dino-500 !text-lg md:!text-2xl" />{{
               item.value }}
         </div>
       </div>

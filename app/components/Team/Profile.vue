@@ -17,8 +17,8 @@ onMounted(() => {
 </script>
 
 <template>
-  <div class="flex flex-col md:flex-row py-6 my-2 gap-6">
-    <NuxtImg :src="props.image" :alt="props.name" class="rounded object-cover h-[600px]" />
+  <div class="flex flex-col pb-6 my-2 gap-6">
+    <NuxtImg :src="props.image" :alt="props.name" class="rounded object-cover h-[400px]" />
     <div class="max-w-max flex flex-col gap-4">
       <div class="text-2xl font-bold">
         {{ props.name }}
