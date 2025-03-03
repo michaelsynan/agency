@@ -45,6 +45,10 @@ h6,
 .switzer {
   font-family: "Switzer", sans-serif;
 }
+
+.lora {
+  font-family: "Lora", serif;
+}
 p,
 button {
   font-family: Inter;

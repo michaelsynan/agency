@@ -1,16 +1,23 @@
 <template>
-  <main class="text-white min-h-screen flex flex-col grow">
-    <div id="top-row" class="flex-1 h-1/2 bg-red-950 flex pt-10 flex-row">
-      <div class="flex-1 text-3xl bg-dino-950 font-delight inset-0">
-        <h1 class="mt-auto">Our Team</h1>
+  <div>
+    <main class="text-white h-screen flex flex-col">
+      <div id="top-row" class="h-2/3 bg-stone-950 flex pt-10">
+        <div class="flex-1 text-3xl bg-dino-950 font-delight flex items-end">
+          <h1 class="mb-4 p-10 text-5xl font-delight">Our Team</h1>
+        </div>
+        <div style="background-image: url(/michael_synan.webp)" class="w-1/3 bg-cover bg-top"></div>
+        <div style="background-image: url(/cecily.webp)" class="w-1/3 bg-cover bg-top"></div>
       </div>
-      <div style="background-image: url(/michael_synan.webp)" class="flex-1">Col 2</div>
-      <div style="background-image: url(/cecily.webp)" class="flex-1">Col 3</div>
-    </div>
-    <div id="bottom-row" class="h-1/2 bg-stone-900 flex-1">bottom</div>
-    <!-- <SharedHero heading="Full Service Digital Agency" description="We focus on you." />
-    <UContainer class="flex flex-col md:flex-row gap-16 md:gap-10 justify-center items-start w-full">
-      <TeamProfiles class="mt-20" />
-    </UContainer> -->
-  </main>
+      <div id="bottom-row" class="h-1/3 bg-stone-900 p-10 flex flex-col">
+        <div class="flex-1 lora text-7xl text-stone-600">Time to get to work...</div>
+        <div class="ml-auto max-w-lg">Lorem ipsum dolor sit amet consectetur adipiscing elit Sed do eiusmod tempor
+          incididunt ut
+          labore et dolore magna aliqua Ut enim ad minim veniam quis nostrud exercitation ullamco laboris nisi ut
+          aliquip
+          ex ea commodo consequat Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+          nulla pariatur Excepteur</div>
+      </div>
+    </main>
+    <AboutProcess class="bg-stone-900 text-white p-10" />
+  </div>
 </template>

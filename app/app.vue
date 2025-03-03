@@ -1,3 +1,6 @@
+<script setup>
+</script>
+
 <template>
   <div id="page-wrapper" class="flex flex-col min-h-screen relative">
     <NavBar />
@@ -5,6 +8,7 @@
       <NuxtPage />
     </div>
     <FooterWrapper />
+    <SharedMinimalFooter />
     <SharedCursorFollow :targetDiv="'turtles'" />
     <UNotifications :ui="{ background: 'bg-stone-900' }" class="toast" />
   </div>
