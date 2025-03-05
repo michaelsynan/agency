@@ -1,4 +1,5 @@
 <script setup>
+const route = useRoute();
 </script>
 
 <template>
@@ -7,8 +8,8 @@
     <div>
       <NuxtPage />
     </div>
-    <FooterWrapper />
-    <SharedMinimalFooter />
+    <FooterWrapper v-if="route.path === '/'" />
+    <FooterMinimal v-else />
     <SharedCursorFollow :targetDiv="'turtles'" />
     <UNotifications :ui="{ background: 'bg-stone-900' }" class="toast" />
   </div>
@@ -17,7 +18,7 @@
 <style scoped>
 .page-enter-active,
 .page-leave-active {
-  transition: all 0.4s;
+  transition: all 0.3s;
 }
 
 .page-enter-from,
