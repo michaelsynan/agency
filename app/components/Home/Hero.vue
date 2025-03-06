@@ -9,12 +9,13 @@
       <h1 class="text-7xl md:text-8xl font-delight font-black text-white-200">
         A <span id="future" class="gradient-text">FUTURE</span> WORTH BUILDING FOR
       </h1>
-      <p class="text-stone-300 text-xl md:text-3xl max-w-[40ch] !leading-relaxed">
+      <p
+        class="text-stone-300 text-xl md:text-3xl max-w-[40ch] !leading-relaxed hover:leading-[200px] transition-all duration-300">
         Shaping Tomorrow So You Can Enjoy Today
       </p>
       <SharedMainCTAButton />
     </UContainer>
-    <HomeHeroBottomStrip />
+    <HomeHeroBottomStrip class="w-full" />
   </div>
 </template>
 

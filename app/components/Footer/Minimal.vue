@@ -2,9 +2,9 @@
 
 <template>
   <div class="text-2xl text-white">
-    <div class="flex items-center">
+    <div class="flex items-start mr-auto">
       <NuxtImg src="/formwork-studios-logo-text.png" height="30" width="486" fit="cover"
-        class="max-w-[80%] self-center mx-auto" alt="Formwork Studios" />
+        class="max-w-[80%] self-start ml-auto" alt="Formwork Studios" />
     </div>
   </div>
 </template>
