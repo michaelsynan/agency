@@ -1,16 +1,33 @@
 <template>
   <div class="py-10 pb-16 bg-stone-950 border-b border-stone-500/50"
     style="background-image: url('grid.svg'); background-size: 300px 300px; background-repeat: repeat;">
-    <h2 class="text-9xl font-delight font-black text-stone-800/50 mb-16 text-left">PROCESS</h2>
+    <h2 class="text-5xl md:text-9xl font-delight font-black text-stone-800/50 mb-6 text-left">
+      PROCESS
+    </h2>
+
+    <p class=" max-w-3xl pb-10 leading-8  text-left switzer text-stone-100">
+
+
+
+      Each step in our methodology is integral to delivering exceptional results. We approach every phase with
+      meticulous attention to detail, ensuring no aspect is overlooked. Our commitment to this structured process allows
+      us to consistently deliver solutions that are both innovative and effective, regardless of the project's
+      complexity.
+    </p>
 
     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 ">
       <div v-for="(step, index) in processSteps" :key="index"
-        class="bg-stone-900 p-6 rounded shadow border-stone-900 hover:border-stone-500/50 border transition-all duration-300 group">
-        <div class="text-2xl font-delight font-black mb-4 font-delight">{{ index + 1 }}.</div>
-        <h3 class="text-xl font-bold mb-2 font-delight">{{ step.title }}</h3>
+        class="bg-stone-900 p-6 rounded-sm shadow border-stone-900 hover:border-stone-500/50 border transition-all duration-300 group">
+        <div class="text-2xl font-delight font-black mb-4 font-delight">
+          {{ index + 1 }}.
+        </div>
+        <h3 class="text-xl font-bold mb-2 font-delight">
+          {{ step.title }}
+        </h3>
         <p
           class="text-stone-500 leading-relaxed switzer group-hover:text-stone-300 transition-colors duration-300 ease-in-out">
-          {{ step.description }}</p>
+          {{ step.description }}
+        </p>
       </div>
     </div>
   </div>
@@ -41,6 +58,6 @@ const processSteps = [
   {
     title: 'Launch, Monitoring & Optimization',
     description: 'After integration, we launch with a full monitoring plan in place. We continuously analyze performance data and optimize the system, ensuring a smooth transition and sustained improvements over time.'
-  }
+  },
 ]
 </script>

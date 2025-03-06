@@ -4,12 +4,12 @@
     <div class="contact-item flex-col md:flex-row min-w-content w-full" v-for="item in contactInfo" :key="item.label">
       <div class="contact-content cursor-pointer">
         <div
-          class="heading text-stone-100 switzer font-bold text-center text-uppercase uppercase !text-lg md:!text-2xl">
+          class="heading text-stone-100 switzer text-center text-uppercase uppercase !text-lg md:!text-2xl font-black">
           {{
             item.label
           }}
         </div>
-        <div class="content text-stone-100 text-center switzer font-bold !text-lg md:!text-2xl"
+        <div class="content text-stone-100 text-center switzer font-bold !text-lg md:!text-2xl font-bold"
           @click="copyToClipboard(item.value, item.label)">
           <UIcon name="i-mdi-content-copy"
             class="w-4 md:w-5 h-4 md:h-5 mr-2 mt-2 !text-dino-500 !text-lg md:!text-2xl" />{{
