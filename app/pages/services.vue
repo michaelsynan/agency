@@ -1,9 +1,6 @@
 <template>
   <main class="text-white min-h-screen">
-    <SharedHero heading="Services" description="These are our services" :gradientOff="true" />
-    <!-- <div class="sticky top-10 bg-stone-900 backdrop-blur z-10 w-full p-2 md:p-4 bg-opacity-40">
-      <ServicesNav />
-    </div> -->
+    <ServicesHero />
     <UContainer class="flex flex-col gap-16 md:gap-10 justify-center items-start w-full my-20 md:px-0">
       <div id="all-services" class=" flex flex-col gap-16 w-full">
         <div id="website-design"
