@@ -38,7 +38,7 @@
       </div>
     </main>
     <AboutProcess class="text-white p-6 md:p-10" />
-    <AboutFinal class="h-screen bg-stone-950 border-b border-stone-500/50" />
+    <AboutFinal class=" bg-stone-950 border-b border-stone-500/50" />
   </div>
 </template>
 
