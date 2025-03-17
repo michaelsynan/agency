@@ -1,33 +1,48 @@
 <template>
-  <div class="py-10 pb-16 bg-stone-950 border-b border-stone-500/50"
+  <div class="bg-stone-950 border-b border-stone-500/50 p-4 md:p-6"
     style="background-image: url('grid.svg'); background-size: 300px 300px; background-repeat: repeat;">
-    <h2 class="text-5xl md:text-9xl font-delight font-black text-stone-800/50 mb-6 text-left">
-      PROCESS
-    </h2>
-
-    <p class=" max-w-3xl pb-10 leading-8  text-left switzer text-stone-100">
-
-
-
-      Each step in our methodology is integral to delivering exceptional results. We approach every phase with
-      meticulous attention to detail, ensuring no aspect is overlooked. Our commitment to this structured process allows
-      us to consistently deliver solutions that are both innovative and effective, regardless of the project's
-      complexity.
-    </p>
-
-    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 ">
-      <div v-for="(step, index) in processSteps" :key="index"
-        class="bg-stone-900 p-6 rounded-sm shadow border-stone-900 hover:border-stone-500/50 border transition-all duration-300 group">
-        <div class="text-2xl font-delight font-black mb-4 font-delight">
-          {{ index + 1 }}.
+    <div class="w-full">
+      <div class="w-full">
+        <InfiniteScroll message="OUR PROCESS OUR PROCESS OUR PROCESS OUR PROCESS OUR PROCESS" speed="20"
+          class="font-bold tracking-widest" />
+      </div>
+    </div>
+    <!-- Use a grid with 5 columns that ensures items start from 3rd column -->
+    <div v-if="false" class="grid gap-6 mb-0 relative z-10">
+      <!-- First row -->
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-6">
+        <div class="col-span-0 md:col-span-1 hidden md:block"></div> <!-- Empty columns -->
+        <div v-for="step in processSteps.slice(0, 3)" :key="step.title"
+          class="bg-stone-900/80 backdrop-blur-sm p-6 rounded-sm shadow border-stone-900 hover:border-stone-500/50 border transition-all duration-300 group">
+          <div class="text-2xl font-delight font-black mb-4 font-delight">
+            {{ processSteps.indexOf(step) + 1 }}.
+          </div>
+          <h3 class="text-xl font-bold mb-2 font-delight">
+            {{ step.title }}
+          </h3>
+          <p
+            class="text-stone-500 leading-relaxed switzer group-hover:text-stone-300 transition-colors duration-300 ease-in-out text-base">
+            {{ step.description }}
+          </p>
         </div>
-        <h3 class="text-xl font-bold mb-2 font-delight">
-          {{ step.title }}
-        </h3>
-        <p
-          class="text-stone-500 leading-relaxed switzer group-hover:text-stone-300 transition-colors duration-300 ease-in-out">
-          {{ step.description }}
-        </p>
+      </div>
+
+      <!-- Second row -->
+      <div class="grid grid-cols-1 md:grid-cols-5 gap-6">
+        <div class="col-span-2 hidden md:block"></div> <!-- Empty columns -->
+        <div v-for="step in processSteps.slice(3, 6)" :key="step.title"
+          class="bg-stone-900/80 backdrop-blur-sm p-6 rounded-sm shadow border-stone-900 hover:border-stone-500/50 border transition-all duration-300 group">
+          <div class="text-2xl font-delight font-black mb-4 font-delight">
+            {{ processSteps.indexOf(step) + 1 }}.
+          </div>
+          <h3 class="text-xl font-bold mb-2 font-delight">
+            {{ step.title }}
+          </h3>
+          <p
+            class="text-stone-500 leading-relaxed switzer group-hover:text-stone-300 transition-colors duration-300 ease-in-out !text-base">
+            {{ step.description }}
+          </p>
+        </div>
       </div>
     </div>
   </div>
@@ -40,7 +55,7 @@ const processSteps = [
     description: 'We begin by gaining a deep understanding of your business, goals, and the system in which it operates. Through stakeholder interviews, data analysis, and mapping out key interactions, we create a comprehensive picture of the challenges and opportunities that exist.'
   },
   {
-    title: 'System Mapping & Strategy Development',
+    title: 'System Mapping',
     description: 'We map the entire system, identifying key components, feedback loops, and potential points of leverage. Using this map, we collaboratively develop a strategy that takes into account both immediate needs and long-term sustainability.'
   },
   {
@@ -52,12 +67,14 @@ const processSteps = [
     description: 'We take a systems approach to ensure that all components of the project integrate seamlessly, avoiding isolated solutions. This phase includes testing, refining, and aligning new systems with existing structures to enhance efficiency and cohesion.'
   },
   {
-    title: 'Feedback & Continuous Improvement',
+    title: 'Feedback & Improvement',
     description: 'Systems thinking is a continuous process. We collect feedback, monitor outcomes, and adapt as necessary to improve the system over time. Our commitment to iterative refinement ensures that your project continues to evolve and thrive.'
   },
   {
-    title: 'Launch, Monitoring & Optimization',
+    title: 'Launch & Monitoring',
     description: 'After integration, we launch with a full monitoring plan in place. We continuously analyze performance data and optimize the system, ensuring a smooth transition and sustained improvements over time.'
   },
 ]
 </script>
+
+<style scoped></style>
