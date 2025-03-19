@@ -1,47 +1,32 @@
 <template>
-  <div class="bg-stone-950 border-b border-stone-500/50 p-4 md:p-6"
-    style="background-image: url('grid.svg'); background-size: 300px 300px; background-repeat: repeat;">
-    <div class="w-full">
-      <div class="w-full">
-        <InfiniteScroll message="OUR PROCESS OUR PROCESS OUR PROCESS OUR PROCESS OUR PROCESS" speed="20"
-          class="font-bold tracking-widest" />
-      </div>
-    </div>
-    <!-- Use a grid with 5 columns that ensures items start from 3rd column -->
-    <div v-if="false" class="grid gap-6 mb-0 relative z-10">
-      <!-- First row -->
-      <div class="grid grid-cols-1 md:grid-cols-4 gap-6">
-        <div class="col-span-0 md:col-span-1 hidden md:block"></div> <!-- Empty columns -->
-        <div v-for="step in processSteps.slice(0, 3)" :key="step.title"
-          class="bg-stone-900/80 backdrop-blur-sm p-6 rounded-sm shadow border-stone-900 hover:border-stone-500/50 border transition-all duration-300 group">
-          <div class="text-2xl font-delight font-black mb-4 font-delight">
-            {{ processSteps.indexOf(step) + 1 }}.
-          </div>
-          <h3 class="text-xl font-bold mb-2 font-delight">
-            {{ step.title }}
-          </h3>
-          <p
-            class="text-stone-500 leading-relaxed switzer group-hover:text-stone-300 transition-colors duration-300 ease-in-out text-base">
-            {{ step.description }}
-          </p>
-        </div>
+  <div class="bg-stone-950 p-6 md:p-9 !py-40">
+    <!-- Introduction paragraph - 1/3 width, left-aligned with bottom border -->
+    <!-- <div class="mb-16 pb-8">
+      <p class="text-stone-100 text-base leading-8 switzer max-w-md border-stone-700 pb-8 h-40">
+        Each step in our methodology is integral to delivering exceptional results. We approach every phase with
+        meticulous attention to detail, ensuring no aspect is overlooked.
+      </p>
+    </div> -->
+
+    <!-- Two-column layout for process steps -->
+    <div class="flex flex-col md:flex-row">
+      <!-- First column (1/3 width) with title -->
+      <div class="w-full md:w-1/3 pr-0 md:pr-12 mb-10 md:mb-0">
+        <h2 class="text-3xl md:text-5xl font-delight font-bold text-stone-100 sticky top-24">Our Process</h2>
       </div>
 
-      <!-- Second row -->
-      <div class="grid grid-cols-1 md:grid-cols-5 gap-6">
-        <div class="col-span-2 hidden md:block"></div> <!-- Empty columns -->
-        <div v-for="step in processSteps.slice(3, 6)" :key="step.title"
-          class="bg-stone-900/80 backdrop-blur-sm p-6 rounded-sm shadow border-stone-900 hover:border-stone-500/50 border transition-all duration-300 group">
-          <div class="text-2xl font-delight font-black mb-4 font-delight">
-            {{ processSteps.indexOf(step) + 1 }}.
+      <!-- Second column (2/3 width) with process steps -->
+      <div class="w-full md:w-2/3">
+        <div class="space-y-24">
+          <div v-for="(step, index) in processSteps" :key="step.title" class="border-t border-stone-800 pt-8">
+            <div class="flex flex-col">
+              <div class="text-xl font-mono text-stone-500 mb-2">0{{ index + 1 }}.</div>
+              <h3 class="text-2xl md:text-3xl font-bold mb-6 text-stone-200">{{ step.title }}</h3>
+              <p class="text-stone-400 leading-relaxed max-w-xl">
+                {{ step.description }}
+              </p>
+            </div>
           </div>
-          <h3 class="text-xl font-bold mb-2 font-delight">
-            {{ step.title }}
-          </h3>
-          <p
-            class="text-stone-500 leading-relaxed switzer group-hover:text-stone-300 transition-colors duration-300 ease-in-out !text-base">
-            {{ step.description }}
-          </p>
         </div>
       </div>
     </div>
@@ -77,4 +62,6 @@ const processSteps = [
 ]
 </script>
 
-<style scoped></style>
+<style scoped>
+/* Add any additional custom styles here */
+</style>

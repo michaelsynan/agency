@@ -37,8 +37,10 @@
         </div>
       </div>
     </main>
-    <AboutProcess class="text-white" />
-    <AboutFinal class=" bg-stone-950 border-b border-stone-500/50" />
+    <AboutScroll class="text-white" />
+    <AboutProcess class=" bg-stone-950 border-b border-stone-500/50" />
+    <!-- <AboutFinal class=" bg-stone-950 border-b border-stone-500/50" /> -->
+    <AboutContact />
   </div>
 </template>
 

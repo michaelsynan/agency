@@ -1,7 +1,7 @@
 <template>
   <div class="grid grid-rows-3 min-h-screen relative grid-row-start-3">
-    <div></div>
-    <div></div>
+    <div class="text-white">Top row</div>
+    <div class="text-white">Middle row</div>
     <div class="grid  grid-cols-3 w-full grid-row-start-3 h-[500px]">
       <div class="p-4 overflow-hidden flex flex-col justify-end">
         <div class="text-stone-100 text-2xl h-full">
