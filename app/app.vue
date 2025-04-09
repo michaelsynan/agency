@@ -3,6 +3,7 @@ const route = useRoute();
 </script>
 
 <template>
+  <UApp>
   <div id="page-wrapper" class="flex flex-col min-h-screen relative">
     <NavBar />
     <div>
@@ -13,6 +14,7 @@ const route = useRoute();
     <SharedCursorFollow :targetDiv="'turtles'" />
     <UNotifications :ui="{ background: 'bg-stone-900' }" class="toast" />
   </div>
+  </UApp>
 </template>
 
 <style scoped>
