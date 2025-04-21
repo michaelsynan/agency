@@ -1,5 +1,12 @@
 export default defineAppConfig({
   ui: {
+    accordion: {
+      slots: {
+        content: "", // not useful
+        body: "text-xl", // not useful
+        label: "text-2xl", // header stuff
+      },
+    },
     notifications: {
       position: "top-0 bottom-0",
       background: "stone-900",

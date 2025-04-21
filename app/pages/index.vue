@@ -1,7 +1,13 @@
 <script>
 definePageMeta({
   colorMode: 'dark',
-})
+});
+
+export default {
+  setup() {
+    return {};
+  },
+};
 </script>
 
 <template>
@@ -10,7 +16,7 @@ definePageMeta({
       <HomeHero />
     </header>
     <main class="flex flex-col">
-      <HomeAbout class="py-48" />
+      <HomeAbout class="py-48 h-screen" />
       <div id="MainCarousel" class="py-48 flex flex-col gap-8 relative border-b border-stone-500">
         <div class="mx-4 md:mx-20 text-6xl md:text-9xl -mt-24 text-stone-800/50 font-delight font-black">SOME
           WORK</div>
@@ -58,3 +64,10 @@ definePageMeta({
     </main>
   </div>
 </template>
+
+<style>
+/* Remove default pointer and finger globally */
+* {
+  cursor: none !important;
+}
+</style>

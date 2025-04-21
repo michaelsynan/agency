@@ -58,27 +58,29 @@ const items = [
 }
 
 ::v-deep button::before {
-  content: "";
+  content: "»";
+  /* Double right arrow */
   position: absolute;
   left: -40px;
   top: 50%;
   transform: translateY(-50%);
-  width: 18px;
-  height: 18px;
-  background-color: rgba(128, 128, 128, 0.5);
+  font-size: 18px;
+  /* Adjust size as needed */
+  color: rgba(128, 128, 128, 0.5);
   /* Gray for hover */
-  border-radius: 50%;
   opacity: 0;
-  transition: opacity 0.3s ease-in-out, background-color 0.3s ease-in-out;
+  transition: opacity 0.3s ease-in-out, color 0.3s ease-in-out;
 }
 
 ::v-deep button:hover::before {
   opacity: 1;
+  color: rgba(255, 255, 255, 0.8);
+  /* Lighter color on hover */
 }
 
 ::v-deep button[aria-expanded="true"]::before {
   opacity: 1;
-  background-color: white;
+  color: white;
   /* White for active */
 }
 </style>

@@ -35,25 +35,69 @@ const services = [
 
 <template>
   <main class="text-white">
-    <div class="w-full h-[66vh] bg-dino-950 relative flex justify-center items-center gap-10 flex-col">
-      <h1 class="text-6xl font-bold font-delight">OUR SERVICES</h1>
-      <div class="text-2xl switzer opacity-50">Design, Development & Marketing</div>
+    <!-- Header with blurred background image -->
+    <div
+      class="w-full h-[66vh] relative flex justify-center items-center gap-10 flex-col bg-gradient-to-b from-dino-950 to-stone-900 overflow-hidden">
+      <!-- Background image with blur effect -->
+      <div class="absolute inset-0 bg-image opacity-30 blur-image !bg-fixed"></div>
+
+      <!-- Dark overlay for better text readability -->
+      <div class="absolute inset-0 bg-dino-950/70"></div>
+
+      <!-- Content positioned above the background -->
+      <div class="relative z-10">
+        <h1 class="text-6xl font-bold font-delight">OUR SERVICES</h1>
+        <div class="text-2xl switzer opacity-50 text-center mt-4">Design, Development & Marketing</div>
+      </div>
     </div>
 
-    <UContainer class="relative">
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-6 py-20"> <!-- Grid layout for services -->
-        <div v-for="service in services" :key="service.id" class="bg-stone-900 p-6 md:p-10 transition-all duration-300 border-t border-stone-700">
-          <h2 class="text-3xl md:text-3xl font-delight mb-4 font-bold">{{ service.title }}</h2>
-          <p class="text-stone-400">{{ service.description }}</p>
+    <div class="bg-stone-950 p-6 md:p-16 !py-40">
+      <!-- Grid layout with responsive breakpoints -->
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 sm:gap-10 lg:gap-16">
+        <!-- First row (3 items) -->
+        <div v-for="(service, index) in services.slice(0, 3)" :key="service.id"
+          class="border-t border-stone-800 pt-12 p-6 w-full">
+          <div class="flex flex-col">
+            <div class="text-xl font-mono text-stone-500 mb-4">0{{ index + 1 }}.</div>
+            <h3 class="text-2xl md:text-3xl font-bold mb-8 text-stone-200 font-delight">{{ service.title }}</h3>
+            <p class="text-stone-400 switzer font-switzer leading-8">
+              {{ service.description }}
+            </p>
+          </div>
+        </div>
+
+        <!-- Second row (3 items) -->
+        <div v-for="(service, index) in services.slice(3, 6)" :key="service.id"
+          class="border-t border-stone-800 pt-12 p-6 w-full">
+          <div class="flex flex-col">
+            <div class="text-xl font-mono text-stone-500 mb-4">0{{ index + 4 }}.</div>
+            <h3 class="text-2xl md:text-3xl font-bold mb-8 text-stone-200 font-delight">{{ service.title }}</h3>
+            <p class="text-stone-400 switzer font-switzer leading-8">
+              {{ service.description }}
+            </p>
+          </div>
         </div>
       </div>
-    </UContainer>
-    <ServicesSection />
+    </div>
   </main>
 </template>
 
 <style scoped>
-.grid {
-  display: grid;
+.bg-image {
+  background-image: url('/manhattan-skyline-nyc.jpg');
+  background-size: cover;
+  background-position: bottom;
+  background-attachment: fixed;
+  /* Makes the background fixed */
+  height: 100%;
+  width: 100%;
+}
+
+.blur-image {
+  /* Multiple blur approaches for browser compatibility */
+  filter: blur(8px);
+  -webkit-filter: blur(8px);
+  transform: scale(1.1);
+  /* Prevent blur edges */
 }
 </style>

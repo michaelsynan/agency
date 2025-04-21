@@ -1,27 +1,75 @@
 @import "tailwindcss";
+@import "@nuxt/ui";
 
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@theme {
+  --font-delight: Delight, sans-serif;
+
+  --font-weight-thin: 100;
+  --font-weight-extralight: 200;
+  --font-weight-light: 300;
+  --font-weight-regular: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+  --font-weight-extrabold: 800;
+  --font-weight-black: 900;
+
+  --color-dino-50: #fcf7fb;
+  --color-dino-100: #f8eff7;
+  --color-dino-200: #f0deee;
+  --color-dino-300: #e3c4de;
+  --color-dino-400: #d1a1c8;
+  --color-dino-500: #ba7baf;
+  --color-dino-600: #9d5c90;
+  --color-dino-700: #8a4f7d;
+  --color-dino-800: #6a3e5f;
+  --color-dino-900: #593650;
+  --color-dino-950: #371b30;
+
+  --color-juju-50: #f0fdfc;
+  --color-juju-100: #ccfbf6;
+  --color-juju-200: #99f6ec;
+  --color-juju-300: #5eeadb;
+  --color-juju-400: #2dd4c2;
+  --color-juju-500: #14b8a6;
+  --color-juju-600: #0d9485;
+  --color-juju-700: #0f766b;
+  --color-juju-800: #115e56;
+  --color-juju-900: #134e48;
+  --color-juju-950: #042f2a;
+}
+
+/*
+  The default border color has changed to `currentcolor` in Tailwind CSS v4,
+  so we've added these compatibility styles to make sure everything still
+  looks the same as it did with Tailwind CSS v3.
+
+  If we ever want to remove these styles, we need to add an explicit border
+  color utility to any element that depends on these defaults.
+*/
+
+@layer base {
+  *,
+  ::after,
+  ::before,
+  ::backdrop,
+  ::file-selector-button {
+    border-color: var(--color-gray-200, currentcolor);
+  }
+}
 
 @layer base {
   body {
     @apply bg-stone-950;
   }
-  /* h1 {
-    @apply text-5xl md:text-6xl leading-normal;
-  } */
-  /* h2 {
-    @apply text-3xl md:text-4xl  leading-normal pb-6;
-  } */
   p {
     @apply text-base md:text-lg leading-relaxed;
   }
 }
 
-/* html {
+html {
   scroll-behavior: smooth;
-} */
+}
 
 @font-face {
   font-family: "BeingBlackInktraps";

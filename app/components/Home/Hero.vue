@@ -13,7 +13,12 @@
         class="text-stone-300 text-xl md:text-3xl max-w-[40ch] !leading-relaxed hover:leading-[200px] transition-all duration-300">
         Shaping Tomorrow So You Can Enjoy Today
       </p>
-      <SharedMainCTAButton />
+      <!-- <SharedMainCTAButton /> REMOVE THIS COMPONENT -->
+      <UButton
+        class="rounded-none text-white font-bold bg-juju-600 hover:bg-juju-500 py-3 px-4 border border-juju-500 mt-4"
+        size="xl" icon="i-mdi-calendar">
+        Book My Free
+        Consultation</UButton>
     </UContainer>
     <HomeHeroBottomStrip class="w-full" />
   </div>
