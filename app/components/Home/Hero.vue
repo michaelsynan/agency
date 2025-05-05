@@ -20,7 +20,7 @@
         Book My Free
         Consultation</UButton>
     </UContainer>
-    <HomeHeroBottomStrip class="w-full" />
+    <HomeHeroBottomStrip class="w-full fixed bottom-0" />
   </div>
 </template>
 

@@ -17,7 +17,7 @@ export default {
     </header>
     <main class="flex flex-col">
       <HomeAbout class="py-48 h-screen" />
-      <div id="MainCarousel" class="py-48 flex flex-col gap-8 relative border-b border-stone-500">
+      <div id="MainCarousel" class="py-48 flex flex-col gap-8 relative border-stone-500">
         <div class="mx-4 md:mx-20 text-6xl md:text-9xl -mt-24 text-stone-800/50 font-delight font-black">SOME
           WORK</div>
         <div
@@ -56,9 +56,9 @@ export default {
           '/michael.webp',
         ]" />
       </div>
-      <SharedFinalCTA2 />
+      <SharedFinalCTA2 class="rounded-3xl px-10 max-w-[90%]" />
 
-      <HomeFAQ class="flex-none w-full py-48" />
+      <HomeFAQ class="flex-none py-48 mx-auto" />
 
       <SharedContactInfo />
     </main>

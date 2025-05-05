@@ -1,5 +1,5 @@
 <template>
-  <div class="cta-background w-full border-b border-stone-500 py-20 md:py-40 relative bg-fixed">
+  <div class="cta-background w-full  py-20 md:py-40 relative bg-fixed max-w-6xl pl-0 md:pl-20 ml-0 md:ml-20">
     <div class="absolute inset-0 bg-black/50"></div> <!-- Overlay -->
     <UContainer class="flex flex-row gap-10 relative z-10 text-white text-center">
       <div class="flex flex-col flex-grow items-start justify-start text-left">
@@ -23,10 +23,12 @@
 
 <style scoped>
 .cta-background {
-  background-image: url('/birdscompressed.jpg'); /* Set the background image */
+  background-image: url('/birdscompressed.jpg');
+  /* Set the background image */
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  background-attachment: fixed; /* Makes the background fixed */
+  background-attachment: fixed;
+  /* Makes the background fixed */
 }
 </style>

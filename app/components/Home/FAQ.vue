@@ -37,50 +37,19 @@ const items = [
 </script>
 
 <template>
-  <UContainer class="max-w-4xl">
-    <h2 class="text-9xl font-delight font-black text-stone-800/50 mb-4">FAQ</h2>
-    <UAccordion :truncate="false" color="none" :items="items" size="xl" variant="soft" class="!text-left" :ui="{
-      default: {
-        class: 'mb-1.5 w-full !items-start !text-left border-b rounded-none px-0',
-      },
-
-      item: { color: 'text-stone-400' },
-
-
-    }" />
-  </UContainer>
+  <div class="w-full flex justify-center px-4 md:px-0">
+    <div class="max-w-5xl w-full">
+      <h2 class="text-9xl font-delight font-black text-stone-800/50 mb-4 text-left">FAQ</h2>
+      <UAccordion :truncate="false" color="none" :items="items" size="xl" variant="soft" class="!text-left" :ui="{
+        default: {
+          class: 'mb-1.5 w-full !items-start !text-left border-b rounded-none px-0',
+        },
+        item: { color: 'text-stone-400' },
+      }" />
+    </div>
+  </div>
 </template>
 
 <style scoped>
-::v-deep button {
-  position: relative;
-  overflow: visible;
-}
-
-::v-deep button::before {
-  content: "»";
-  /* Double right arrow */
-  position: absolute;
-  left: -40px;
-  top: 50%;
-  transform: translateY(-50%);
-  font-size: 18px;
-  /* Adjust size as needed */
-  color: rgba(128, 128, 128, 0.5);
-  /* Gray for hover */
-  opacity: 0;
-  transition: opacity 0.3s ease-in-out, color 0.3s ease-in-out;
-}
-
-::v-deep button:hover::before {
-  opacity: 1;
-  color: rgba(255, 255, 255, 0.8);
-  /* Lighter color on hover */
-}
-
-::v-deep button[aria-expanded="true"]::before {
-  opacity: 1;
-  color: white;
-  /* White for active */
-}
+/* Removed the double arrow hover effect */
 </style>

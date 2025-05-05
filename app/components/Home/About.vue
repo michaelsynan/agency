@@ -63,7 +63,7 @@ onUnmounted(() => {
 </script>
 
 <template>
-  <div class="border-b border-stone-500/50 py-48 bg-url">
+  <div class="border-b border-stone-500/50 py-72 bg-url !h-screen">
     <UContainer class="text-center flex flex-col justify-center items-center h-full">
       <div class="text-sm text-stone-700 mb-8 uppercase font-bold font-mono tracking-wider">
         / our common problem

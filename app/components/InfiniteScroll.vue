@@ -75,7 +75,8 @@ onMounted(() => {
 
 @media (max-width: 600px) {
   .marquee__item {
-    font-size: calc(var(--baseFontSize) * 0.5);
+    font-size: calc(var(--baseFontSize) * 1.5) !important;
+    /* Increased font size for mobile */
   }
 }
 

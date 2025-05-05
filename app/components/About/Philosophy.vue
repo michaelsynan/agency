@@ -1,5 +1,5 @@
 <template>
-    <div class="bg-dino-950 p-6 md:p-9 !py-40 border-y-2 border-white">
+    <div class="bg-dino-950 p-6 md:p-9 py-20 md:py-40 border-y-2 border-white ">
         <!-- Two-column layout for philosophy content -->
         <div class="flex flex-col md:flex-row">
             <!-- First column (1/3 width) with title -->
@@ -13,7 +13,7 @@
             <!-- Second column (2/3 width) with philosophy content -->
             <div class="w-full md:w-2/3">
                 <div class=" border-stone-800">
-                    <p class="text-stone-400 switzer font-switzer leading-14 text-4xl tracking-wide">
+                    <p class="text-stone-400 switzer font-switzer leading-14 text-2xl md:text-4xl tracking-wide">
                         We approach every challenge through the lens of systems thinking—recognizing that digital
                         products exist within complex ecosystems of users, business objectives, and technological
                         constraints. Our philosophy centers on understanding these interconnections to create solutions
