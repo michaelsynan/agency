@@ -1,4 +1,6 @@
 <script setup>
+import { ref } from 'vue';
+
 const services = [
   {
     id: 'website-design',
@@ -51,26 +53,12 @@ const services = [
       </div>
     </div>
 
-    <div class="bg-stone-950 p-6 md:p-16 !py-40">
-      <!-- Grid layout with responsive breakpoints -->
-      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 sm:gap-10 lg:gap-16">
-        <!-- First row (3 items) -->
-        <div v-for="(service, index) in services.slice(0, 3)" :key="service.id"
-          class="border-t border-stone-800 pt-12 p-6 w-full">
+    <div class="bg-stone-950 p-6 md:p-16 !py-40 relative">
+      <!-- Stack all services vertically with max width -->
+      <div class="flex flex-col gap-8 max-w-4xl mx-auto" id="services-container">
+        <div v-for="(service, index) in services" :key="service.id" :class="{ 'border-t': index !== 0 }"
+          class="pt-12 p-6 w-full relative">
           <div class="flex flex-col">
-            <div class="text-xl font-mono text-stone-500 mb-4">0{{ index + 1 }}.</div>
-            <h3 class="text-2xl md:text-3xl font-bold mb-8 text-stone-200 font-delight">{{ service.title }}</h3>
-            <p class="text-stone-400 switzer font-switzer leading-8">
-              {{ service.description }}
-            </p>
-          </div>
-        </div>
-
-        <!-- Second row (3 items) -->
-        <div v-for="(service, index) in services.slice(3, 6)" :key="service.id"
-          class="border-t border-stone-800 pt-12 p-6 w-full">
-          <div class="flex flex-col">
-            <div class="text-xl font-mono text-stone-500 mb-4">0{{ index + 4 }}.</div>
             <h3 class="text-2xl md:text-3xl font-bold mb-8 text-stone-200 font-delight">{{ service.title }}</h3>
             <p class="text-stone-400 switzer font-switzer leading-8">
               {{ service.description }}

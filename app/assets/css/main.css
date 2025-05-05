@@ -1,5 +1,6 @@
 @import "tailwindcss";
 @import "@nuxt/ui";
+/* @plugin "@tailwindcss/typography"; */
 
 @theme {
   --font-delight: Delight, sans-serif;
@@ -65,6 +66,42 @@
   p {
     @apply text-base md:text-lg leading-relaxed;
   }
+
+  /* Blog post heading styles */
+  .blog-post h1 {
+    @apply text-4xl md:text-5xl font-bold font-delight leading-tight mb-6;
+  }
+
+  .blog-post h2 {
+    @apply text-3xl md:text-4xl font-semibold font-delight leading-snug mb-5 mt-8;
+  }
+
+  .blog-post h3 {
+    @apply text-2xl md:text-3xl font-medium font-delight leading-snug mb-4 mt-6;
+  }
+
+  .blog-post h4 {
+    @apply text-xl md:text-2xl font-medium font-delight leading-relaxed mb-3 mt-5;
+  }
+
+  .blog-post h5 {
+    @apply text-lg md:text-xl font-medium font-delight leading-relaxed mb-2 mt-4;
+  }
+
+  .blog-post ol {
+    @apply list-decimal pl-6 mb-6;
+  }
+  .blog-post ol li {
+    @apply mb-2 pl-2 text-base md:text-lg leading-relaxed;
+  }
+
+  .blog-post p {
+    @apply text-base md:text-lg leading-relaxed tracking-normal mb-6;
+  }
+
+  .blog-post p:has(img) {
+    @apply mb-2;
+  }
 }
 
 html {
@@ -80,18 +117,6 @@ html {
   font-family: "BeingBlackInktraps", sans-serif;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-.header {
-  /* font-family: "Work Sans", sans-serif; */
-  /* font-family: "Geist", sans-serif; */
-  /* font-family: "Switzer", sans-serif;
-  font-weight: 900; */
-}
 .switzer {
   font-family: "Switzer", sans-serif;
 }
@@ -187,4 +212,8 @@ span {
   src: url("/assets/fonts/Delight-Thin.ttf") format("truetype");
   font-weight: 100;
   font-style: normal;
+}
+
+.blog-image {
+  max-height: 400px;
 }

@@ -12,9 +12,9 @@ watch(route, () => {
 </script>
 
 <template>
-  <nav
-    class="w-full flex flex-col items-center bg-stone-900 text-white mb-4 shadow-sm bg-opacity-50 !z-100 fixed zfix p-2 md:p-0 backdrop-blur"
-    aria-label="Main navigation" :class="route.path === '/about' ? '!bg-stone-900' : 'bg-transparent'">
+  <nav class="w-full flex flex-col items-center text-white mb-4 shadow-sm !z-100 fixed zfix p-2 md:p-0 backdrop-blur"
+    aria-label="Main navigation"
+    :class="route.path === '/' ? 'bg-transparent' : route.path.startsWith('/posts') ? 'bg-juju-950' : 'bg-stone-900'">
     <div class="w-full flex flex-col md:flex-row justify-between text-lg">
       <div class="flex justify-between items-center w-full md:mb-0 ml-1">
         <ULink :to="'/'" class="font-medium zfix text-xl tracking-wider p-2">
@@ -38,7 +38,7 @@ watch(route, () => {
         <ULink to="/services" prefetch active-class="!bg-zinc-700"
           class="!font-inter px-4 py-2 text-base font-medium tracking-widest text-gray-300 hover:text-gray-100 transition-colors hover:bg-zinc-800 justify-center items-center flex">
           Services</ULink>
-        <ULink to="/blog" prefetch active-class="!bg-zinc-700"
+        <ULink to="/posts" prefetch active-class="!bg-zinc-700"
           class="!font-inter px-4 py-2 text-base font-medium tracking-widest text-gray-300 hover:text-gray-100 transition-colors hover:bg-zinc-800 justify-center items-center flex">
           Blog</ULink>
         <ULink to="https://calendly.com/formworkstudios/free-strategy-call" target="_blank" active-class="underline"
@@ -56,7 +56,7 @@ watch(route, () => {
             class="hover:underline transition-all duration-100 text-center tracking-wide" prefetch>About</ULink>
           <ULink to="/services" active-class="underline"
             class="hover:underline transition-all duration-100 text-center tracking-wide" prefetch>Services</ULink>
-          <ULink to="/blog" active-class="underline"
+          <ULink to="/posts" active-class="underline"
             class="hover:underline transition-all duration-100 text-center tracking-wide" prefetch>Blog</ULink>
           <ULink to="https://calendly.com/formworkstudios/free-strategy-call" target="_blank" active-class="underline"
             class="hover:underline transition-all duration-100 text-center tracking-wide" prefetch>Contact</ULink>

@@ -7,15 +7,10 @@ const { data: page } = await useAsyncData(route.path, () => {
 
 <template>
   <main class="text-white pt-32 min-h-screen">
-    <UContainer
-      :ui="{
-        constrained: 'max-w-4xl',
-      }"
-    >
-      <ContentRenderer
-        v-if="page"
-        :value="page"
-      />
+    <UContainer :ui="{
+      constrained: 'max-w-2xl',
+    }">
+      <ContentRenderer class="blog-post max-w-3xl mx-auto pb-[100px]" v-if="page" :value="page" />
     </UContainer>
   </main>
 </template>

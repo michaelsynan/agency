@@ -106,4 +106,14 @@ onUnmounted(() => {
   filter: blur(0);
   opacity: 1;
 }
+
+/* Add background blur and box shadow */
+.bg-url {
+  backdrop-filter: blur(10px);
+  /* Adds a background blur */
+  -webkit-backdrop-filter: blur(10px);
+  /* For Safari support */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.06);
+  /* Subtle shadow effect */
+}
 </style>
