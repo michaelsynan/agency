@@ -13,7 +13,7 @@ const followerCircleStyle = ref({
 const cursorCircleStyle = ref({
   left: '0px',
   top: '0px',
-  backgroundColor: 'white', // Default background color
+  backgroundColor: 'white', // White works best with mix-blend-mode: difference
 });
 
 const targetPosition = ref({ x: 0, y: 0 });
@@ -51,7 +51,8 @@ const handleMouseOver = (event) => {
   if (target) {
     cursorCircleStyle.value = {
       ...cursorCircleStyle.value,
-      backgroundColor: '#ba7baf', // Change to a custom color when over a link or button
+      backgroundColor: '#ba7baf', // Change to purple when over a link or button
+      mixBlendMode: 'normal', // Disable inverse effect on interactive elements
     };
   }
 };
@@ -62,11 +63,15 @@ const handleMouseOut = (event) => {
     cursorCircleStyle.value = {
       ...cursorCircleStyle.value,
       backgroundColor: 'white', // Revert to default color
+      mixBlendMode: 'difference', // Re-enable inverse effect
     };
   }
 };
 
 onMounted(() => {
+  // Initial cursor style setup
+  cursorCircleStyle.value.mixBlendMode = 'difference';
+
   window.addEventListener('mousemove', updatePositions);
   window.addEventListener('mouseover', handleMouseOver);
   window.addEventListener('mouseout', handleMouseOut);
@@ -118,6 +123,13 @@ onUnmounted(() => {
   transform: translate(-50%, -50%);
   z-index: 9999;
   /* Very high to stay on top of everything */
+  mix-blend-mode: difference;
+  /* Add this line for inverse effect */
+  transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275),
+    border-radius 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275),
+    background-color 0.3s;
+  will-change: transform, border-radius, background-color;
+  backface-visibility: hidden;
 }
 
 .follower-circle {

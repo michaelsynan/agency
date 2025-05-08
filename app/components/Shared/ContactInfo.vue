@@ -1,19 +1,16 @@
 <template>
-  <div
-    class="contact-container border-stone-500 border-y py-10 md:py-20 px-2 md:px-20 flex flex-col md:flex-row gap-20 bg-stone-900/50">
-    <div class="contact-item flex-col md:flex-row min-w-content w-full" v-for="item in contactInfo" :key="item.label">
-      <div class="contact-content cursor-pointer">
-        <div
-          class="heading text-stone-100 switzer text-center text-uppercase uppercase !text-lg md:!text-2xl font-black">
-          {{
-            item.label
-          }}
-        </div>
-        <div class="content text-stone-100 text-center switzer font-bold !text-lg md:!text-2xl font-bold"
-          @click="copyToClipboard(item.value, item.label)">
-          <UIcon name="i-mdi-content-copy"
-            class="w-4 md:w-5 h-4 md:h-5 mr-2 mt-2 !text-dino-500 !text-lg md:!text-2xl" />{{
-              item.value }}
+  <div class="contact-container border-stone-500 border-y py-2 md:py-6 px-4 md:px-12 bg-stone-900/50">
+    <div class="max-w-md flex flex-col gap-2">
+      <div class="contact-item" v-for="item in contactInfo" :key="item.label">
+        <div class="flex-row gap-2">
+          <div class="label">{{ item.label }}:</div>
+          <div class="censored-content" @click="copyToClipboard(item.value, item.label)">
+            <div class="censored-text">{{ generateCensoredText(item.value) }}</div>
+            <div class="actual-text">
+              <span>{{ item.value }}</span>
+              <UIcon name="i-mdi-content-copy" class="copy-icon ml-1 !text-dino-500 !text-xs" />
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -25,9 +22,12 @@ const toast = useToast()
 
 const contactInfo = [
   { label: 'Email', value: 'hello@formworkstudios.com' },
-  { label: 'Phone', value: '1-222-222-2222' },
-  { label: 'Calendar', value: 'www.calendar.com' }
+  { label: 'Phone', value: '+1 (800) 657-6893' }
 ];
+
+const generateCensoredText = (text) => {
+  return '█'.repeat(text.length);
+};
 
 const copyToClipboard = async (text, label) => {
   try {
@@ -37,54 +37,113 @@ const copyToClipboard = async (text, label) => {
     toast.add({ title: 'Failed to copy', description: err.message });
   }
 };
-
 </script>
-
 
 <style scoped>
 .contact-container {
-  display: flex;
-
-  align-items: center;
+  color: #f5f5f5;
 }
 
 .contact-item {
-  flex: 1;
-  overflow: hidden;
-}
-
-.contact-content {
   position: relative;
-  height: 40px;
+  cursor: pointer;
 }
 
-.heading,
-.content {
+/* Add padding to the FIRST contact item only */
+.contact-item:first-child {
+  padding-bottom: 0.75rem;
+}
+
+.flex-row {
+  display: flex;
+  align-items: flex-end;
+  /* Changed from baseline to flex-end for true bottom alignment */
+}
+
+.label {
+  display: block;
+  /* Changed from inline-block */
+  font-family: switzer, sans-serif;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 0.875rem;
+  line-height: 0.875rem;
+  color: #f5f5f5;
+  margin-right: 0.5rem;
+  padding-bottom: 0;
+  /* Ensure no padding at bottom */
+  margin-bottom: 0;
+  /* Ensure no margin at bottom */
+}
+
+.censored-content {
+  position: relative;
+  display: block;
+  /* Changed from inline-block */
+  text-align: left;
+  padding-bottom: 0;
+  /* Ensure no padding at bottom */
+  margin-bottom: 0;
+  /* Ensure no margin at bottom */
+}
+
+.censored-text,
+.actual-text {
+  font-family: 'Courier New', monospace;
+  font-size: 0.875rem;
+  line-height: 0.875rem;
+  /* Match line-height to font-size */
+  font-weight: normal;
+  letter-spacing: 0.3px;
+  color: #f5f5f5;
+  text-align: left;
+  padding-bottom: 0;
+  /* Ensure no padding at bottom */
+  margin-bottom: 0;
+  /* Ensure no margin at bottom */
+}
+
+.actual-text {
   position: absolute;
-  width: 100%;
-  transition: transform 0.3s ease-in-out, visibility 0s linear 0.3s;
-  will-change: transform, visibility;
+  top: 0;
+  left: 0;
+  display: inline-flex;
+  align-items: baseline;
+  opacity: 0;
+  transition: opacity 0.2s ease;
 }
 
-.heading {
-  transform: translateY(0);
-  font-size: 24px;
+.censored-content:hover .actual-text {
+  opacity: 1;
 }
 
-.content {
-  transform: translateY(100%);
-  font-size: 24px;
-  visibility: hidden;
+.censored-content:hover .censored-text {
+  opacity: 0;
 }
 
-.contact-item:hover .heading {
-  transform: translateY(-100%);
-  visibility: hidden;
+.copy-icon {
+  opacity: 0.7;
 }
 
-.contact-item:hover .content {
-  transform: translateY(0);
-  visibility: visible;
-  transition-delay: 0s;
+.censored-content:hover .copy-icon {
+  opacity: 1;
+}
+
+@media (min-width: 768px) {
+
+  .label,
+  .censored-text,
+  .actual-text {
+    font-size: 0.875rem;
+  }
+}
+
+@media (max-width: 767px) {
+
+  .label,
+  .censored-text,
+  .actual-text {
+    font-size: 0.75rem;
+  }
 }
 </style>

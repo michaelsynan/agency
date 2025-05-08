@@ -1,19 +1,24 @@
 <template>
-  <div class="cta-background w-full  py-20 md:py-40 relative bg-fixed max-w-6xl pl-0 md:pl-20 ml-0 md:ml-20">
-    <div class="absolute inset-0 bg-black/50"></div> <!-- Overlay -->
-    <UContainer class="flex flex-row gap-10 relative z-10 text-white text-center">
-      <div class="flex flex-col flex-grow items-start justify-start text-left">
-        <div class="text-2xl md:text-4xl font-regular !leading-relaxed font-delight tracking-wide max-w-3xl">
-          Formwork Studios operates at the intersection of design, technology, and strategy, where every project is an
-          intricate exploration of how tailored digital solutions can fundamentally transform user experiences and
-          organizational trajectories.
+  <div class="w-full py-24 md:py-40 relative max-w-6xl mx-auto">
+    <div class="flex flex-col md:flex-row">
+      <!-- Left Column: Image with Text -->
+      <div class="w-full md:w-1/2 relative">
+        <div class="cta-background relative h-full py-32 px-8 md:px-12">
+          <div class="absolute inset-0 bg-black/50"></div> <!-- Overlay -->
+          <div class="relative z-10 text-white">
+            <div class="text-2xl md:text-4xl font-regular !leading-relaxed font-delight tracking-wide">
+              Formwork Studios operates at the intersection of design, technology, and strategy, where every project is
+              an
+              intricate exploration of how tailored digital solutions can fundamentally transform user experiences and
+              organizational trajectories.
+            </div>
+          </div>
         </div>
       </div>
-      <div id="right-container" class="">
-        <div id="bottom-row" class="flex flex-row gap-10">
-        </div>
-      </div>
-    </UContainer>
+
+      <!-- Right Column: Empty Space (hidden on mobile) -->
+      <div class="hidden md:block md:w-1/2"></div>
+    </div>
   </div>
 </template>
 
@@ -24,11 +29,8 @@
 <style scoped>
 .cta-background {
   background-image: url('/birdscompressed.jpg');
-  /* Set the background image */
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  background-attachment: fixed;
-  /* Makes the background fixed */
 }
 </style>

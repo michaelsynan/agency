@@ -8,7 +8,7 @@ const { data: blogs } = await useAsyncData('documents-list', () => {
 
 <template>
   <main class="text-white min-h-screen">
-    <SharedHero heading="Blog" description="Check out our blogs" />
+    <SharedHero heading="DESIGN, TECHNOLOGY & PHILOSOPHY" description="Check out our blogs" />
     <UContainer class="my-32 grid grid-cols-1 md:grid-cols-2 gap-12">
       <div v-for="blog in blogs" :key="blog.path">
         <nuxt-link :to="blog.path" class="flex flex-col gap-2">

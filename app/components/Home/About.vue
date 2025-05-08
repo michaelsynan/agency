@@ -3,7 +3,7 @@ import { ref, onMounted, onUnmounted } from 'vue';
 
 // Updated words with punctuation
 const words = [
-  "THE", "WORLD", "IS", "CHANGING", "AT", "BREAKNECK", "SPEED,", "AND", "LEAVING", "THE", "HUMAN", "ELEMENT", "BEHIND.", "WE", "ARE", "HERE", "TO", "CHANGE", "THAT.", "YOU", "ARE", "INVITED", "TO", "JOIN", "US."
+  "IN", "A", "QUICKLY", "CHANGING", "WORLD,", "THE", "HUMAN ", "ELEMENT ", "IS", "BEING", "LEFT", "BEHIND.", "WE", "ARE", "HERE", "TO", "CHANGE", "THAT.", "LET'S", "DO", "IT", "TOGETHER."
 ];
 
 const containerRef = ref(null);
@@ -87,18 +87,18 @@ onUnmounted(() => {
 }
 
 /* Add proper spacing after periods and commas */
-.word-span:nth-child(13),
+.word-span:nth-child(12),
 /* BEHIND. */
-.word-span:nth-child(19),
+.word-span:nth-child(18),
 /* THAT. */
-.word-span:nth-child(25) {
-  /* US. */
+.word-span:nth-child(22) {
+  /* TOGETHER. */
   margin-right: 0.5rem;
 }
 
 /* Add a bit more space after the comma */
-.word-span:nth-child(7) {
-  /* SPEED, */
+.word-span:nth-child(5) {
+  /* WORLD, */
   margin-right: 0.3rem;
 }
 

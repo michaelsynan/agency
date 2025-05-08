@@ -37,15 +37,23 @@ const items = [
 </script>
 
 <template>
-  <div class="w-full flex justify-center px-4 md:px-0">
-    <div class="max-w-5xl w-full">
-      <h2 class="text-9xl font-delight font-black text-stone-800/50 mb-4 text-left">FAQ</h2>
-      <UAccordion :truncate="false" color="none" :items="items" size="xl" variant="soft" class="!text-left" :ui="{
-        default: {
-          class: 'mb-1.5 w-full !items-start !text-left border-b rounded-none px-0',
-        },
-        item: { color: 'text-stone-400' },
-      }" />
+  <div class="w-full flex justify-center px-4 md:px-0 py-24 md:py-60">
+    <div class="max-w-6xl w-full">
+      <div class="flex flex-col md:flex-row">
+        <!-- Left Column: Empty Space (hidden on mobile) -->
+        <div class="hidden md:block md:w-1/2"></div>
+
+        <!-- Right Column: FAQ Content -->
+        <div class="w-full md:w-1/2">
+          <h2 class="text-9xl font-delight font-black text-stone-800/50 mb-4 text-left">FAQ</h2>
+          <UAccordion :truncate="false" color="none" :items="items" size="xl" variant="soft" class="!text-left" :ui="{
+            default: {
+              class: 'mb-1.5 w-full !items-start !text-left border-b rounded-none px-0',
+            },
+            item: { color: 'text-stone-400' },
+          }" />
+        </div>
+      </div>
     </div>
   </div>
 </template>
