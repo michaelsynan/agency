@@ -57,7 +57,7 @@ const services = [
       <!-- Stack all services vertically with max width -->
       <div class="flex flex-col gap-8 max-w-4xl mx-auto" id="services-container">
         <div v-for="(service, index) in services" :key="service.id" :class="{ 'border-t': index !== 0 }"
-          class="pt-12 p-6 w-full relative">
+          class="pt-12 p-6 px-0 w-full relative">
           <div class="flex flex-col">
             <h3 class="text-2xl md:text-3xl font-bold mb-8 text-stone-200 font-delight">{{ service.title }}</h3>
             <p class="text-stone-400 switzer font-switzer leading-8">

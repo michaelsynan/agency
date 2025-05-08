@@ -1,12 +1,15 @@
 <template>
-  <div class="contact-container border-stone-500 border-y py-2 md:py-6 px-4 md:px-12 bg-stone-900/50">
-    <div class="max-w-md flex flex-col gap-2">
-      <div class="contact-item" v-for="item in contactInfo" :key="item.label">
-        <div class="flex-row gap-2">
-          <div class="label">{{ item.label }}:</div>
+  <div class="contact-container border-stone-500 border-y py-2 md:py-6 px-4 md:px-12 bg-stone-900/50 hidden md:flex">
+    <div class="max-w-md flex flex-col gap-6 md:gap-10">
+      <div>
+        <h2 class="font-switzer text-lg font-bold">Contact Information</h2>
+      </div>
+      <div class="contact-item gap-4 !flex-row font-mono" v-for="item in contactInfo" :key="item.label">
+        <div class="flex-row gap-2 ">
+          <div class="label font-mono">{{ item.label }}:</div>
           <div class="censored-content" @click="copyToClipboard(item.value, item.label)">
-            <div class="censored-text">{{ generateCensoredText(item.value) }}</div>
-            <div class="actual-text">
+            <div class="censored-text font-mono">{{ generateCensoredText(item.value) }}</div>
+            <div class="actual-text font-mono">
               <span>{{ item.value }}</span>
               <UIcon name="i-mdi-content-copy" class="copy-icon ml-1 !text-dino-500 !text-xs" />
             </div>
@@ -49,10 +52,7 @@ const copyToClipboard = async (text, label) => {
   cursor: pointer;
 }
 
-/* Add padding to the FIRST contact item only */
-.contact-item:first-child {
-  padding-bottom: 0.75rem;
-}
+
 
 .flex-row {
   display: flex;
@@ -145,5 +145,7 @@ const copyToClipboard = async (text, label) => {
   .actual-text {
     font-size: 0.75rem;
   }
+
+
 }
 </style>

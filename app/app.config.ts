@@ -3,15 +3,26 @@ export default defineAppConfig({
     accordion: {
       slots: {
         content: "", // not useful
-        body: "text-xl", // not useful
+        body: "text-xl text-stone-400 switzer font-switzer leading-8", // not useful
         label: "text-2xl", // header stuff
+        item: "border-b border-stone-700", // border between items
       },
     },
     notifications: {
       position: "top-0 bottom-0",
       background: "stone-900",
     },
-    primary: "dino",
+    colors: {
+      primary: "dino",
+      secondary: "juju",
+      accent: "stone-900",
+      background: "stone-900",
+      foreground: "stone-100",
+      border: "stone-700",
+      muted: "stone-800",
+      subtle: "stone-800",
+      shadow: "stone-900",
+    },
     toast: {
       slots: {
         root: "rounded-none bg-stone-900",

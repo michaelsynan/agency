@@ -1,5 +1,5 @@
 <template>
-    <div class="bg-dino-950 p-6 md:p-9 py-20 md:py-40 border-y-2 border-white ">
+    <div class="bg-dino-950 p-6 md:p-9 py-20 md:py-40 border-y-1 border-stone-500/50 ">
         <!-- Two-column layout for philosophy content -->
         <div class="flex flex-col md:flex-row">
             <!-- First column (1/3 width) with title -->

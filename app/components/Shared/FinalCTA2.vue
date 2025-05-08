@@ -1,9 +1,9 @@
 <template>
-  <div class="w-full py-24 md:py-40 relative max-w-6xl mx-auto">
+  <div class="w-full py-24 md:py-48 relative max-w-6xl mx-auto">
     <div class="flex flex-col md:flex-row">
       <!-- Left Column: Image with Text -->
       <div class="w-full md:w-1/2 relative">
-        <div class="cta-background relative h-full py-32 px-8 md:px-12">
+        <div class="cta-background relative h-full p-24 md:p-12">
           <div class="absolute inset-0 bg-black/50"></div> <!-- Overlay -->
           <div class="relative z-10 text-white">
             <div class="text-2xl md:text-4xl font-regular !leading-relaxed font-delight tracking-wide">

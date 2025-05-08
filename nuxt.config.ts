@@ -9,6 +9,7 @@ export default defineNuxtConfig({
     "@nuxtjs/sitemap",
     "@nuxt/content",
     "@vueuse/nuxt",
+    "@nuxtjs/seo",
   ],
   ssr: true,
   devtools: { enabled: true },
