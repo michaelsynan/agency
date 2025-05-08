@@ -14,8 +14,6 @@
             Privacy Policy
           </NuxtLink> | <NuxtLink to="/tos">
             Terms of Service
-          </NuxtLink>| <NuxtLink to="/sitemap.xml">
-            Sitemap
           </NuxtLink>
         </div>
         <div>

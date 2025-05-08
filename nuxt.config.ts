@@ -8,6 +8,7 @@ export default defineNuxtConfig({
     "@nuxthub/core",
     "@nuxt/content",
     "@vueuse/nuxt",
+    "@nuxtjs/sitemap",
   ],
   ssr: true,
   devtools: { enabled: true },
@@ -17,10 +18,13 @@ export default defineNuxtConfig({
       mode: "out-in",
     },
   },
-
   css: ["~/assets/css/main.css"],
   colorMode: {
     preference: "dark",
+  },
+  site: {
+    url: "https://formworkstudios.com",
+    name: "Formwork Studios",
   },
   ui: {
     safelistColors: ["dino", "juju"],
