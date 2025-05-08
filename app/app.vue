@@ -136,6 +136,20 @@ onUnmounted(() => {
   transform: translate(-50%, -50%);
   z-index: 9998;
 }
+
+/* Hide custom cursors on mobile devices */
+@media (max-width: 768px) {
+
+  .cursor-circle,
+  .follower-circle {
+    display: none;
+  }
+
+  .custom-cursor {
+    cursor: auto;
+    /* Restore default cursor on mobile */
+  }
+}
 </style>
 
 <style scoped>
