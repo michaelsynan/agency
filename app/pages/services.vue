@@ -38,18 +38,18 @@ const services = [
 <template>
   <main class="text-white">
     <!-- Header with blurred background image -->
-    <div
-      class="w-full h-[66vh] relative flex justify-center items-center gap-10 flex-col bg-gradient-to-b from-dino-950 to-stone-900 overflow-hidden">
+    <div class="w-full h-[66vh] relative flex flex-col bg-gradient-to-b from-dino-950 to-stone-900 overflow-hidden">
       <!-- Background image with blur effect -->
       <div class="absolute inset-0 bg-image opacity-30 blur-image !bg-fixed"></div>
 
       <!-- Dark overlay for better text readability -->
       <div class="absolute inset-0 bg-dino-950/70"></div>
 
-      <!-- Content positioned above the background -->
-      <div class="relative z-10">
-        <h1 class="text-6xl font-bold font-delight">OUR SERVICES</h1>
-        <div class="text-2xl switzer opacity-50 text-center mt-4">Design, Development & Marketing</div>
+      <!-- Content positioned at the bottom of the hero section -->
+      <div id="hero" class="relative z-10 mt-auto w-full px-6 md:px-16 pb-12 md:pb-16">
+        <h1 class="text-4xl md:text-6xl font-bold font-delight text-left">OUR SERVICES</h1>
+        <div class="text-lg md:text-2xl switzer opacity-50 text-left mt-3 md:mt-4">Design, Development &
+          Marketing</div>
       </div>
     </div>
 

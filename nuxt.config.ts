@@ -44,22 +44,14 @@ export default defineNuxtConfig({
       weights: [400],
       families: [{ name: "Switzer", provider: "fontshare" }],
       styles: ["normal", "italic"],
-      subsets: [
-        "cyrillic-ext",
-        "cyrillic",
-        "greek-ext",
-        "greek",
-        "vietnamese",
-        "latin-ext",
-        "latin",
-      ],
+      subsets: ["latin"], // Simplified to only include Latin (English) characters
     },
   },
-  image: {
-    cloudflare: {
-      baseURL: "https://imagedelivery.net/q2nIRgCuWuc2K4JgVsWp8w/",
-    },
-  },
+  // image: {
+  //   cloudflare: {
+  //     baseURL: "https://imagedelivery.net/q2nIRgCuWuc2K4JgVsWp8w/",
+  //   },
+  // },
   seo: {
     meta: {
       description:

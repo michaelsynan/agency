@@ -1,13 +1,7 @@
-<script>
+<script setup>
 definePageMeta({
   colorMode: 'dark',
 });
-
-export default {
-  setup() {
-    return {};
-  },
-};
 </script>
 
 <template>
@@ -43,16 +37,12 @@ export default {
           '/hero-image.webp',
           '/facial-serum-website.webp',
           '/primo.webp',
-          '/gahs.png', '/nuts.webp',
+          '/gahs.png',
+          '/nuts.webp',
           '/insure2.webp',
-
           '/video-photography-website.webp',
-
           '/sauna.webp',
           '/yoga-pilates.webp',
-
-
-
           '/michael.webp',
         ]" />
       </div>
@@ -66,7 +56,6 @@ export default {
 </template>
 
 <style>
-/* Remove default pointer and finger globally */
 * {
   cursor: none !important;
 }
