@@ -19,7 +19,7 @@ const services = [
   },
   {
     id: 'ai',
-    title: 'AI and Automation',
+    title: 'AI & Automation',
     description: 'Leverage the power of artificial intelligence to streamline your business operations. From chatbots and automated customer service to data analysis and predictive modeling, we implement AI solutions that save time, reduce costs, and improve decision-making.'
   },
   {
@@ -56,8 +56,8 @@ const services = [
     <div class="bg-stone-950 p-6 md:p-16 !py-40 relative">
       <!-- Stack all services vertically with max width -->
       <div class="flex flex-col gap-8 max-w-4xl mx-auto" id="services-container">
-        <div v-for="(service, index) in services" :key="service.id" :class="{ 'border-t': index !== 0 }"
-          class="pt-12 p-6 px-0 w-full relative">
+        <div v-for="(service, index) in services" :key="service.id"
+          :class="{ 'border-t border-stone-500/50': index !== 0 }" class="pt-12 p-6 px-0 w-full relative">
           <div class="flex flex-col">
             <h3 class="text-2xl md:text-3xl font-bold mb-8 text-stone-200 font-delight">{{ service.title }}</h3>
             <p class="text-stone-400 switzer font-switzer leading-8">

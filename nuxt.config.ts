@@ -60,4 +60,10 @@ export default defineNuxtConfig({
       baseURL: "https://imagedelivery.net/q2nIRgCuWuc2K4JgVsWp8w/",
     },
   },
+  seo: {
+    meta: {
+      description:
+        "Formwork Studios creates human-centered digital solutions blending strategy, technology, and design to solve complex problems for you and your business.",
+    },
+  },
 });

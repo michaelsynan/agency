@@ -42,9 +42,9 @@ export default {
           '/dashboard.webp',
           '/hero-image.webp',
           '/facial-serum-website.webp',
-          '/primo.png',
+          '/primo.webp',
           '/gahs.png', '/nuts.webp',
-          '/insure2.png',
+          '/insure2.webp',
 
           '/video-photography-website.webp',
 

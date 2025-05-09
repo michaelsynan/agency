@@ -28,7 +28,7 @@
 
 <style scoped>
 .cta-background {
-  background-image: url('/birdscompressed.jpg');
+  background-image: url('/birdscompressed.webp');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
