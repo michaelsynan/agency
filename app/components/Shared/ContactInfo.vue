@@ -1,5 +1,5 @@
 <template>
-  <div class="contact-container border-stone-500 border-y py-2 md:py-6 px-4 md:px-12 bg-stone-900/50 hidden md:flex">
+  <div class="contact-container border-stone-500 border-y py-2 md:py-6 px-4 md:px-12 bg-stone-900/20 hidden md:flex">
     <div class="max-w-md flex flex-col gap-6 md:gap-10">
       <div>
         <h2 class="font-switzer text-lg font-bold">Contact Information</h2>

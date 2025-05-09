@@ -11,7 +11,7 @@
         A <span id="future" class="gradient-text">FUTURE</span> WORTH BUILDING FOR
       </h1>
       <p
-        class="text-stone-300 text-xl md:text-3xl max-w-[40ch] !leading-relaxed hover:leading-[200px] transition-all duration-300">
+        class="text-stone-300 text-xl md:text-3xl max-w-[40ch] !leading-relaxed hover:leading-[200px] transition-all duration-300 hidden md:block">
         Shaping Tomorrow So You Can Enjoy Today
       </p>
       <UButton to="https://calendly.com/formworkstudios/free-strategy-call" target="_blank"

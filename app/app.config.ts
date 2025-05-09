@@ -3,8 +3,8 @@ export default defineAppConfig({
     accordion: {
       slots: {
         content: "", // not useful
-        body: "text-xl text-stone-400 switzer font-switzer leading-8", // not useful
-        label: "text-2xl", // header stuff
+        body: "text-lg md:text-xl text-stone-400 switzer font-switzer leading-8", // not useful
+        label: "text-2xl md:text-2xl", // header stuff
         item: "border-b border-stone-700", // border between items
       },
     },

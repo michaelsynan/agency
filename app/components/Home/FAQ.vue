@@ -45,7 +45,7 @@ const items = [
 
         <!-- Right Column: FAQ Content -->
         <div class="w-full md:w-1/2">
-          <h2 class="text-9xl font-delight font-black text-stone-800/50 mb-4 text-left">FAQ</h2>
+          <h2 class="text-8xl md:text-9xl font-delight font-black text-stone-800/50 mb-4 text-left">FAQ</h2>
           <UAccordion :truncate="false" color="none" :items="items" size="xl" variant="soft" class="!text-left" :ui="{
             default: {
               class: 'mb-1.5 w-full !items-start !text-left border-b rounded-none px-0',
