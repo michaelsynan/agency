@@ -4,7 +4,7 @@ export default defineAppConfig({
       slots: {
         content: "", // not useful
         body: "text-lg md:text-xl text-stone-400 switzer font-switzer leading-8", // not useful
-        label: "text-sm md:text-2xl", // header stuff
+        label: "text-xl md:text-2xl", // header stuff
         item: "border-b border-stone-700", // border between items
       },
     },

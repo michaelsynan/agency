@@ -14,7 +14,7 @@
       <!-- Right Column: Image -->
       <div class="w-full md:w-1/2 h-[400px] md:h-auto">
         <nuxt-img src="/birdscompressed.webp" format="webp" width="1200" height="800" loading="lazy"
-          alt="Formwork Studios" class="w-full h-full object-cover" />
+          alt="Formwork Studios" class="w-full h-full object-cover" placeholder />
       </div>
     </div>
   </div>

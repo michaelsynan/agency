@@ -38,7 +38,7 @@ const items = [
 
 <template>
   <div class="w-full flex justify-center px-4 md:px-0 pb-48">
-    <div class="max-w-6xl w-full">
+    <div class="max-w-5xl w-full">
       <div class="flex flex-col">
         <!-- FAQ Content -->
         <div class="w-full">

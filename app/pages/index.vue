@@ -17,7 +17,7 @@ defineOgImageComponent('Page', {
     <main class="flex flex-col bg-stone-950">
       <HomeAbout class="py-48 h-screen" />
       <SharedFinalCTA2 class="" />
-      <div id="MainCarousel" class="py-48 flex flex-col gap-8 relative border-stone-500">
+      <div id="MainCarousel" class="py-32 md:py-48 flex flex-col gap-8 relative border-stone-500">
         <!-- <div class="mx-4 md:mx-20 text-8xl md:text-9xl -mt-24 text-stone-800/50 font-delight font-black">
           WORK</div> -->
         <div

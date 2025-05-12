@@ -26,7 +26,7 @@
   <template>
     <div ref="el" class="scroll-container flex flex-nowrap overflow-x-scroll gap-8">
       <div v-for="item in props.items" :key="item" class="shrink-0">
-        <img :src="item" class="h-64 object-contain rounded-sm" style="width: auto;">
+        <img :src="item" class="h-64 object-contain" style="width: auto;">
       </div>
     </div>
   </template>
