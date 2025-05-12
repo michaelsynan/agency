@@ -37,8 +37,8 @@ const items = [
 </script>
 
 <template>
-  <div class="w-full flex justify-center px-4 md:px-0 py-24 md:py-60">
-    <div class="max-w-[90%] w-full">
+  <div class="w-full flex justify-start md:justify-center px-4 md:px-0 py-24 md:py-60">
+    <div class="max-w-none md:max-w-[90%] w-full">
       <div class="flex flex-col md:flex-row">
         <!-- Left Column: Empty Space (hidden on mobile) -->
         <div class="hidden md:block md:w-1/2"></div>

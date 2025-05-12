@@ -1,5 +1,5 @@
 <template>
-  <div class="w-full py-24 md:py-48 relative max-w-6xl mx-auto">
+  <div class="w-full py-12 md:py-48 relative max-w-6xl mx-auto">
     <div class="flex flex-col md:flex-row">
       <!-- Left Column: Image with Text -->
       <div class="w-full md:w-1/2 relative">

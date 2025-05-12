@@ -2,11 +2,14 @@
 defineProps({
   title: {
     type: String,
-    default: 'OUR SERVICES (default)',
+    default: 'OUR SERVICES',
   },
   description: {
     type: String,
     default: 'Design, Development & Marketing',
+  },
+  icon: {
+    type: String,
   },
 })
 </script>
@@ -24,10 +27,12 @@ defineProps({
       id="hero"
       class="relative z-10 mt-auto w-full px-6 md:px-16 pb-12 md:pb-16"
     >
-      <h1 class="text-4xl md:text-6xl font-bold font-delight text-left text-white z-10">
+    <UIcon :name="icon" class="size-16" />
+
+      <h1 class="text-4xl md:text-6xl font-bold font-delight text-left">
         {{ title }}
       </h1>
-      <div class="text-lg md:text-2xl switzer opacity-50 text-left mt-3 md:mt-4 text-white z-10">
+      <div class="text-lg md:text-2xl switzer opacity-50 text-left mt-3 md:mt-4">
         {{ description }}
       </div>
     </div>

@@ -2,6 +2,11 @@
 definePageMeta({
   colorMode: 'dark',
 });
+
+
+defineOgImageComponent('Page', {
+  title: 'Is this thing on?'
+})
 </script>
 
 <template>
@@ -47,7 +52,7 @@ definePageMeta({
         ]" />
       </div>
       <SharedFinalCTA2 class="rounded-3xl px-4 md:px-10 max-w-none md:max-w-[90%]" />
-      <HomeFAQ class="flex-none py-48 mx-auto" />
+      <HomeFAQ class="flex-none py-12 md:py-48 mx-auto" />
       <SharedContactInfo class="max-w-2xl border-x ml-0 md:ml-10 w-full -translate-y-10" />
     </main>
   </div>
