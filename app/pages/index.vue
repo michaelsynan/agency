@@ -16,9 +16,10 @@ defineOgImageComponent('Page', {
     </header>
     <main class="flex flex-col bg-stone-950">
       <HomeAbout class="py-48 h-screen" />
+      <SharedFinalCTA2 class="" />
       <div id="MainCarousel" class="py-48 flex flex-col gap-8 relative border-stone-500">
-        <div class="mx-4 md:mx-20 text-8xl md:text-9xl -mt-24 text-stone-800/50 font-delight font-black">
-          WORK</div>
+        <!-- <div class="mx-4 md:mx-20 text-8xl md:text-9xl -mt-24 text-stone-800/50 font-delight font-black">
+          WORK</div> -->
         <div
           class="absolute inset-y-0 left-0 w-[20px] md:w-[40px] bg-gradient-to-r from-stone-950 via-stone-950 to-transparent z-10">
         </div>
@@ -51,9 +52,8 @@ defineOgImageComponent('Page', {
           '/michael.webp',
         ]" />
       </div>
-      <SharedFinalCTA2 class="rounded-3xl px-4 md:px-10 max-w-none md:max-w-[90%]" />
-      <HomeFAQ class="flex-none py-12 md:py-48 mx-auto" />
-      <SharedContactInfo class="max-w-2xl border-x ml-0 md:ml-10 w-full -translate-y-10" />
+      <HomeFAQ class="flex-none mx-auto" />
+      <!-- <SharedContactInfo class="max-w-2xl border-x ml-0 md:ml-10 w-full -translate-y-10" /> -->
     </main>
   </div>
 </template>
