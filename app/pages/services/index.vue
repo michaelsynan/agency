@@ -70,7 +70,8 @@ const services = [
 <template>
   <main class="text-white">
     <!-- Header with blurred background image -->
-    <div class="w-full h-[66vh] relative flex flex-col bg-gradient-to-b from-dino-950 to-stone-900 overflow-hidden">
+    <div
+      class="w-full h-[50vh] md:h-[66vh] relative flex flex-col bg-gradient-to-b from-dino-950 to-stone-900 overflow-hidden">
       <!-- Background image with blur effect -->
       <div class="absolute inset-0 bg-image opacity-30 blur-image !bg-fixed"></div>
 

@@ -14,7 +14,8 @@
             Privacy Policy
           </NuxtLink> | <NuxtLink to="/tos">
             Terms of Service
-          </NuxtLink>
+          </NuxtLink> |
+          <NuxtLink to="/get-in-touch">Contact</NuxtLink>
         </div>
         <div>
           &copy; {{ new Date().getFullYear() }} Formwork Studios. All rights reserved.
