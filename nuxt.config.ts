@@ -1,16 +1,6 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
-  modules: [
-    "@nuxt/ui",
-    "@nuxt/image",
-    "@nuxt/fonts",
-    "@nuxt/eslint",
-    "@nuxthub/core",
-    "@nuxtjs/sitemap",
-    "@vueuse/nuxt",
-    "@nuxtjs/seo",
-    "@nuxt/content",
-  ],
+  modules: ["@nuxt/ui", "@nuxt/image", "@nuxt/fonts", "@nuxt/eslint", "@nuxthub/core", "@nuxtjs/sitemap", "@vueuse/nuxt", "@nuxtjs/seo", "@nuxt/content", "@nuxtjs/robots"],
   ssr: true,
   devtools: { enabled: true },
   app: {
