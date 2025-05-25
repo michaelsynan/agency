@@ -48,8 +48,8 @@ watch(route, () => {
       <div id="mobile-nav"
         :class="{ 'opacity-0 pointer-events-none': !menuOpen, 'opacity-100 pointer-events-auto': menuOpen }"
         class="fixed inset-0 bg-gradient-to-bl from-stone-950 to-stone-900 flex flex-col items-start px-4 justify-center  space-y-8 transition-opacity duration-300 ease-in-out pt-0 text-2xl h-screen max-h-screen justify-between">
-        <div class="flex flex-col items-start gap-8 -mt-8 pb-8">
-          <ULink to="/" active-class="underline"
+        <div id="mobile-items" class="h-1/2 bottom-0 flex flex-col items-start gap-8 -mt-8 pb-8">
+          <ULink to="/" active-class="underline mt-auto"
             class="hover:underline transition-all duration-100 text-center tracking-wide">Home</ULink>
 
           <ULink to="/about" active-class="underline"
@@ -61,7 +61,7 @@ watch(route, () => {
           <ULink to="https://calendly.com/formworkstudios/free-strategy-call" target="_blank" active-class="underline"
             class="hover:underline transition-all duration-100 text-center tracking-wide" prefetch>Contact</ULink>
         </div>
-        <FooterSocials class="mt-auto" />
+        <FooterSocials class="mt-auto p-2 border-t border-stone-500/20 w-full pb-4 pt-4" />
       </div>
     </div>
   </nav>
