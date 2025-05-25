@@ -27,7 +27,7 @@ useSeoMeta({
               Send us a message and we'll get back to you within 24 hours. Perfect for detailed project discussions.
             </p>
             <UButton size="lg"
-              class="mt-4 font-bold !text-white !bg-dino-600 ring-dino-600 hover:!bg-dino-500 hover:ring-dino-400 transition-all duration-200 ring-2 text-center rounded-none"
+              class="mt-4 font-bold !text-white !bg-juju-500 ring-juju-500 hover:!bg-juju-400 hover:ring-juju-300 transition-all duration-200 ring-2 text-center rounded-none"
               icon="i-mdi-email" to="mailto:hello@formworkstudios.com">
               Send Email
             </UButton>
@@ -47,7 +47,7 @@ useSeoMeta({
               Speak directly with our team. Available Monday-Friday, 9am-5pm EST for immediate assistance.
             </p>
             <UButton size="lg"
-              class="mt-4 font-bold !text-white !bg-dino-600 ring-dino-600 hover:!bg-dino-500 hover:ring-dino-400 transition-all duration-200 ring-2 text-center rounded-none"
+              class="mt-4 font-bold !text-white !bg-juju-500 ring-juju-500 hover:!bg-juju-400 hover:ring-juju-300 transition-all duration-200 ring-2 text-center rounded-none"
               icon="i-mdi-phone" to="tel:18006576893">
               Call Now
             </UButton>
@@ -67,7 +67,7 @@ useSeoMeta({
               Book a free consultation call to discuss your project requirements and explore how we can help.
             </p>
             <UButton size="lg"
-              class="mt-4 font-bold !text-white !bg-dino-600 ring-dino-600 hover:!bg-dino-500 hover:ring-dino-400 transition-all duration-200 ring-2 text-center rounded-none"
+              class="mt-4 font-bold !text-white !bg-juju-500 ring-juju-500 hover:!bg-juju-400 hover:ring-juju-300 transition-all duration-200 ring-2 text-center rounded-none"
               icon="i-mdi-calendar-clock" to="https://calendly.com/formworkstudios" target="_blank" external>
               Book Meeting
             </UButton>

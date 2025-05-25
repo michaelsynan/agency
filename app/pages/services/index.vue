@@ -9,25 +9,25 @@ const services = [
     id: 'website-design',
     title: 'Website Design',
     description: 'We create beautiful, functional websites that drive results. Our design process focuses on user experience, conversion optimization, and brand consistency across all touchpoints. From simple landing pages to complex e-commerce solutions, we deliver designs that make an impact.',
-    // link: '/services/website-design'
+    link: '/services/website-design'
   },
   {
     id: 'development',
     title: 'Development',
     description: 'Our development team builds robust, scalable solutions using modern technologies. We specialize in responsive websites, custom applications, and content management systems that are easy to maintain and update. We focus on performance, security, and code quality.',
-    // link: '/services/development'
+    link: '/services/development'
   },
   {
     id: 'digital-marketing',
     title: 'Marketing',
     description: 'Drive traffic and generate leads with our comprehensive digital marketing services. We create data-driven strategies that include SEO, content marketing, social media, and paid advertising to help you reach your target audience and achieve measurable results.',
-    // link: '/services/digital-marketing'
+    link: '/services/digital-marketing'
   },
   {
     id: 'ai',
     title: 'AI & Automation',
     description: 'Leverage the power of artificial intelligence to streamline your business operations. From chatbots and automated customer service to data analysis and predictive modeling, we implement AI solutions that save time, reduce costs, and improve decision-making.',
-    // link: '/services/ai'
+    link: '/services/ai-automation-services'
   },
   {
     id: 'branding',
@@ -86,7 +86,7 @@ const services = [
       </div>
     </div>
 
-    <div class="bg-stone-950 p-6 md:p-16 !py-40 relative">
+    <div class="bg-stone-950 p-6 md:p-16 !py-20 relative">
       <!-- Stack all services vertically with max width -->
       <div class="flex flex-col gap-8 max-w-4xl mx-auto" id="services-container">
         <div v-for="(service, index) in services" :key="service.id"

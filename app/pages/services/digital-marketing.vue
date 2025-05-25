@@ -2,7 +2,7 @@
 
 <template>
   <div>
-    Page: locations
+    Page: services/digital-marketing
   </div>
 </template>
 
