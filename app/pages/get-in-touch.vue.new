@@ -15,7 +15,7 @@ useSeoMeta({
     <div class="bg-stone-950 py-20">
       <div class="max-w-6xl mx-auto px-4">
         <!-- Contact Information -->
-        <div class="max-w-2xl mx-auto">
+        <div class="max-w-2xl mx-auto !rounded-sm">
           <div class="space-y-12">
             <div class="flex flex-col items-center md:flex-row md:items-start gap-6">
               <div class="bg-stone-900/50 p-4 rounded-full">

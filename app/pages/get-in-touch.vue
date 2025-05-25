@@ -10,67 +10,77 @@ useSeoMeta({
     <GeneralHeader heading="Get in Touch" description="We'd love to hear about your project" />
 
     <div class="bg-stone-950 py-20">
-      <div class="max-w-6xl mx-auto px-4">
-        <!-- Contact Information -->
-        <div class="max-w-2xl mx-auto">
-
-
-          <div class="space-y-12">
-            <div class="flex flex-col items-center md:flex-row md:items-start gap-6">
-              <div class="bg-stone-900/50 p-4 rounded-full">
-                <UIcon name="i-tabler-mail" class="h-8 w-8 text-dino-500" />
-              </div>
-              <div class="text-center md:text-left">
-                <h3 class="text-2xl font-bold mb-2 text-stone-200">
-                  Email
-                </h3>
-                <a href="mailto:hello@formworkstudios.com"
-                  class="text-dino-400 text-xl hover:text-dino-300 transition-colors">
-                  hello@formworkstudios.com
-                </a>
-                <p class="text-stone-400 mt-2">
-                  For inquiries, project discussions, or just to say hello
-                </p>
+      <div class="max-w-7xl mx-auto px-4">
+        <!-- Contact Options -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <!-- Email Box -->
+          <div class="bg-stone-900/50 rounded-sm p-8 text-center hover:bg-stone-900/70 transition-all duration-300">
+            <div class="flex justify-center mb-6">
+              <div class="bg-dino-500/20 p-4 rounded-full">
+                <UIcon name="i-mdi-email" class="h-10 w-10 text-dino-500" />
               </div>
             </div>
-
-            <div class="flex flex-col items-center md:flex-row md:items-start gap-6">
-              <div class="bg-stone-900/50 p-4 rounded-full">
-                <UIcon name="i-tabler-phone" class="h-8 w-8 text-dino-500" />
-              </div>
-              <div class="text-center md:text-left">
-                <h3 class="text-2xl font-bold mb-2 text-stone-200">
-                  Phone
-                </h3>
-                <a href="tel:18006576893" class="text-dino-400 text-xl hover:text-dino-300 transition-colors">
-                  1-800-657-6893
-                </a>
-              </div>
-            </div>
-
+            <h3 class="text-2xl font-bold font-delight mb-3 text-stone-200">
+              Email Us
+            </h3>
+            <p class="text-stone-400 mb-6">
+              Send us a message and we'll get back to you within 24 hours. Perfect for detailed project discussions.
+            </p>
+            <UButton size="lg"
+              class="mt-4 font-bold !text-white !bg-dino-600 ring-dino-600 hover:!bg-dino-500 hover:ring-dino-400 transition-all duration-200 ring-2 text-center rounded-none"
+              icon="i-mdi-email" to="mailto:hello@formworkstudios.com">
+              Send Email
+            </UButton>
           </div>
 
-          <div class="mt-16 text-center">
-            <h3 class="text-2xl font-bold mb-4 text-stone-200">
-              Follow Us
-            </h3>
-            <div class="flex justify-center gap-6">
-              <a href="#" class="text-stone-400 hover:text-dino-400 transition-colors" aria-label="LinkedIn">
-                <UIcon name="i-tabler-brand-linkedin" class="h-8 w-8" />
-              </a>
-              <a href="#" class="text-stone-400 hover:text-dino-400 transition-colors" aria-label="Twitter">
-                <UIcon name="i-tabler-brand-twitter" class="h-8 w-8" />
-              </a>
-              <a href="#" class="text-stone-400 hover:text-dino-400 transition-colors" aria-label="Instagram">
-                <UIcon name="i-tabler-brand-instagram" class="h-8 w-8" />
-              </a>
+          <!-- Phone Box -->
+          <div class="bg-stone-900/50 rounded-sm p-8 text-center hover:bg-stone-900/70 transition-all duration-300">
+            <div class="flex justify-center mb-6">
+              <div class="bg-dino-500/20 p-4 rounded-full">
+                <UIcon name="i-mdi-phone" class="h-10 w-10 text-dino-500" />
+              </div>
             </div>
+            <h3 class="text-2xl font-bold font-delight mb-3 text-stone-200">
+              Call Us
+            </h3>
+            <p class="text-stone-400 mb-6">
+              Speak directly with our team. Available Monday-Friday, 9am-5pm EST for immediate assistance.
+            </p>
+            <UButton size="lg"
+              class="mt-4 font-bold !text-white !bg-dino-600 ring-dino-600 hover:!bg-dino-500 hover:ring-dino-400 transition-all duration-200 ring-2 text-center rounded-none"
+              icon="i-mdi-phone" to="tel:18006576893">
+              Call Now
+            </UButton>
+          </div>
+
+          <!-- Schedule Box -->
+          <div class="bg-stone-900/50 rounded-sm p-8 text-center hover:bg-stone-900/70 transition-all duration-300">
+            <div class="flex justify-center mb-6">
+              <div class="bg-dino-500/20 p-4 rounded-full">
+                <UIcon name="i-mdi-calendar-clock" class="h-10 w-10 text-dino-500" />
+              </div>
+            </div>
+            <h3 class="text-2xl font-bold font-delight mb-3 text-stone-200">
+              Schedule Meeting
+            </h3>
+            <p class="text-stone-400 mb-6">
+              Book a free consultation call to discuss your project requirements and explore how we can help.
+            </p>
+            <UButton size="lg"
+              class="mt-4 font-bold !text-white !bg-dino-600 ring-dino-600 hover:!bg-dino-500 hover:ring-dino-400 transition-all duration-200 ring-2 text-center rounded-none"
+              icon="i-mdi-calendar-clock" to="https://calendly.com/formworkstudios" target="_blank" external>
+              Book Meeting
+            </UButton>
           </div>
         </div>
       </div>
     </div>
   </main>
 </template>
+
+<style scoped>
+/* Custom styles if needed */
+</style>
 
 <style scoped>
 /* Custom styles if needed */
