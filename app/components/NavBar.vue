@@ -47,8 +47,8 @@ watch(route, () => {
       </div>
       <div id="mobile-nav"
         :class="{ 'opacity-0 pointer-events-none': !menuOpen, 'opacity-100 pointer-events-auto': menuOpen }"
-        class="fixed inset-0 bg-gradient-to-bl from-stone-950 to-stone-900 flex flex-col items-start px-4 justify-center  space-y-8 transition-opacity duration-300 ease-in-out pt-0 text-2xl h-screen max-h-screen justify-between">
-        <div id="mobile-items" class="h-1/2 bottom-0 flex flex-col items-start gap-8 -mt-8 pb-8">
+        class="fixed inset-0 bg-gradient-to-bl from-stone-950 to-stone-900 flex flex-col items-start px-4   space-y-8 transition-opacity duration-300 ease-in-out pt-0 text-2xl  ">
+        <div id="mobile-items" class=" bottom-0 flex flex-col items-start gap-8 -mt-8 pb-8">
           <ULink to="/" active-class="underline mt-auto"
             class="hover:underline transition-all duration-100 text-center tracking-wide">Home</ULink>
 

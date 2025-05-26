@@ -96,8 +96,10 @@ const services = [
             <p class="text-stone-400 switzer font-switzer leading-8">
               {{ service.description }}
             </p>
-            <nuxt-link v-if="service.link" :href="service.link" class="text-dino-500 hover:underline mt-4">Read more
-              -></nuxt-link>
+            <nuxt-link v-if="service.link" :href="service.link"
+              class="text-dino-500 hover:underline mt-4 inline-flex items-center gap-1">Read more
+              <UIcon name="i-mdi-arrow-right-thin" class="h-4 w-4" />
+            </nuxt-link>
           </div>
         </div>
       </div>

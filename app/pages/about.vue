@@ -1,7 +1,7 @@
 <template>
   <div>
     <main class="text-white h-auto md:h-screen flex flex-col">
-      <div id="top-row" class="bg-stone-950 flex flex-col md:flex-row h-screen md:h-2/3">
+      <digv id="top-row" class="bg-stone-950 flex flex-col md:flex-row h-screen md:h-2/3">
         <!-- About Header - Half screen on mobile -->
         <div id="about-header"
           class="flex-none md:flex-1 text-3xl bg-dino-950 font-delight flex flex-col justify-end p-6 md:p-10 h-1/2 md:h-auto"
@@ -19,7 +19,7 @@
             <TeamSocials team="cecily" class="p-4 bg-black/50" />
           </div>
         </div>
-      </div>
+      </digv>
 
       <div id="bottom-row"
         class="h-1/3 bg-stone-950 p-6 md:p-8 flex flex-col border-b border-stone-500/50 gap-4 md:gap-0">
