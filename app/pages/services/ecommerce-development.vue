@@ -2,15 +2,16 @@
 
 
 <template>
-  <main class="text-white">
-  <ServicesHeader
-    title="E-Commerce Design & Development"
-    description="See things online with Shopify and other leading storefronts"
-    icon='i-mdi-cart-outline'
-  />
   <div>
-    <h2>Other content</h2>
+    <main class="text-white">
+      <ServicesHeader title="E-Commerce Design & Development"
+        description="See things online with Shopify and other leading storefronts" />
+      <SharedPageWrapper>
+        <div>
+          <h2>Other content</h2>
+        </div>
+      </SharedPageWrapper>
+    </main>
   </div>
-  </main>
 </template>
 <style scoped></style>

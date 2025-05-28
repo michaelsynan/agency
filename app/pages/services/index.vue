@@ -15,7 +15,7 @@ const services = [
     id: 'development',
     title: 'Development',
     description: 'Our development team builds robust, scalable solutions using modern technologies. We specialize in responsive websites, custom applications, and content management systems that are easy to maintain and update. We focus on performance, security, and code quality.',
-    link: '/services/development'
+    link: '/services/website-development'
   },
   {
     id: 'digital-marketing',
@@ -97,8 +97,9 @@ const services = [
               {{ service.description }}
             </p>
             <nuxt-link v-if="service.link" :href="service.link"
-              class="text-dino-500 hover:underline mt-4 inline-flex items-center gap-1">Read more
-              <UIcon name="i-mdi-arrow-right-thin" class="h-4 w-4" />
+              class="text-dino-500 mt-4 inline-flex items-center gap-1 group">Read more
+              <UIcon name="i-mdi-arrow-right-thin"
+                class="h-4 w-4 transition-transform duration-200 group-hover:translate-x-1" />
             </nuxt-link>
           </div>
         </div>

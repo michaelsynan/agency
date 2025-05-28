@@ -1,13 +1,17 @@
 <script setup lang="ts"></script>
 
 <template>
-  <main class="text-white">
-    <ServicesHeader title="Brand Identity"
-      description="Crafting a unique brand identity that resonates with your audience." />
-    <div>
-      <h2>Other content</h2>
-    </div>
-  </main>
+  <div>
+    <main class="text-white">
+      <ServicesHeader title="Brand Identity"
+        description="Crafting a unique brand identity that resonates with your audience." />
+      <SharedPageWrapper>
+        <div>
+          <h2>Other content</h2>
+        </div>
+      </SharedPageWrapper>
+    </main>
+  </div>
 </template>
 
 
