@@ -146,22 +146,9 @@ useSeoMeta({
               </div>
             </div>
           </section>
-
-          <!-- CTA -->
-          <section class="text-center p-10 bg-dino-950 rounded-lg">
-            <h2 class="text-3xl md:text-4xl font-bold font-delight mb-6">
-              Ready to Improve Your Search Rankings?
-            </h2>
-            <p class="text-stone-400 switzer leading-8 mb-8 max-w-2xl mx-auto">
-              Let's work together to create an SEO strategy that drives real business results. Contact us today for a
-              free consultation and website audit.
-            </p>
-            <a href="/contact"
-              class="inline-block bg-dino-500 hover:bg-dino-600 text-white font-bold py-3 px-8 rounded-lg transition-colors">
-              Get Started
-            </a>
-          </section>
         </div>
+
+        <ServicesCTA />
       </SharedPageWrapper>
     </main>
   </div>

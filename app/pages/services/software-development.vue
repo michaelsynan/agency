@@ -8,6 +8,8 @@
         <div>
           <h2>Other content</h2>
         </div>
+
+        <ServicesCTA />
       </SharedPageWrapper>
     </main>
   </div>
