@@ -47,21 +47,33 @@ watch(route, () => {
       </div>
       <div id="mobile-nav"
         :class="{ 'opacity-0 pointer-events-none': !menuOpen, 'opacity-100 pointer-events-auto': menuOpen }"
-        class="fixed inset-0 bg-gradient-to-bl from-stone-950 to-stone-900 flex flex-col items-start px-4   space-y-8 transition-opacity duration-300 ease-in-out pt-0 text-2xl  ">
-        <div id="mobile-items" class=" bottom-0 flex flex-col items-start gap-8 -mt-8 pb-8">
-          <ULink to="/" active-class="underline mt-auto"
-            class="hover:underline transition-all duration-100 text-center tracking-wide">Home</ULink>
+        class="fixed inset-0 transition-opacity duration-300 ease-in-out z-40">
+        <div class="w-screen h-screen bg-stone-950 flex flex-col justify-between px-6 py-8 text-2xl">
+          <div id="mobile-items" class="flex flex-col items-start gap-8 mt-20">
+            <ULink to="/" active-class="underline"
+              class="hover:underline transition-all duration-100 text-left tracking-wide">
+              Home
+            </ULink>
 
-          <ULink to="/about" active-class="underline"
-            class="hover:underline transition-all duration-100 text-center tracking-wide" prefetch>About</ULink>
-          <ULink to="/services" active-class="underline"
-            class="hover:underline transition-all duration-100 text-center tracking-wide" prefetch>Services</ULink>
-          <ULink to="/posts" active-class="underline"
-            class="hover:underline transition-all duration-100 text-center tracking-wide" prefetch>Blog</ULink>
-          <ULink to="https://calendly.com/formworkstudios/free-strategy-call" target="_blank" active-class="underline"
-            class="hover:underline transition-all duration-100 text-center tracking-wide" prefetch>Contact</ULink>
+            <ULink to="/about" active-class="underline"
+              class="hover:underline transition-all duration-100 text-left tracking-wide" prefetch>
+              About
+            </ULink>
+            <ULink to="/services" active-class="underline"
+              class="hover:underline transition-all duration-100 text-left tracking-wide" prefetch>
+              Services
+            </ULink>
+            <ULink to="/posts" active-class="underline"
+              class="hover:underline transition-all duration-100 text-left tracking-wide" prefetch>
+              Blog
+            </ULink>
+            <ULink to="https://calendly.com/formworkstudios/free-strategy-call" target="_blank" active-class="underline"
+              class="hover:underline transition-all duration-100 text-left tracking-wide" prefetch>
+              Contact
+            </ULink>
+          </div>
+          <FooterSocials class="border-t border-stone-500/20 w-full pt-6" />
         </div>
-        <FooterSocials class="mt-auto p-2 border-t border-stone-500/20 w-full pb-4 pt-4" />
       </div>
     </div>
   </nav>
