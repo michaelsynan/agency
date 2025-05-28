@@ -29,20 +29,20 @@ watch(route, () => {
       </div>
       <div class="hidden md:flex">
         <ULink to="/" active-class="!bg-zinc-700"
-          class="!font-inter px-4 py-2 text-base font-medium tracking-widest text-gray-300 hover:text-gray-100 transition-colors hover:bg-zinc-800 justify-center items-center flex">
+          class="!font-inter px-4 py-2 text-base font-medium tracking-widest text-stone-300 hover:text-stone-100 transition-colors hover:bg-zinc-800 justify-center items-center flex">
           Home</ULink>
 
         <ULink to="/about" prefetch active-class="!bg-zinc-700"
-          class="!font-inter px-4 py-2 text-base font-medium tracking-widest text-gray-300 hover:text-gray-100 transition-colors hover:bg-zinc-800 justify-center items-center flex">
+          class="!font-inter px-4 py-2 text-base font-medium tracking-widest text-stone-300 hover:text-stone-100 transition-colors hover:bg-zinc-800 justify-center items-center flex">
           About</ULink>
         <ULink to="/services" prefetch active-class="!bg-zinc-700"
-          class="!font-inter px-4 py-2 text-base font-medium tracking-widest text-gray-300 hover:text-gray-100 transition-colors hover:bg-zinc-800 justify-center items-center flex">
+          class="!font-inter px-4 py-2 text-base font-medium tracking-widest text-stone-300 hover:text-stone-100 transition-colors hover:bg-zinc-800 justify-center items-center flex">
           Services</ULink>
         <ULink to="/posts" prefetch active-class="!bg-zinc-700"
-          class="!font-inter px-4 py-2 text-base font-medium tracking-widest text-gray-300 hover:text-gray-100 transition-colors hover:bg-zinc-800 justify-center items-center flex">
+          class="!font-inter px-4 py-2 text-base font-medium tracking-widest text-stone-300 hover:text-stone-100 transition-colors hover:bg-zinc-800 justify-center items-center flex">
           Blog</ULink>
         <ULink to="https://calendly.com/formworkstudios/free-strategy-call" target="_blank" active-class="underline"
-          class="!font-inter px-4 py-2 text-base font-medium tracking-widest text-gray-300 hover:text-gray-100 transition-colors hover:bg-juju-500 bg-juju-700 justify-center items-center flex min-w-max  booking-button font-bold"
+          class="!font-inter px-4 py-2 text-base font-medium tracking-widest text-stone-300 hover:text-stone-100 transition-colors hover:bg-juju-500 bg-juju-700 justify-center items-center flex min-w-max  booking-button font-bold"
           prefetch>Book Now</ULink>
       </div>
       <div id="mobile-nav"
