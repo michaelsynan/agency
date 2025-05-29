@@ -1,7 +1,7 @@
 <script setup lang="ts"></script>
 
 <template>
-  <section class="text-center p-8 md:p-12 bg-stone-900/30 rounded-sm border border-stone-800/50">
+  <section class="text-center p-8 md:p-12 bg-stone-900/30 rounded-sm border border-stone-800/50 mt-12">
     <h2 class="text-2xl md:text-3xl font-bold font-delight mb-4 text-stone-200">
       Ready to Get Started?
     </h2>

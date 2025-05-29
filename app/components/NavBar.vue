@@ -29,7 +29,7 @@ watch(route, () => {
       </div>
       <div class="hidden md:flex">
         <ULink to="/" active-class="!bg-zinc-700"
-          class="!font-inter px-4 py-2 text-base font-medium tracking-widest text-stone-300 hover:text-stone-100 transition-colors hover:bg-zinc-800 justify-center items-center flex">
+ d          class="!font-inter px-4 py-2 text-base font-medium tracking-widest text-stone-300 hover:text-stone-100 transition-colors hover:bg-zinc-800 justify-center items-center flex">
           Home</ULink>
 
         <ULink to="/about" prefetch active-class="!bg-zinc-700"

@@ -14,7 +14,8 @@ useSeoMeta({
         <!-- Contact Options -->
         <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
           <!-- Email Box -->
-          <div class="bg-stone-900/50 rounded-sm p-8 text-center hover:bg-stone-900/70 transition-all duration-300">
+          <div
+            class="bg-stone-900/50 border border-stone-500/20  p-8 text-center hover:bg-stone-900/70 transition-all duration-300">
             <div class="flex justify-center mb-6">
               <div class="bg-dino-500/20 p-4 rounded-full">
                 <UIcon name="i-mdi-email" class="h-10 w-10 text-dino-500" />
@@ -34,7 +35,8 @@ useSeoMeta({
           </div>
 
           <!-- Phone Box -->
-          <div class="bg-stone-900/50 rounded-sm p-8 text-center hover:bg-stone-900/70 transition-all duration-300">
+          <div
+            class="bg-stone-900/50 border border-stone-500/20  p-8 text-center hover:bg-stone-900/70 transition-all duration-300">
             <div class="flex justify-center mb-6">
               <div class="bg-dino-500/20 p-4 rounded-full">
                 <UIcon name="i-mdi-phone" class="h-10 w-10 text-dino-500" />
@@ -54,7 +56,8 @@ useSeoMeta({
           </div>
 
           <!-- Schedule Box -->
-          <div class="bg-stone-900/50 rounded-sm p-8 text-center hover:bg-stone-900/70 transition-all duration-300">
+          <div
+            class="bg-stone-900/50  border border-stone-500/20 p-8 text-center hover:bg-stone-900/70 transition-all duration-300">
             <div class="flex justify-center mb-6">
               <div class="bg-dino-500/20 p-4 rounded-full">
                 <UIcon name="i-mdi-calendar-clock" class="h-10 w-10 text-dino-500" />
