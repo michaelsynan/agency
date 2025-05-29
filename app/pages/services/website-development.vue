@@ -21,41 +21,41 @@
             </div>
           </div>
 
-          <!-- Info Boxes Grid -->
-          <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-            <!-- Full Width Box -->
-            <div class="md:col-span-2 bg-stone-900/50 border border-stone-500/50 p-6 rounded-lg">
-              <h3 class="text-xl font-bold mb-3">Modern Web Technologies</h3>
-              <p class="text-stone-400">We leverage cutting-edge frameworks and tools to build fast, secure, and
+          <!-- Info Sections -->
+          <div class="space-y-8">
+            <!-- Modern Web Technologies -->
+            <div class="pt-8">
+              <h3 class="text-2xl font-bold mb-4">Modern Web Technologies</h3>
+              <p class="text-stone-400 text-lg">We leverage cutting-edge frameworks and tools to build fast, secure, and
                 scalable websites that perform exceptionally across all devices and browsers.</p>
             </div>
 
-            <!-- Row 1 - Box 1 -->
-            <div class="bg-stone-900/50 border border-stone-500/50 p-6 rounded-lg">
-              <h3 class="text-xl font-bold mb-3">Frontend Excellence</h3>
-              <p class="text-stone-400">React, Vue.js, and modern JavaScript frameworks for dynamic, interactive user
-                experiences.</p>
+            <!-- Frontend Excellence -->
+            <div class="border-t border-stone-500/50 pt-8">
+              <h3 class="text-2xl font-bold mb-4">Frontend Excellence</h3>
+              <p class="text-stone-400 text-lg">React, Vue.js, and modern JavaScript frameworks for dynamic, interactive
+                user experiences that engage your visitors.</p>
             </div>
 
-            <!-- Row 1 - Box 2 -->
-            <div class="bg-stone-900/50 border border-stone-500/50 p-6 rounded-lg">
-              <h3 class="text-xl font-bold mb-3">Backend Power</h3>
-              <p class="text-stone-400">Node.js, Python, and robust server architectures for reliable performance and
-                data management.</p>
+            <!-- Backend Power -->
+            <div class="border-t border-stone-500/50 pt-8">
+              <h3 class="text-2xl font-bold mb-4">Backend Power</h3>
+              <p class="text-stone-400 text-lg">Node.js, Python, and robust server architectures for reliable
+                performance and data management that scales with your business.</p>
             </div>
 
-            <!-- Row 2 - Box 1 -->
-            <div class="bg-stone-900/50 border border-stone-500/50 p-6 rounded-lg">
-              <h3 class="text-xl font-bold mb-3">Database Solutions</h3>
-              <p class="text-stone-400">SQL and NoSQL databases optimized for your specific data requirements and
-                scaling needs.</p>
+            <!-- CMS & E-commerce -->
+            <div class="border-t border-stone-500/50 pt-8">
+              <h3 class="text-2xl font-bold mb-4">CMS & E-commerce Solutions</h3>
+              <p class="text-stone-400 text-lg">WordPress, Shopify, and custom content management systems optimized for
+                your specific business requirements and growth objectives.</p>
             </div>
 
-            <!-- Row 2 - Box 2 -->
-            <div class="bg-stone-900/50 border border-stone-500/50 p-6 rounded-lg">
-              <h3 class="text-xl font-bold mb-3">Cloud & Deployment</h3>
-              <p class="text-stone-400">AWS, Vercel, and modern hosting solutions with CI/CD pipelines for seamless
-                deployment.</p>
+            <!-- Cloud & Deployment -->
+            <div class="border-t border-stone-500/50 border-b border-stone-500/50 pt-8 pb-8">
+              <h3 class="text-2xl font-bold mb-4">Cloud & Deployment</h3>
+              <p class="text-stone-400 text-lg">AWS, Vercel, and modern hosting solutions with CI/CD pipelines for
+                seamless deployment and reliable uptime.</p>
             </div>
           </div>
         </div>
