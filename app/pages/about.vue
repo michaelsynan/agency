@@ -1,6 +1,6 @@
 <script setup>
 useSeoMeta({
-  title: 'About Us | Formwork Studios',
+  title: 'About Us',
   description: 'Meet the creative team behind Formwork Studios. We believe hard work, creativity, and imagination lead the way. Your goals are our goals, your success is our success.',
 })
 </script>
