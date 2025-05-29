@@ -29,7 +29,7 @@
             <div class="flex flex-col gap-12">
               <!-- Step 1 -->
               <div class="flex gap-8">
-                <div class="text-4xl font-bold text-stone-400 flex-shrink-0">01</div>
+                <div class="text-4xl font-bold text-stone-400 flex-shrink-0 font-mono">01</div>
                 <div class="flex flex-col">
                   <h3 class="text-xl font-bold mb-3">Discovery & Research</h3>
                   <p class="text-stone-400 leading-relaxed">
@@ -42,7 +42,7 @@
 
               <!-- Step 2 -->
               <div class="flex gap-8">
-                <div class="text-4xl font-bold text-stone-400 flex-shrink-0">02</div>
+                <div class="text-4xl font-bold text-stone-400 flex-shrink-0 font-mono">02</div>
                 <div class="flex flex-col">
                   <h3 class="text-xl font-bold mb-3">Wireframes & Mockups</h3>
                   <p class="text-stone-400 leading-relaxed">
@@ -54,7 +54,7 @@
 
               <!-- Step 3 -->
               <div class="flex gap-8">
-                <div class="text-4xl font-bold text-stone-400 flex-shrink-0">03</div>
+                <div class="font-mono text-4xl font-bold text-stone-400 flex-shrink-0">03</div>
                 <div class="flex flex-col">
                   <h3 class="text-xl font-bold mb-3">Design & Refinement</h3>
                   <p class="text-stone-400 leading-relaxed">

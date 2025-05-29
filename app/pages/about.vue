@@ -1,3 +1,10 @@
+<script setup>
+useSeoMeta({
+  title: 'About Us | Formwork Studios',
+  description: 'Meet the creative team behind Formwork Studios. We believe hard work, creativity, and imagination lead the way. Your goals are our goals, your success is our success.',
+})
+</script>
+
 <template>
   <div>
     <main class="text-white h-auto md:h-screen flex flex-col">
