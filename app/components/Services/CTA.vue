@@ -1,7 +1,7 @@
 <script setup lang="ts"></script>
 
 <template>
-  <section class="text-center py-12">
+  <section class="text-center bg-gradient-to-r from-dino-950/50 to-juju-950/50 border border-dino-500/30 p-8 md:p-12">
     <h2 class="text-3xl md:text-4xl font-bold font-delight mb-6 text-white">
       Ready to Get Started?
     </h2>

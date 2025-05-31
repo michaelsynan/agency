@@ -65,7 +65,7 @@ onUnmounted(() => {
 <template>
   <div class="border-b border-stone-500/50 py-72 bg-url !h-screen">
     <UContainer class="text-center flex flex-col justify-center items-center h-full">
-      <div class="text-sm text-stone-700 mb-8 uppercase font-bold font-mono tracking-wider">
+      <div class="text-sm mb-8 uppercase font-bold font-mono tracking-wider gradient-text">
         / our common problem
       </div>
       <div
@@ -115,5 +115,13 @@ onUnmounted(() => {
   /* For Safari support */
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.06);
   /* Subtle shadow effect */
+}
+
+/* Gradient text from stone-600 to stone-800 */
+.gradient-text {
+  background: linear-gradient(to right, #57534e, #292524);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 </style>

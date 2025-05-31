@@ -28,8 +28,8 @@ watch(route, () => {
         </button>
       </div>
       <div class="hidden md:flex">
-        <ULink to="/" active-class="!bg-zinc-700"
- d          class="!font-inter px-4 py-2 text-base font-medium tracking-widest text-stone-300 hover:text-stone-100 transition-colors hover:bg-zinc-800 justify-center items-center flex">
+        <ULink to="/" active-class="!bg-zinc-700" d
+          class="!font-inter px-4 py-2 text-base font-medium tracking-widest text-stone-300 hover:text-stone-100 transition-colors hover:bg-zinc-800 justify-center items-center flex">
           Home</ULink>
 
         <ULink to="/about" prefetch active-class="!bg-zinc-700"
@@ -48,31 +48,36 @@ watch(route, () => {
       <div id="mobile-nav"
         :class="{ 'opacity-0 pointer-events-none': !menuOpen, 'opacity-100 pointer-events-auto': menuOpen }"
         class="fixed inset-0 transition-opacity duration-300 ease-in-out z-40">
-        <div class="w-screen h-screen bg-stone-950 flex flex-col justify-between px-6 py-8 text-2xl">
+        <div class="w-screen h-screen bg-stone-950 flex flex-col px-6 py-8 text-2xl">
           <div id="mobile-items" class="flex flex-col items-start gap-8 mt-20">
-            <ULink to="/" active-class="underline"
-              class="hover:underline transition-all duration-100 text-left tracking-wide">
+            <ULink to="/" active-class="!text-stone-50 underline"
+              class="hover:underline transition-all duration-100 text-left tracking-wide text-stone-300 hover:text-stone-100">
               Home
             </ULink>
 
-            <ULink to="/about" active-class="underline"
-              class="hover:underline transition-all duration-100 text-left tracking-wide" prefetch>
+            <ULink to="/about" active-class="!text-stone-50 underline"
+              class="hover:underline transition-all duration-100 text-left tracking-wide text-stone-300 hover:text-stone-100"
+              prefetch>
               About
             </ULink>
-            <ULink to="/services" active-class="underline"
-              class="hover:underline transition-all duration-100 text-left tracking-wide" prefetch>
+            <ULink to="/services" active-class="!text-stone-50 underline"
+              class="hover:underline transition-all duration-100 text-left tracking-wide text-stone-300 hover:text-stone-100"
+              prefetch>
               Services
             </ULink>
-            <ULink to="/posts" active-class="underline"
-              class="hover:underline transition-all duration-100 text-left tracking-wide" prefetch>
+            <ULink to="/posts" active-class="!text-stone-50 underline"
+              class="hover:underline transition-all duration-100 text-left tracking-wide text-stone-300 hover:text-stone-100"
+              prefetch>
               Blog
             </ULink>
-            <ULink to="https://calendly.com/formworkstudios/free-strategy-call" target="_blank" active-class="underline"
-              class="hover:underline transition-all duration-100 text-left tracking-wide" prefetch>
+            <ULink to="https://calendly.com/formworkstudios/free-strategy-call" target="_blank"
+              active-class="!text-stone-50 underline"
+              class="hover:underline transition-all duration-100 text-left tracking-wide text-stone-300 hover:text-stone-100"
+              prefetch>
               Contact
             </ULink>
           </div>
-          <FooterSocials class="border-t border-stone-500/20 w-full pt-6" />
+          <FooterSocials class="border-t border-stone-500/20 w-full pt-6 mt-8" />
         </div>
       </div>
     </div>
