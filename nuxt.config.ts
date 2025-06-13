@@ -11,6 +11,7 @@ export default defineNuxtConfig({
     "@vueuse/nuxt",
     "@nuxtjs/seo",
     "@nuxt/content",
+    "@nuxtjs/tailwindcss",
   ],
   ssr: true,
   devtools: { enabled: true },
