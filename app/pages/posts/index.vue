@@ -1,4 +1,8 @@
 <script setup lang="ts">
+useSeoMeta({
+  title: 'Design, Technology & Philosophy Blog',
+})
+
 const { data: blogs } = await useAsyncData('documents-list', () => {
   return queryCollection('blogs')
     .select('title', 'path', 'description', 'date', 'tags', 'image', 'category', 'time')
