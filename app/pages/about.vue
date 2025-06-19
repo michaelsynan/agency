@@ -33,10 +33,10 @@ useSeoMeta({
         <div class="flex-1 lora text-3xl md:text-6xl text-stone-800 flex flex-row">
           <!-- Every Detail Matters -->
         </div>
-        <div class="ml-auto max-w-lg leading-8 text-left md:text-right switzer text-stone-100">
+        <div class="ml-auto max-w-lg leading-8 text-stone-100 text-justify text-justify-inter-word">
           Underlying all change and uncertainty are a few things you can count on—Hard work, Creativity & Imagination
           will lead the way, even when the destination unclear. When we work together, we're on the same team. Your
-          goals are our goals. Your success is our success.
+          goals are our goals — <b>Your success is our success</b>.
         </div>
       </div>
     </main>

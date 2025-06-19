@@ -41,7 +41,7 @@ defineOgImageComponent('Page', {
           { src: '/hero-image.webp', alt: 'Hero Image' },
           { src: '/facial-serum-website.webp', alt: 'Facial Serum Website' },
           { src: '/primo.webp', alt: 'Primo Project' },
-          { src: '/gahs.png', alt: 'GAHS Project' },
+          { src: '/historical-society-nyc.webp', alt: 'NYC Non-profit Website' },
           { src: '/nuts.webp', alt: 'Nuts Project' },
           { src: '/insure2.webp', alt: 'Insure2 Project' },
           { src: '/video-photography-website.webp', alt: 'Video & Photography Website' },
