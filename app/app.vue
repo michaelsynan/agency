@@ -2,6 +2,13 @@
 import { ref, onMounted, onUnmounted } from 'vue';
 const route = useRoute();
 
+useHead({
+  htmlAttrs: {
+    lang: 'en'
+  }
+})
+
+
 // For the follower circle (with delay)
 const followerCircleStyle = ref({
   left: '0px',
