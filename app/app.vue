@@ -94,7 +94,6 @@ onUnmounted(() => {
 
 <template>
   <UApp>
-    <!-- Custom cursor elements -->
     <div class="cursor-circle fixed w-4 h-4 rounded-full pointer-events-none transition-colors duration-300 ease-in-out"
       :style="cursorCircleStyle"></div>
     <div class="follower-circle fixed w-8 h-8 border border-stone-500 rounded-full pointer-events-none"

@@ -18,8 +18,6 @@ defineOgImageComponent('Page', {
       <HomeAbout class="py-48 h-screen" />
       <SharedFinalCTA2 class="" />
       <div id="MainCarousel" class="py-32 md:py-48 flex flex-col gap-8 relative border-stone-500">
-        <!-- <div class="mx-4 md:mx-20 text-8xl md:text-9xl -mt-24 text-stone-800/50 font-delight font-black">
-          WORK</div> -->
         <div
           class="absolute inset-y-0 left-0 w-[20px] md:w-[40px] bg-gradient-to-r from-stone-950 via-stone-950 to-transparent z-10">
         </div>
@@ -53,7 +51,6 @@ defineOgImageComponent('Page', {
         ]" />
       </div>
       <HomeFAQ class="flex-none mx-auto" />
-      <!-- <SharedContactInfo class="max-w-2xl border-x ml-0 md:ml-10 w-full -translate-y-10" /> -->
     </main>
   </div>
 </template>
