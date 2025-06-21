@@ -15,6 +15,7 @@ export default defineNuxtConfig({
   ],
   ssr: true,
   nitro: {
+    compressPublicAssets: true,
     prerender: {
       // Pre-render the homepage
       routes: ["/"],

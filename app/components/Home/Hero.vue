@@ -17,10 +17,9 @@ useHead({
         class="absolute inset-0 w-full h-full object-cover brightness-40" format="webp" quality="60" placeholder
         loading="eager" fetchpriority="high" />
     </div>
-    <!-- <div class="absolute top-0 left-0 right-0 bottom-0 bg-black opacity-60"></div> -->
     <UContainer class="relative z-10 flex flex-col items-start justify-center h-full gap-2 md:gap-4 w-full">
-      <h1 class="text-7xl md:text-8xl font-delight font-black text-white-200">
-        A <span id="future" class="gradient-text">FUTURE</span> WORTH BUILDING FOR
+      <h1 class="text-7xl md:text-8xl font-delight font-black">
+        A <span class="gradient-text">FUTURE</span> WORTH BUILDING FOR
       </h1>
       <p
         class="text-stone-300 text-xl md:text-3xl max-w-[40ch] !leading-relaxed hover:leading-[200px] transition-all duration-300 hidden md:block">
@@ -46,7 +45,6 @@ useHead({
   will-change: transform;
 }
 
-/* Fixed background effect for the image */
 .fixed-image {
   background-attachment: fixed;
   transform: translateZ(0);
@@ -68,8 +66,6 @@ useHead({
 }
 
 @media (max-width: 767px) {
-
-  /* Disable fixed effect on mobile for better performance */
   .fixed-image {
     position: absolute;
   }
