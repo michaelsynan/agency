@@ -14,6 +14,14 @@ export default defineNuxtConfig({
     "@nuxtjs/tailwindcss",
   ],
   ssr: true,
+  nitro: {
+    prerender: {
+      // Pre-render the homepage
+      routes: ["/"],
+      // Then crawl all the links on the page
+      crawlLinks: true,
+    },
+  },
   devtools: { enabled: true },
   app: {
     pageTransition: {
