@@ -44,12 +44,13 @@ const items = [
         <div class="w-full">
           <!-- <h2 class="text-8xl md:text-9xl font-delight font-black text-stone-800/50 mb-4 text-center md:text-left">FAQ
           </h2> -->
-          <UAccordion :truncate="false" color="none" :items="items" size="xl" variant="soft" class="!text-left" :ui="{
-            default: {
-              class: 'mb-1.5 w-full !items-start !text-left border-b rounded-none px-0',
-            },
-            item: { color: 'text-stone-400' },
-          }" />
+          <UAccordion :truncate="false" as="h2" color="none" :items="items" size="xl" variant="soft" class="!text-left"
+            :ui="{
+              default: {
+                class: 'mb-1.5 w-full !items-start !text-left border-b rounded-none px-0',
+              },
+              item: { color: 'text-stone-400' },
+            }" />
         </div>
       </div>
     </div>

@@ -58,11 +58,6 @@ export default defineNuxtConfig({
       subsets: ["latin"], // Simplified to only include Latin (English) characters
     },
   },
-  // image: {
-  //   cloudflare: {
-  //     baseURL: "https://imagedelivery.net/q2nIRgCuWuc2K4JgVsWp8w/",
-  //   },
-  // },
   seo: {
     meta: {
       description:
