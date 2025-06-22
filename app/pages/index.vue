@@ -50,7 +50,7 @@ defineOgImageComponent('Page', {
           { src: '/michael.webp', alt: 'Michael Synan Portrait' },
         ]" />
       </div>
-      <LazyHomeFAQ class="flex-none mx-auto" />
+      <HomeFAQ class="pb-48 px-4 mx-auto" />
     </main>
   </div>
 </template>
