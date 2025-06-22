@@ -26,10 +26,10 @@ useHead({
         Shaping Tomorrow So You Can Enjoy Today
       </p>
       <UButton to="https://calendly.com/formworkstudios/free-strategy-call" target="_blank"
-        class="w-full md:w-auto rounded-none text-white font-bold bg-juju-700 hover:bg-juju-600 py-3 px-4 border border-juju-600 mt-4"
+        class="w-full md:w-auto rounded-none text-white font-bold bg-juju-700 hover:bg-juju-600 py-3 px-4 border border-juju-600 mt-4 justify-center items-center flex"
         size="xl" icon="i-mdi-calendar">
-        Book My Free
-        Consultation</UButton>
+        <span class="text-center whitespace-nowrap">Book My Free Consultation</span>
+      </UButton>
     </UContainer>
     <HomeHeroBottomStrip class="w-full fixed bottom-0" />
   </div>
