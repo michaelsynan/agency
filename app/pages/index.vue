@@ -3,6 +3,10 @@ definePageMeta({
   colorMode: 'dark',
 });
 
+useSeoMeta({
+  title: 'Website Design, Development & Digital Marketing',
+  description: 'Professional web design, development, and digital marketing services. We create custom websites and digital solutions that help your business grow and succeed online.',
+});
 
 defineOgImageComponent('Page', {
   title: 'Is this thing on?'

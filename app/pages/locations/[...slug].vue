@@ -24,7 +24,7 @@ if (!location.value) {
 
 // Set SEO meta tags
 useSeoMeta({
-    title: `${location.value.name} | Formwork Studios`,
+    title: location.value.title,
     description: location.value.description,
 });
 </script>

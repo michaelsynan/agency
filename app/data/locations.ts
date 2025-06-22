@@ -7,6 +7,7 @@ export interface Location {
   phone: string;
   email: string;
   description: string;
+  title: string; // SEO title for the location
   tag?: string; // Optional tag field
   mapLink: string;
   image: string; // Location image
@@ -38,6 +39,7 @@ export const locations: Locations = [
     phone: "1-800-657-6893",
     email: "hello@formworkstudios.com",
     image: "/pa.jpg",
+    title: "Website Design, Development & Marketing in North Eastern PA",
     description:
       "Our main Pennsylvania office location providing full-service web development, design, and digital marketing solutions.",
     tag: "Main Office",
@@ -64,6 +66,7 @@ export const locations: Locations = [
     phone: "1-800-657-6893",
     email: "hello@formworkstudios.com",
     image: "/china-town-nyc.webp",
+    title: "Website Design, Development & Marketing in NYC",
     description:
       "Our New York City location serving clients throughout the NYC metropolitan area with comprehensive digital services.",
     tag: "NYC Branch",
