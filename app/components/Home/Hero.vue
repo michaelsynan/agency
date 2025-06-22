@@ -14,8 +14,8 @@ useHead({
   <div id="main-border" class="relative h-screen w-full overflow-hidden">
     <div class="absolute inset-0 overflow-hidden">
       <NuxtImg src="formwork-studios.webp" alt="Formwork Studios hero image"
-        class="absolute inset-0 w-full h-full object-cover brightness-40" format="webp" quality="60" placeholder
-        loading="eager" fetchpriority="high" />
+        class="fixed-image absolute inset-0 w-full h-full object-cover brightness-40" format="webp" quality="60"
+        placeholder loading="eager" fetchpriority="high" />
     </div>
     <UContainer class="relative z-10 flex flex-col items-start justify-center h-full gap-2 md:gap-4 w-full">
       <h1 class="text-7xl md:text-8xl font-delight font-black">
