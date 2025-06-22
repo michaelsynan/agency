@@ -1,7 +1,7 @@
 <script setup lang="ts"></script>
 
 <template>
-  <div id="footer" class-bak="border-t border-stone-500">
+  <div id="footer">
     <UContainer class="text-white pt-0 pb-8 flex flex-col items-center gap-10 justify-between">
       <div class="flex align-center items-center flex flex-col gap-8">
         <NuxtImg src="/logo.png" alt="Formwork Studios"

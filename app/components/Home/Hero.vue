@@ -17,7 +17,8 @@ useHead({
         class="fixed-image absolute inset-0 w-full h-full object-cover brightness-40" format="webp" quality="60"
         placeholder loading="eager" fetchpriority="high" />
     </div>
-    <UContainer class="relative z-10 flex flex-col items-start justify-center h-full gap-2 md:gap-4 w-full">
+    <UContainer
+      class="relative z-10 flex flex-col items-start justify-center h-full gap-2 md:gap-4 w-full mb-[40px] md:mb-0">
       <h1 class="text-7xl md:text-8xl font-delight font-black">
         A <span class="gradient-text">FUTURE</span> WORTH BUILDING FOR
       </h1>

@@ -111,7 +111,7 @@ onUnmounted(() => {
       <div>
         <NuxtPage />
       </div>
-      <FooterWrapper v-if="route.path === '/'" />
+      <FooterWrapper v-if="route.path === '/'" class="border-t border-stone-500" />
       <FooterMinimal v-else />
 
       <UNotifications :ui="{ background: 'bg-stone-900' }" class="toast" />
