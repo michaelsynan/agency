@@ -19,9 +19,9 @@ defineOgImageComponent('Page', {
       <HomeHero />
     </header>
     <main class="flex flex-col bg-stone-950">
-      <HomeAbout class="py-48 h-screen" />
+      <HomeAbout class="py-48 h-screen border-t border-stone-500" />
       <LazySharedFinalCTA2 class="" />
-      <div id="MainCarousel" class="py-32 md:py-48 flex flex-col gap-8 relative border-stone-500">
+      <div id="MainCarousel" class="pt-32 md:pt-48 flex flex-col gap-8 relative border-stone-500">
         <div
           class="absolute inset-y-0 left-0 w-[20px] md:w-[40px] bg-gradient-to-r from-stone-950 via-stone-950 to-transparent z-10">
         </div>
@@ -53,6 +53,12 @@ defineOgImageComponent('Page', {
           { src: '/yoga-pilates.webp', alt: 'Yoga & Pilates Website' },
           { src: '/michael.webp', alt: 'Michael Synan Portrait' },
         ]" />
+      </div>
+      <div class="w-full px-4 flex justify-end pb-32 pt-6">
+        <div class="w-max font-black font-delight text-4xl text-stone-600 flex items-end"><Nuxt-link
+            to="/web-design-and-development-projects/" class="gradient-text">See
+            Our Work ➜</Nuxt-link>
+        </div>
       </div>
       <HomeFAQ class="pb-48 px-4 mx-auto" />
     </main>

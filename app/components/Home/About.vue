@@ -116,12 +116,4 @@ onUnmounted(() => {
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.06);
   /* Subtle shadow effect */
 }
-
-/* Gradient text from stone-600 to stone-800 */
-.gradient-text {
-  background: linear-gradient(to right, #57534e, #292524);
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
 </style>

@@ -7,8 +7,7 @@
           class="text-2xl md:text-4xl font-regular !leading-relaxed tracking-wide text-white max-w-xl mx-auto switzer">
           Formwork Studios operates at the intersection of design, technology & strategy, where every project is
           jumping-off point into the creation of tailored digital solutions that fundamentally transform user
-          experiences and
-          organizational trajectories.
+          experiences & organizational trajectories.
         </div>
       </div>
 
