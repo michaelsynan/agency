@@ -11,7 +11,7 @@ useHead({
 })
 </script>
 <template>
-  <div id="main-border" class="relative h-screen w-full overflow-hidden">
+  <div id="main-border" class="relative h-[100dvh] md:h-screen w-full overflow-hidden">
     <div class="absolute inset-0 overflow-hidden">
       <NuxtImg src="formwork-studios.webp" alt="Formwork Studios hero image"
         class="fixed-image absolute inset-0 w-full h-full object-cover brightness-40" format="webp" quality="60"
