@@ -3,6 +3,13 @@ useHead({
   link: [
     {
       rel: 'preload',
+      as: 'font',
+      type: 'font/woff2',
+      href: '/fonts/Delight-Black-subset.woff2',
+      crossorigin: 'anonymous'
+    },
+    {
+      rel: 'preload',
       as: 'image',
       href: '/formwork-studios.webp',
       type: 'image/webp'
