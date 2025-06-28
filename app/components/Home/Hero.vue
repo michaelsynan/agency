@@ -19,8 +19,9 @@ useHead({
     </div>
     <UContainer
       class="relative z-10 flex flex-col items-start justify-center h-full gap-2 md:gap-4 w-full mb-[40px] md:mb-0">
-      <h1 class="text-7xl md:text-8xl font-delight font-black">
-        A <span class="gradient-text">FUTURE</span> WORTH BUILDING <span class="hidden md:inline">FOR</span>
+      <h1 class="text-7xl md:text-8xl delight-black">
+        A <span class="gradient-text">FUTURE</span> WORTH BUILDING <span class="hidden md:inline">FOR
+        </span>
       </h1>
       <p
         class="text-stone-300 text-xl md:text-3xl max-w-[40ch] !leading-relaxed hover:leading-[200px] transition-all duration-300 hidden md:block">
