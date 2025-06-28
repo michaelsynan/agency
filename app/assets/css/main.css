@@ -154,7 +154,7 @@ span {
 
 @font-face {
   font-family: "Delight";
-  src: url("/assets/fonts/Delight-Black.woff2") format("woff2");
+  src: url("/assets/fonts/Delight-Black-subset.woff2") format("woff2");
   font-weight: 900;
   font-style: normal;
   font-display: swap;
