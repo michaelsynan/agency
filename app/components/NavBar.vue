@@ -76,12 +76,11 @@ watch(route, () => {
               prefetch>
               Contact
             </ULink>
-
-
           </div>
 
           <FooterSocials class="border-t border-stone-500/20 w-full pt-6 mt-8" />
-          <div class="mt-auto">
+
+          <div class="mt-auto pb-safe-bottom pb-8">
             <a href="tel:18006576893"
               class="hover:underline transition-all duration-100 text-left tracking-wide text-stone-300 hover:text-stone-100">
               (800) 657-6893
