@@ -31,8 +31,7 @@ onUnmounted(() => {
   <div
     class="group w-full absolute bottom-0 left-0 border-t border-stone-500 font-switzer font-bold text-opacity-40 text-sm h-content flex items-center pl-2"
     :style="{ opacity: opacity }">
-    <span class="h-3 w-3 bg-dino-500 rounded-full mr-2 animate-pulse-indicator">
-    </span>
+
     <a href="tel:18006576893"
       class="block transition-all duration-300 ease-in-out !font-mono mt-0.5 hover:text-stone-100 tracking-wide text-xs md:text-sm">
       (800) 657-6893 | call for free consultation
