@@ -97,6 +97,25 @@ onUnmounted(() => {
   // Remove class from body when component unmounts
   document.body.classList.remove('custom-cursor');
 });
+
+useHead({
+  script: [
+    {
+      src: 'https://www.googletagmanager.com/gtag/js?id=G-74XJ1CYD7P',
+      async: true,
+    },
+    {
+      children: `
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-74XJ1CYD7P');
+      `,
+      type: 'text/javascript',
+    }
+  ]
+})
+
 </script>
 
 <template>
