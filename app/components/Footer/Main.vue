@@ -13,12 +13,13 @@
       <FooterSocials />
       <div class="flex flex-col items-center gap-1 text-stone-400">
         <div>
-          <NuxtLink to="/privacy">
-            Privacy Policy
-          </NuxtLink> | <NuxtLink to="/tos">
-            Terms of Service
+          <NuxtLink to="/tos">
+            TOS
           </NuxtLink> |
-          <NuxtLink to="/get-in-touch">Contact</NuxtLink>
+          <NuxtLink to="/get-in-touch">Contact</NuxtLink> |
+          <NuxtLink to="/locations">
+            Locations
+          </NuxtLink>
         </div>
         <div>
           &copy; {{ new Date().getFullYear() }} Formwork Studios. All rights reserved.
