@@ -20,10 +20,10 @@ useSeoMeta({
         <div id="about-team" class="flex-none md:w-2/3 h-1/2 md:h-auto flex flex-row">
           <div style="background-image: url(/michael_synan.webp)"
             class="w-1/2 bg-cover bg-top flex flex-col justify-end p-4">
-            <TeamSocials team="michael" class="p-4 bg-black/50" />
+            <TeamSocials team="michael" class="p-4" />
           </div>
           <div style="background-image: url(/cecily.webp)" class="w-1/2 bg-cover bg-top flex flex-col justify-end p-4">
-            <TeamSocials team="cecily" class="p-4 bg-black/50" />
+            <TeamSocials team="cecily" class="p-4" />
           </div>
         </div>
       </div>

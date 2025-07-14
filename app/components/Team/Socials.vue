@@ -23,7 +23,7 @@ const socials = teamMembers[props.team] || [];
 
 <template>
   <div
-    class="bg-stone-900 hover:bg-stone-800 duration-200 bg-opacity-90 px-3 py-3 rounded-full w-max ml-auto border border-stone-500/50 shadow-[inset_0_2px_6px_rgba(255,255,255,0.1)]">
+    class="!bg-stone-900 hover:!bg-stone-800/90 duration-200 bg-opacity-90 px-3 py-3 rounded-full w-max ml-auto border border-stone-500/50 shadow-[inset_0_2px_6px_rgba(255,255,255,0.1)]">
     <ul v-if="socials.length" class="flex flex-row gap-3 justify-end">
       <li v-for="social in socials" :key="social.name">
         <a :href="social.url" target="_blank" class="flex items-center text-blue-500 hover:underline">
