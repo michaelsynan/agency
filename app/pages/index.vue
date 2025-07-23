@@ -61,6 +61,7 @@ defineOgImageComponent('Page', {
         </div>
       </div>
       <HomeFAQ class="pb-48 px-4 mx-auto" />
+      <HomeBadges />
     </main>
   </div>
 </template>
