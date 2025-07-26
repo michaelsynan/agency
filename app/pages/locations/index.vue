@@ -55,7 +55,7 @@ useSeoMeta({
               </div>
               <div class="text-center space-y-3">
                 <NuxtLink :to="`/locations/${location.name.toLowerCase().replace(/\s+/g, '-')}`"
-                  class="block w-full font-bold !text-white !bg-dino-500 ring-dino-500 hover:!bg-dino-400 hover:ring-dino-300 transition-all duration-200 ring-2 text-center rounded-none px-6 py-3">
+                  class="block w-full font-bold !text-white !bg-blue-600 ring-blue-600 hover:!bg-blue-500 hover:ring-blue-400 transition-all duration-200 ring-2 text-center rounded-none px-6 py-3">
                   View Details
                 </NuxtLink>
                 <a :href="location.mapLink" target="_blank" rel="noopener noreferrer"
