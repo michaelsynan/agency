@@ -32,7 +32,7 @@ export type Locations = Location[];
 export const locations: Locations = [
   {
     id: 1,
-    name: "Pennsylvania Office",
+    name: "Pennsylvania Web Design and Development",
     city: "Pennsylvania",
     state: "PA",
     address: "966 Ridge Avenue",
@@ -59,7 +59,7 @@ export const locations: Locations = [
   },
   {
     id: 2,
-    name: "New York City Office",
+    name: "NYC Web Design and Development",
     city: "Queens",
     state: "NY",
     address: "61-25 97th Street 12R",

@@ -22,6 +22,17 @@ export default defineNuxtConfig({
       // Then crawl all the links on the page
       crawlLinks: true,
     },
+    routeRules: {
+      // Redirects for SEO-friendly location URLs
+      "/locations/pennsylvania-office": {
+        redirect: "/locations/pennsylvania-web-design-and-development",
+        prerender: false,
+      },
+      "/locations/new-york-city-office": {
+        redirect: "/locations/nyc-web-design-and-development",
+        prerender: false,
+      },
+    },
   },
   devtools: { enabled: true },
   app: {
