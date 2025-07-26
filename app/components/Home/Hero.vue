@@ -25,7 +25,7 @@ useHead({
         placeholder loading="eager" fetchpriority="high" />
     </div>
     <UContainer
-      class="relative z-10 flex flex-col items-start justify-center h-full gap-2 md:gap-4 w-full mb-[40px] md:mb-0">
+      class="relative z-10 flex flex-col items-center md:items-start justify-center h-full gap-2 md:gap-4 w-full mb-[40px] md:mb-0 text-center md:text-left">
       <h1 class="text-7xl md:text-8xl delight-black">
         A <span class="gradient-text">FUTURE</span> WORTH BUILDING <span class="hidden md:inline">FOR
         </span>
@@ -35,7 +35,7 @@ useHead({
         Shaping Tomorrow So You Can Enjoy Today
       </p>
       <UButton to="https://calendly.com/formworkstudios/free-strategy-call" target="_blank"
-        class="w-full md:w-auto rounded-none text-white font-bold bg-juju-700 hover:bg-juju-600 py-3 px-4 border border-juju-600 mt-4 justify-center items-center flex"
+        class="w-auto rounded-none text-white font-bold bg-juju-700 hover:bg-juju-600 py-3 px-4 border border-juju-600 mt-4 justify-center items-center flex"
         size="xl" icon="i-mdi-calendar">
         <span class="text-center whitespace-nowrap">Book My Free Consultation</span>
       </UButton>

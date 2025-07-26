@@ -44,7 +44,7 @@ onUnmounted(() => {
     :style="{ opacity: opacity }">
     <div
       class="block transition-all duration-300 ease-in-out !font-mono mt-0.5 text-stone-400 tracking-wide text-xs md:text-sm">
-      ({{ x }}, {{ y }})
+      {{ x }}, {{ y }}
     </div>
   </div>
 </template>
