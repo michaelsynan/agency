@@ -43,7 +43,6 @@ useSeoMeta({
         </div>
       </div>
     </main>
-    <!-- <AboutScroll class="text-white" /> -->
     <AboutProcess class="bg-stone-950 border-b border-stone-500/50" />
     <AboutPhilosophy />
   </div>
@@ -69,7 +68,7 @@ useSeoMeta({
   display: none;
 }
 
-\/* Only show on desktop */ @media (min-width: 768px) {
+@media (min-width: 768px) {
   #top-row::before {
     display: block;
   }
