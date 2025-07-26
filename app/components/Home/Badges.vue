@@ -16,7 +16,7 @@
         class="w-20 h-20 md:w-28 md:h-28 object-contain mx-auto mb-6 md:mb-4" placeholder />
     </NuxtLink>
 
-    <NuxtLink to='www.bbb.org/us/pa/scranton/profile/web-design/formwork-studios-0241-236094847'>
+    <NuxtLink to='https://www.bbb.org/us/pa/scranton/profile/web-design/formwork-studios-0241-236094847'>
       <NuxtImg src="/bbb.png" alt="BBB Accredited Business"
         class="w-20 h-20 md:w-28 md:h-28 object-contain mx-auto mb-6 md:mb-4" placeholder />
     </NuxtLink>
