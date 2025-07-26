@@ -69,7 +69,7 @@ useSeoMeta({
   display: none;
 }
 
-@media (min-width: 768px) {
+\/* Only show on desktop */ @media (min-width: 768px) {
   #top-row::before {
     display: block;
   }
@@ -89,6 +89,7 @@ useSeoMeta({
   display: none;
 }
 
+/* Only show on desktop */
 @media (min-width: 768px) {
   #top-row::after {
     display: block;
@@ -113,6 +114,7 @@ useSeoMeta({
   display: none;
 }
 
+/* Only show on desktop */
 @media (min-width: 768px) {
   #bottom-row::before {
     display: block;
