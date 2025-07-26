@@ -20,7 +20,7 @@ const projects: Project[] = [
     image: '/nuts.webp',
     alt: 'Best Organic Nuts website',
     tags: ['E-commerce'],
-    link: '#'
+    link: 'https://www.bestorganicnuts.com/'
   },
   {
     id: 2,
@@ -28,7 +28,7 @@ const projects: Project[] = [
     image: '/red-light-bed-thum.jpg',
     alt: 'Red Light Bed Consulting website',
     tags: ['E-commerce', 'Nuxt'],
-    link: '#'
+    link: 'https://www.redlightbedconsulting.com/'
   },
   {
     id: 3,
@@ -41,10 +41,10 @@ const projects: Project[] = [
   {
     id: 4,
     title: 'Biohack Your Sauna',
-    image: '/sauna.webp',
+    image: '/sauna.jpg',
     alt: 'Biohack Your Sauna website',
     tags: ['E-commerce'],
-    link: '#'
+    link: 'https://www.biohackyoursauna.com/'
   },
   {
     id: 5,
@@ -72,8 +72,9 @@ const projects: Project[] = [
     <main class="bg-stone-950 text-white min-h-screen py-20">
       <div class="max-w-6xl mx-auto px-4">
         <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-          <NuxtLink v-for="project in projects" :key="project.id" :to="project.link"
-            class="bg-stone-900/50 overflow-hidden hover:bg-stone-900/70 transition-colors block group">
+          <NuxtLink v-for="(project, index) in projects" :key="project.id" :to="project.link"
+            class="bg-stone-900/50 overflow-hidden hover:bg-stone-900/70 transition-colors block group animate-slide-up"
+            :style="{ animationDelay: `${index * 150}ms` }">
             <div class="bg-stone-800 relative border border-stone-500/20" style="aspect-ratio: 1200/565;">
               <NuxtImg :src="project.image" :alt="project.alt" class="w-full h-full object-cover" placeholder />
             </div>
@@ -105,4 +106,21 @@ const projects: Project[] = [
   </div>
 </template>
 
-<style scoped></style>
+<style scoped>
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(16px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-slide-up {
+  animation: slideUp 0.8s ease-out forwards;
+  opacity: 0;
+}
+</style>

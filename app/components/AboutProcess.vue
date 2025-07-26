@@ -22,7 +22,7 @@
             <div class="flex flex-col">
               <div class="text-xl font-mono text-stone-500 mb-2">0{{ index + 1 }}.</div>
               <h3 class="text-2xl md:text-3xl font-bold mb-6 text-stone-200 font-delight">{{ step.title }}</h3>
-              <p class="text-stone-400 max-w-xl switzer font-switzer leading-10">
+              <p class="text-stone-400 max-w-xl switzer font-switzer leading-loose md:leading-10">
                 {{ step.description }}
               </p>
             </div>

@@ -9,7 +9,7 @@ useSeoMeta({
 });
 
 defineOgImageComponent('Page', {
-  title: 'Is this thing on?'
+  title: 'No Nonsense Digital Solutions',
 })
 </script>
 
@@ -54,11 +54,12 @@ defineOgImageComponent('Page', {
           { src: '/michael.webp', alt: 'Michael Synan Portrait' },
         ]" />
       </div>
-      <div class="w-full px-4 flex justify-end pb-32 pt-6">
-        <div class="w-max font-black font-delight text-4xl text-stone-600 flex items-end"><Nuxt-link
-            to="/web-design-and-development-projects/" class="gradient-text">See
-            Our Work ➜</Nuxt-link>
-        </div>
+      <div class="w-full px-4 flex justify-center pb-32 pt-12">
+        <UButton size="lg"
+          class="mt-4 font-bold !text-white !bg-juju-600 ring-juju-600 hover:!bg-juju-500 hover:ring-juju-400 transition-all duration-200 ring-2 text-center rounded-none"
+          trailing-icon="i-mdi-arrow-right" to="/web-design-and-development-projects/">
+          Selected Work
+        </UButton>
       </div>
       <HomeFAQ class="pb-48 px-4 mx-auto" />
       <HomeBadges />
