@@ -19,12 +19,12 @@ useSeoMeta({
 
         <!-- About Team - Other half on mobile -->
         <div id="about-team" class="flex-none md:w-2/3 h-1/2 md:h-auto flex flex-row">
-          <div class="w-1/2 flex flex-col justify-end p-4 relative bg-juju-700">
+          <div class="w-1/2 h-full flex flex-col justify-end p-4 relative bg-juju-700">
             <img src="/michael_synan.webp" alt="Michael Synan"
               class="absolute inset-0 w-full h-full object-cover object-top z-10">
             <TeamSocials team="michael" class="p-4 relative z-20" />
           </div>
-          <div class="w-1/2 flex flex-col justify-end p-4 relative bg-dino-700">
+          <div class="w-1/2 h-full flex flex-col justify-end p-4 relative bg-dino-700">
             <img src="/cecily.webp" alt="Cecily" class="absolute inset-0 w-full h-full object-cover object-top z-10">
             <TeamSocials team="cecily" class="p-4 relative z-20" />
           </div>
@@ -36,7 +36,7 @@ useSeoMeta({
         <div class="flex-1 lora text-3xl md:text-6xl text-stone-800 flex flex-row">
           <!-- Every Detail Matters -->
         </div>
-        <div class="ml-auto max-w-lg leading-8 text-stone-100 text-justify text-justify-inter-word">
+        <div class="ml-auto max-w-lg leading-8 text-stone-100 text-justify text-justify-inter-word    ">
           Underlying all change and uncertainty are a few things you can count on—Hard work, Creativity & Imagination
           will lead the way, even when the destination unclear. When we work together, we're on the same team. Your
           goals are our goals — <b>Your success is our success</b>.
@@ -66,6 +66,13 @@ useSeoMeta({
     linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)) center/2px 100% no-repeat,
     linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)) center/100% 2px no-repeat;
   z-index: 30;
+  display: none;
+}
+
+@media (min-width: 768px) {
+  #top-row::before {
+    display: block;
+  }
 }
 
 #top-row::after {
@@ -79,6 +86,13 @@ useSeoMeta({
     linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)) center/2px 100% no-repeat,
     linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)) center/100% 2px no-repeat;
   z-index: 30;
+  display: none;
+}
+
+@media (min-width: 768px) {
+  #top-row::after {
+    display: block;
+  }
 }
 
 #bottom-row {
@@ -96,6 +110,13 @@ useSeoMeta({
     linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)) center/2px 100% no-repeat,
     linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)) center/100% 2px no-repeat;
   z-index: 30;
+  display: none;
+}
+
+@media (min-width: 768px) {
+  #bottom-row::before {
+    display: block;
+  }
 }
 
 @keyframes dotCycle {

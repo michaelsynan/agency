@@ -10,7 +10,6 @@ const props = defineProps({
 const title = computed(() => (props.title || "").slice(0, 60));
 const description = computed(() => (props.description || "").slice(0, 200));
 </script>
-<<<<<<< HEAD
 
 <template>
   <div class="bg-stone-950 text-white w-full h-full flex flex-col justify-center p-16">
@@ -38,5 +37,3 @@ const description = computed(() => (props.description || "").slice(0, 200));
     </div>
   </div>
 </template>
-=======
->>>>>>> 272cafa (og)
