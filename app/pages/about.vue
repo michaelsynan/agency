@@ -7,12 +7,12 @@ useSeoMeta({
 
 <template>
   <div>
-    <main class="text-white h-auto flex flex-col">
+    <main class="text-white h-auto md:h-screen flex flex-col">
       <div id="top-row"
         class="bg-stone-950 overflow-hidden flex flex-col md:flex-row h-screen md:h-2/3 border-b border-stone-500">
         <!-- About Header - Half screen on mobile -->
         <div id="about-header"
-          class="flex-none md:flex-1 text-3xl font-delight flex flex-col justify-end p-6 md:p-10 h-1/2 md:h-1/3"
+          class="flex-none md:flex-1 text-3xl font-delight flex flex-col justify-end p-6 md:p-10 h-1/2 md:h-auto"
           style="background-image: url('grid.svg'); background-size: 100px 100px; background-repeat: repeat;">
           <h1 class="mb-4 text-5xl font-delight text-left font-bold">Our Team</h1>
         </div>
