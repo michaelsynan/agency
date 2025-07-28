@@ -7,7 +7,7 @@ useSeoMeta({
 
 <template>
   <div>
-    <main class="text-white h-auto md:h-screen flex flex-col">
+    <main class="text-white h-auto flex flex-col">
       <div id="top-row"
         class="bg-stone-950 overflow-hidden flex flex-col md:flex-row h-screen md:h-2/3 border-b border-stone-500">
         <!-- About Header - Half screen on mobile -->
