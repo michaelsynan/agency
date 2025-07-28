@@ -31,7 +31,7 @@ useSeoMeta({
 
 <template>
     <main class="text-white min-h-screen">
-        <GeneralHeader :heading="location.name" :description="`${location.city}, ${location.state}`" />
+        <GeneralHeader :heading="location.nameClean" :description="`${location.city}, ${location.state}`" long />
 
         <div class="bg-stone-950 py-20">
             <div class="max-w-4xl mx-auto px-4">

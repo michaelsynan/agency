@@ -19,12 +19,12 @@ useSeoMeta({
 
         <!-- About Team - Other half on mobile -->
         <div id="about-team" class="flex-none md:w-2/3 h-1/2 md:h-auto flex flex-row">
-          <div class="w-1/2 h-full flex flex-col justify-end p-4 relative bg-juju-700">
+          <div class="w-1/2 aspect-square md:h-full md:aspect-auto flex flex-col justify-end p-4 relative bg-juju-700">
             <img src="/michael_synan.webp" alt="Michael Synan"
               class="absolute inset-0 w-full h-full object-cover object-top z-10">
             <TeamSocials team="michael" class="p-4 relative z-20" />
           </div>
-          <div class="w-1/2 h-full flex flex-col justify-end p-4 relative bg-dino-700">
+          <div class="w-1/2 aspect-square md:h-full md:aspect-auto flex flex-col justify-end p-4 relative bg-dino-700">
             <img src="/cecily.webp" alt="Cecily" class="absolute inset-0 w-full h-full object-cover object-top z-10">
             <TeamSocials team="cecily" class="p-4 relative z-20" />
           </div>

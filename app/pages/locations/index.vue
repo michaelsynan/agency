@@ -34,7 +34,7 @@ useSeoMeta({
                   </div>
                 </div>
                 <h3 class="text-2xl font-bold font-delight mb-2 text-stone-200">
-                  {{ location.name }}
+                  {{ location.id === 1 ? 'Pennsylvania' : location.id === 2 ? 'NYC' : location.name }}
                 </h3>
                 <span v-if="location.tag"
                   class="inline-block bg-dino-500/20 text-dino-400 px-3 py-1 rounded-full text-sm font-medium">
@@ -55,7 +55,7 @@ useSeoMeta({
               </div>
               <div class="text-center space-y-3">
                 <NuxtLink :to="`/locations/${location.name.toLowerCase().replace(/\s+/g, '-')}`"
-                  class="block w-full font-bold !text-white !bg-blue-600 ring-blue-600 hover:!bg-blue-500 hover:ring-blue-400 transition-all duration-200 ring-2 text-center rounded-none px-6 py-3">
+                  class="block w-full font-bold !text-white !bg-juju-600 ring-juju-600 hover:!bg-juju-500 hover:ring-juju-400 transition-all duration-200 ring-2 text-center rounded-none px-6 py-3">
                   View Details
                 </NuxtLink>
                 <a :href="location.mapLink" target="_blank" rel="noopener noreferrer"
@@ -66,8 +66,6 @@ useSeoMeta({
             </div>
           </div>
         </div>
-
-
       </div>
     </div>
   </main>

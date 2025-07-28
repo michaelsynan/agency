@@ -1,6 +1,7 @@
 export interface Location {
   id: number;
   name: string;
+  nameClean?: string; // Optional clean name for SEO-friendly URLs
   city: string;
   state: string;
   address: string;
@@ -33,6 +34,7 @@ export const locations: Locations = [
   {
     id: 1,
     name: "Pennsylvania Web Design and Development",
+    nameClean: "Pennsylvania Web Design & Development",
     city: "Pennsylvania",
     state: "PA",
     address: "966 Ridge Avenue",
@@ -60,6 +62,7 @@ export const locations: Locations = [
   {
     id: 2,
     name: "NYC Web Design and Development",
+    nameClean: "NYC Web Design & Development",
     city: "Queens",
     state: "NY",
     address: "61-25 97th Street 12R",
