@@ -25,6 +25,11 @@ onMounted(() => {
 <template>
   <div ref="badgesRef"
     class="py-10 pt-14 border-stone-500 flex flex-row gap-8 md:gap-10 justify-center items-center flex-wrap md:flex-nowrap">
+    <NuxtLink to="https://skillshop.credential.net/60c42c90-b9ad-4895-81c2-ec86b890e042#acc.BlzyTjHq"
+      :class="['badge-item', { 'animate-fade-in-4': isVisible }]">
+      <NuxtImg src="/google-ads.jpg" alt="Google Ads Certified"
+        class="w-20 h-20 md:w-28 md:h-28 object-contain mx-auto mb-6 md:mb-4" placeholder />
+    </NuxtLink>
     <NuxtLink to="https://www.designrush.com/agency/profile/formwork-studios"
       :class="['badge-item', { 'animate-fade-in-1': isVisible }]">
       <NuxtImg src="/best-website-designrush.png" alt="Award Winning Studio"
