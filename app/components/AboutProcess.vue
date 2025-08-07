@@ -19,12 +19,14 @@
       <div class="w-full md:w-2/3">
         <div class="space-y-24">
           <div v-for="(step, index) in processSteps" :key="step.title" class="border-t border-stone-800 pt-8">
-            <div class="flex flex-col">
-              <div class="text-xl font-mono text-stone-500 mb-2">0{{ index + 1 }}.</div>
-              <h3 class="text-2xl md:text-3xl font-bold mb-6 text-stone-200 font-delight">{{ step.title }}</h3>
-              <p class="text-stone-400 max-w-xl switzer font-switzer leading-loose md:leading-10">
-                {{ step.description }}
-              </p>
+            <div class="flex flex-row items-start gap-6">
+              <div class="text-xl font-mono text-stone-500 min-w-[3rem] mt-1">0{{ index + 1 }}.</div>
+              <div class="flex flex-col">
+                <h3 class="text-2xl md:text-3xl font-bold mb-4 text-stone-200 font-delight">{{ step.title }}</h3>
+                <p class="text-stone-400 max-w-xl switzer font-switzer leading-loose md:leading-10">
+                  {{ step.description }}
+                </p>
+              </div>
             </div>
           </div>
         </div>
