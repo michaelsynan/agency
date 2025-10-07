@@ -13,16 +13,97 @@ const checklistItems = [
   'Develop <strong>consistent branding</strong> across all touchpoints',
   'Hack your growth by leveraging <strong>online directories</strong> and building relationships in <strong>digital communities</strong>... and lots more!'
 ];
+
+// Simple gated-download flow
+const email = ref('')
+const consent = ref(false)
+const errorMsg = ref('')
+
+function isValidEmail(value: string) {
+  return /.+@.+\..+/.test(value)
+}
+
+async function onSubmitDownload(e: Event) {
+  e.preventDefault()
+  errorMsg.value = ''
+  if (!isValidEmail(email.value)) {
+    errorMsg.value = 'Please enter a valid email address.'
+    return
+  }
+  if (!consent.value) {
+    errorMsg.value = 'Please agree to the privacy notice.'
+    return
+  }
+  try {
+    // Persist locally to allow gated access on the download page
+    localStorage.setItem('sbp-email', email.value)
+  }
+  catch {
+    // Non-blocking if localStorage fails, we still navigate
+  }
+  await navigateTo('/small-business-download')
+}
 </script>
 
 <template>
   <div>
     <main class="text-white">
-      <ServicesHeader title="Small Business Playbook"
+      <ServicesHeader title="Small Business Survival Guide"
         description="Your roadmap to digital success and sustainable growth" />
 
       <SharedPageWrapper>
         <div class="max-w-4xl mx-auto">
+
+          <!-- Instant Download (Email Gate) - Prominent CTA at top -->
+          <section class="mb-16 border-stone-500/50 pb-8">
+            <h2 class="text-3xl font-bold font-delight mb-6">
+              Get the Playbook Now
+            </h2>
+            <p class="text-stone-300 mb-6">
+              Enter your email to get immediate access to the Small Business Playbook.
+            </p>
+            <div class="grid md:grid-cols-2 gap-8 items-stretch">
+              <!-- Form column -->
+              <form class="bg-stone-900/50 border border-stone-800/50 p-6 flex flex-col gap-4"
+                @submit="onSubmitDownload">
+                <label class="flex flex-col gap-2">
+                  <span class="text-stone-200">
+                    Email address
+                  </span>
+                  <input v-model="email" type="email" required placeholder="you@example.com"
+                    class="w-full bg-stone-900 border border-stone-700/70 text-stone-100 rounded px-4 py-3 placeholder-stone-500 focus:outline-none focus:ring-2 focus:ring-dino-500/50">
+                </label>
+                <label class="flex items-start gap-3 text-stone-300">
+                  <input v-model="consent" type="checkbox" class="mt-1 h-4 w-4">
+                  <span>
+                    I agree to receive emails about this download and occasional updates. See our
+                    <NuxtLink to="/privacy" class="underline">
+                      Privacy Policy
+                    </NuxtLink>.
+                  </span>
+                </label>
+                <div v-if="errorMsg" class="text-red-400 text-sm">
+                  {{ errorMsg }}
+                </div>
+                <div class="flex items-center gap-4">
+                  <button type="submit"
+                    class="inline-flex items-center gap-2 bg-dino-500 hover:bg-dino-600 text-black font-semibold px-5 py-3 rounded">
+                    <UIcon name="i-mdi-download" class="w-5 h-5" />
+                    Get the PDF
+                  </button>
+                  <span class="text-stone-400 text-sm">
+                    We’ll also email you a copy.
+                  </span>
+                </div>
+              </form>
+
+              <!-- Cover image column -->
+              <div class="relative bg-stone-900/50 border border-stone-800/50 p-4 flex items-center justify-center">
+                <NuxtImg src="/cover-final.png" alt="Small Business Playbook cover"
+                  class="w-full h-full object-contain" />
+              </div>
+            </div>
+          </section>
 
           <!-- Hero Quote Section -->
           <section class="mb-16">
@@ -132,14 +213,8 @@ const checklistItems = [
             </div>
           </section>
 
-          <!-- Get Your Complete Playbook -->
-          <SharedGetPDF header="Get Your Complete Playbook"
-            copy="Ready to transform your business? Get our comprehensive 50-page digital business playbook with detailed strategies, templates, and step-by-step guides. Plus, schedule a free consultation to discuss your specific challenges."
-            campaign="small-business" />
-
-
+          <!-- removed lower CTA and legacy SharedGetPDF to avoid duplication -->
         </div>
-
       </SharedPageWrapper>
     </main>
   </div>

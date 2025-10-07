@@ -18,7 +18,7 @@ defineProps({
   <div
     class="w-full h-[50vh] md:h-[66vh] relative flex flex-col bg-gradient-to-b from-dino-950 to-stone-900 overflow-hidden">
     <!-- Background image with blur effect -->
-    <div class="absolute inset-0 bg-image opacity-30 blur-image !bg-fixed" />
+    <div class="absolute inset-0 bg-image opacity-90 blur-image !bg-fixed" />
 
     <!-- Dark overlay for better text readability -->
     <div class="absolute inset-0 bg-dino-950/70" />
@@ -51,7 +51,7 @@ defineProps({
 .blur-image {
   /* Multiple blur approaches for browser compatibility */
   filter: blur(8px);
-  -webkit-filter: blur(8px);
+  -webkit-filter: blur(0px);
   transform: scale(1.1);
   /* Prevent blur edges */
 }

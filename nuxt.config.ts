@@ -64,7 +64,10 @@ export default defineNuxtConfig({
   fonts: {
     defaults: {
       weights: [400],
-      families: [{ name: "Switzer", provider: "fontshare" }],
+      families: [
+        { name: "Switzer", provider: "fontshare" },
+        { name: "Work Sans", provider: "google" },
+      ],
       styles: ["normal", "italic"],
       subsets: ["latin"], // Simplified to only include Latin (English) characters
     },
