@@ -122,7 +122,7 @@ export default defineNuxtConfig({
           "https://formworkstudios.com/pa.jpg",
           "https://formworkstudios.com/china-town-nyc.webp",
         ],
-        logo: "https://formworkstudios.com/bset-web-design-company-ever.png",
+        logo: "https://formworkstudios.com/best-web-design-company-ever.png",
         openingHoursSpecification: [
           {
             dayOfWeek: [
@@ -192,7 +192,7 @@ export default defineNuxtConfig({
           "https://formworkstudios.com/china-town-nyc.webp",
           "https://formworkstudios.com/pa.jpg",
         ],
-        logo: "https://formworkstudios.com/bset-web-design-company-ever.png",
+        logo: "https://formworkstudios.com/best-web-design-company-ever.png",
         openingHoursSpecification: [
           {
             dayOfWeek: [
