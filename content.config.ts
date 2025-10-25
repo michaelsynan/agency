@@ -1,4 +1,4 @@
-import { defineCollection, defineContentConfig, z } from "@nuxt/content";
+import { defineCollection, z } from "@nuxt/content";
 import { asSitemapCollection } from "@nuxtjs/sitemap/content";
 
 export const collections = {

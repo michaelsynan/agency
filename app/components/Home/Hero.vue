@@ -18,25 +18,42 @@ useHead({
 })
 </script>
 <template>
-  <div id="main-border" class="relative h-[100dvh] md:h-screen w-full overflow-hidden">
+  <div
+    id="main-border"
+    class="relative h-[100dvh] md:h-screen w-full overflow-hidden"
+  >
     <div class="absolute inset-0 overflow-hidden">
-      <NuxtImg src="formwork-studios.webp" alt="Formwork Studios hero image"
-        class="fixed-image absolute inset-0 w-full h-full object-cover brightness-40" format="webp" quality="60"
-        placeholder loading="eager" fetchpriority="high" />
+      <NuxtImg
+        src="formwork-studios.webp"
+        alt="Formwork Studios hero image"
+        class="fixed-image absolute inset-0 w-full h-full object-cover brightness-40"
+        format="webp"
+        quality="60"
+        placeholder
+        loading="eager"
+        fetchpriority="high"
+      />
     </div>
     <UContainer
-      class="relative z-10 flex flex-col items-center md:items-start justify-center h-full gap-2 md:gap-4 w-full mb-[40px] md:mb-0 text-center md:text-left">
+      class="relative z-10 flex flex-col items-center md:items-start justify-center h-full gap-2 md:gap-4 w-full mb-[40px] md:mb-0 text-center md:text-left"
+    >
       <h1 class="text-7xl md:text-8xl delight-black">
-        A <span class="gradient-text">FUTURE</span> WORTH BUILDING <span class="hidden md:inline">FOR
+        A <span class="gradient-text !font-black delight-black">FUTURE</span> WORTH BUILDING <span
+          class="hidden md:inline delight-black"
+        >FOR
         </span>
       </h1>
       <p
         class="text-stone-300 text-xl md:text-3xl max-w-[40ch] !leading-relaxed hover:leading-[200px] transition-all duration-300 hidden md:block">
         Shaping Tomorrow So You Can Enjoy Today
       </p>
-      <UButton to="https://calendly.com/formworkstudios/free-strategy-call" target="_blank"
+      <UButton
+        to="https://calendly.com/formworkstudios/free-strategy-call"
+        target="_blank"
         class="w-auto rounded-none text-white font-bold bg-juju-700 hover:bg-juju-600 py-3 px-4 border border-juju-600 mt-4 justify-center items-center flex"
-        size="xl" icon="i-mdi-calendar">
+        size="xl"
+        icon="i-mdi-calendar"
+      >
         <span class="text-center whitespace-nowrap">Book My Free Consultation</span>
       </UButton>
     </UContainer>
