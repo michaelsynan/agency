@@ -38,6 +38,7 @@
     "@tailwindcss/typography": "^0.5.16",
     "eslint": "^9.15.0",
     "typescript": "^5.7.2",
+    "vue-gtag-next": "^1.14.0",
     "wrangler": "^3.91.0"
   }
 }
