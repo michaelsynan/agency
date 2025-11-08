@@ -17,7 +17,7 @@ useSeoMeta({
           <div
             class="bg-stone-900/50 border border-stone-500/20  p-8 text-center hover:bg-stone-900/70 transition-all duration-300">
             <div class="flex justify-center mb-6">
-              <div class="bg-dino-500/20 p-4 rounded-full">
+              <div class="bg-dino-500/20 rounded-full w-20 h-20 flex items-center justify-center">
                 <UIcon name="i-mdi-email" class="h-10 w-10 text-dino-500" />
               </div>
             </div>
@@ -28,7 +28,7 @@ useSeoMeta({
               Send us a message and we'll get back to you within 24 hours. Perfect for detailed project discussions.
             </p>
             <UButton size="lg"
-              class="mt-4 font-bold !text-white !bg-juju-500 ring-juju-500 hover:!bg-juju-400 hover:ring-juju-300 transition-all duration-200 ring-2 text-center rounded-none"
+              class="mt-4 font-bold !text-white !bg-juju-500 ring-juju-500 hover:!bg-juju-400 hover:ring-juju-300 transition-all duration-200 ring-2 text-center rounded-none w-full justify-center"
               icon="i-mdi-email" to="mailto:hello@formworkstudios.com">
               Send Email
             </UButton>
@@ -38,7 +38,7 @@ useSeoMeta({
           <div
             class="bg-stone-900/50 border border-stone-500/20  p-8 text-center hover:bg-stone-900/70 transition-all duration-300">
             <div class="flex justify-center mb-6">
-              <div class="bg-dino-500/20 p-4 rounded-full">
+              <div class="bg-dino-500/20 rounded-full w-20 h-20 flex items-center justify-center">
                 <UIcon name="i-mdi-phone" class="h-10 w-10 text-dino-500" />
               </div>
             </div>
@@ -49,7 +49,7 @@ useSeoMeta({
               Speak directly with our team. Available Monday-Friday, 9am-5pm EST for immediate assistance.
             </p>
             <UButton size="lg"
-              class="mt-4 font-bold !text-white !bg-juju-500 ring-juju-500 hover:!bg-juju-400 hover:ring-juju-300 transition-all duration-200 ring-2 text-center rounded-none"
+              class="mt-4 font-bold !text-white !bg-juju-500 ring-juju-500 hover:!bg-juju-400 hover:ring-juju-300 transition-all duration-200 ring-2 text-center rounded-none w-full justify-center"
               icon="i-mdi-phone" to="tel:18006576893">
               Call Now
             </UButton>
@@ -59,7 +59,7 @@ useSeoMeta({
           <div
             class="bg-stone-900/50  border border-stone-500/20 p-8 text-center hover:bg-stone-900/70 transition-all duration-300">
             <div class="flex justify-center mb-6">
-              <div class="bg-dino-500/20 p-4 rounded-full">
+              <div class="bg-dino-500/20 rounded-full w-20 h-20 flex items-center justify-center">
                 <UIcon name="i-mdi-calendar-clock" class="h-10 w-10 text-dino-500" />
               </div>
             </div>
@@ -70,7 +70,7 @@ useSeoMeta({
               Book a free consultation call to discuss your project requirements and explore how we can help.
             </p>
             <UButton size="lg"
-              class="mt-4 font-bold !text-white !bg-juju-500 ring-juju-500 hover:!bg-juju-400 hover:ring-juju-300 transition-all duration-200 ring-2 text-center rounded-none"
+              class="mt-4 font-bold !text-white !bg-juju-500 ring-juju-500 hover:!bg-juju-400 hover:ring-juju-300 transition-all duration-200 ring-2 text-center rounded-none w-full justify-center"
               icon="i-mdi-calendar-clock" to="https://calendly.com/formworkstudios" target="_blank" external>
               Book Meeting
             </UButton>

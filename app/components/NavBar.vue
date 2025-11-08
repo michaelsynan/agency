@@ -1,4 +1,7 @@
-<script setup lang="ts">
+<script
+  setup
+  lang="ts"
+>
 const route = useRoute()
 const menuOpen = ref(false)
 const show = ref(true)
@@ -43,18 +46,33 @@ onBeforeUnmount(() => {
       { 'navbar-hidden': !show },
     ]"
   >
-    <div class="w-full bg-gradient-to-r from-dino-700 to-dino-900 text-center py-1 text-sm font-bold">
-      <a href="tel:18006576893" class="text-white hover:underline">
+    <div class="w-full bg-gradient-to-r from-dino-700 to-dino-900 text-center py-2.5 md:py-1 text-sm font-bold">
+      <a
+        href="tel:18006576893"
+        class="text-white hover:underline"
+      >
         Call Now: 1-800-657-6893
       </a>
     </div>
     <div class="w-full flex flex-col md:flex-row justify-between text-lg">
       <div class="flex justify-between items-center w-full md:mb-0 ml-1">
-        <ULink :to="'/'" class="font-medium zfix text-xl tracking-wider p-2">
-          <NuxtImg src="/logo.png" width="20" fit="cover" alt="Formwork Studios" />
+        <ULink
+          :to="'/'"
+          class="font-medium zfix text-xl tracking-wider p-2"
+        >
+          <NuxtImg
+            src="/logo.png"
+            width="20"
+            fit="cover"
+            alt="Formwork Studios"
+          />
         </ULink>
 
-        <button class="hamburger md:hidden zfix my-1 mr-4" aria-label="Open menu" @click="toggleMenu">
+        <button
+          class="hamburger md:hidden zfix my-1 mr-4"
+          aria-label="Open menu"
+          @click="toggleMenu"
+        >
           <span :class="['hamburger-line', menuOpen ? 'transform' : 'ml-auto mt-0.5']" />
           <span :class="['hamburger-line', menuOpen ? 'transform' : 'ml-auto !w-4']" />
           <span :class="['hamburger-line', menuOpen ? 'transform' : 'ml-auto !w-3']" />
@@ -108,7 +126,10 @@ onBeforeUnmount(() => {
         class="fixed inset-0 transition-opacity duration-300 ease-in-out z-40"
       >
         <div class="w-screen h-screen bg-stone-950 flex flex-col px-6 py-8 text-2xl">
-          <div id="mobile-items" class="flex flex-col items-start gap-8 mt-20">
+          <div
+            id="mobile-items"
+            class="flex flex-col items-start gap-8 mt-20"
+          >
             <ULink
               to="/"
               active-class="!text-stone-50 underline"
@@ -172,6 +193,7 @@ onBeforeUnmount(() => {
 }
 
 @keyframes colorShift {
+
   0%,
   10% {
     background-color: #0f766b;
@@ -211,6 +233,7 @@ onBeforeUnmount(() => {
   padding: 0;
   box-sizing: border-box;
 }
+
 @media (min-width: 768px) {
   .hamburger {
     display: none;

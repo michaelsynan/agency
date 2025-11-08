@@ -71,35 +71,51 @@ const services = [
   <main class="text-white">
     <!-- Header with blurred background image -->
     <div
-      class="w-full h-[50vh] md:h-[66vh] relative flex flex-col bg-gradient-to-b from-dino-950 to-stone-900 overflow-hidden">
+      class="w-full h-[50vh] md:h-[66vh] relative flex flex-col bg-gradient-to-b from-dino-950 to-stone-900 overflow-hidden"
+    >
       <!-- Background image with blur effect -->
-      <div class="absolute inset-0 bg-image opacity-30 blur-image !bg-fixed"></div>
+      <div class="absolute inset-0 bg-image opacity-70 blur-image !bg-fixed"></div>
 
       <!-- Dark overlay for better text readability -->
       <div class="absolute inset-0 bg-dino-950/70"></div>
 
       <!-- Content positioned at the bottom of the hero section -->
-      <div id="hero" class="relative z-10 mt-auto w-full px-6 md:px-16 pb-12 md:pb-16">
+      <div
+        id="hero"
+        class="relative z-10 mt-auto w-full px-6 md:px-16 pb-12 md:pb-16"
+      >
         <h1 class="text-4xl md:text-6xl font-bold font-delight text-left">OUR SERVICES</h1>
-        <div class="text-lg md:text-2xl switzer opacity-50 text-left mt-3 md:mt-4">Design, Development &
+        <div class="text-lg md:text-2xl switzer opacity-50 text-left mt-2 md:mt-2">Design, Development &
           Marketing</div>
       </div>
     </div>
 
     <div class="bg-stone-950 p-6 md:p-16 !py-20 relative">
       <!-- Stack all services vertically with max width -->
-      <div class="flex flex-col gap-8 max-w-4xl mx-auto" id="services-container">
-        <div v-for="(service, index) in services" :key="service.id"
-          :class="{ 'border-t border-stone-500/50': index !== 0 }" class="pt-12 p-6 px-0 w-full relative ">
+      <div
+        class="flex flex-col gap-8 max-w-4xl mx-auto"
+        id="services-container"
+      >
+        <div
+          v-for="(service, index) in services"
+          :key="service.id"
+          :class="{ 'border-t border-stone-500/50': index !== 0 }"
+          class="pt-12 p-6 px-0 w-full relative "
+        >
           <div class="flex flex-col">
             <h3 class="text-2xl md:text-3xl font-bold mb-8 text-stone-200 font-delight">{{ service.title }}</h3>
             <p class="text-stone-400 switzer font-switzer leading-8">
               {{ service.description }}
             </p>
-            <nuxt-link v-if="service.link" :href="service.link"
-              class="text-dino-500 mt-4 inline-flex items-center gap-1 group">Read more
-              <UIcon name="i-mdi-arrow-right-thin"
-                class="h-4 w-4 transition-transform duration-200 group-hover:translate-x-1" />
+            <nuxt-link
+              v-if="service.link"
+              :href="service.link"
+              class="text-dino-500 mt-4 inline-flex items-center gap-1 group"
+            >Read more
+              <UIcon
+                name="i-mdi-arrow-right-thin"
+                class="h-4 w-4 transition-transform duration-200 group-hover:translate-x-1"
+              />
             </nuxt-link>
           </div>
         </div>
@@ -121,8 +137,8 @@ const services = [
 
 .blur-image {
   /* Multiple blur approaches for browser compatibility */
-  filter: blur(8px);
-  -webkit-filter: blur(8px);
+  /* filter: blur(4px);
+  -webkit-filter: blur(4px); */
   transform: scale(1.1);
   /* Prevent blur edges */
 }

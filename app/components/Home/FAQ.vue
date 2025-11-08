@@ -1,4 +1,7 @@
-<script setup lang="ts">
+<script
+  setup
+  lang="ts"
+>
 const items = [
   {
     label: 'What services do you offer?',
@@ -33,6 +36,14 @@ const items = [
     label: 'How do you ensure privacy and security for my project?',
     content: 'We adhere to industry best practices for data protection and follow strict security protocols throughout the development process. This includes employing secure coding standards, implementing SSL/TLS encryption, conducting regular vulnerability assessments, and maintaining compliance with relevant data protection regulations.',
   },
+  {
+    label: 'What is SEO and why is it important?',
+    content: 'SEO (Search Engine Optimization) improves your website so more of the right people find you organically. We focus on technical structure, metadata, page speed, accessibility, content quality, and authority signals to grow qualified traffic and reduce dependence on paid ads.',
+  },
+  {
+    label: 'What is Local SEO and how can it help my business?',
+    content: 'Local SEO focuses on improving visibility for searches with geographic intent—like “plumber in Scranton” or “contractor in Pittsburg.” We optimize your Google Business Profile, local citations, structured data (schema.org), location pages, reviews, and geo-targeted content so customers in regions like Scranton, Pittsburgh, Philadelphia, Manhattan, Queens, and Brooklyn can find and trust your brand more easily.',
+  },
 ]
 </script>
 
@@ -44,13 +55,19 @@ const items = [
         <div class="w-full">
           <!-- <h2 class="text-8xl md:text-9xl font-delight font-black text-stone-800/50 mb-4 text-center md:text-left">FAQ
           </h2> -->
-          <UAccordion :truncate="false" as="h2" color="none" :items="items" size="xl" variant="soft" class="!text-left"
+          <UAccordion
+            :truncate="false"
+            as="h2"
+            color="none"
+            :items="items"
+            size="xl"
+            variant="soft"
+            class="text-left!"
             :ui="{
-              default: {
-                class: 'mb-1.5 w-full !items-start !text-left border-b rounded-none px-0',
-              },
-              item: { color: 'text-stone-400' },
-            }" />
+              root: 'mb-1.5 w-full !items-start !text-left border-b border-b-stone-500/40  rounded-none px-0',
+              item: 'text-stone-400'
+            }"
+          />
         </div>
       </div>
     </div>

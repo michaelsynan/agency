@@ -1,4 +1,7 @@
-<script setup lang="ts">
+<script
+  setup
+  lang="ts"
+>
 defineProps({
   heading: {
     type: String,
@@ -24,12 +27,19 @@ defineProps({
     <div class="absolute inset-0 bg-juju-950/70" />
 
     <!-- Content positioned at the bottom of the hero section -->
-    <div id="hero" class="relative z-10 mt-auto w-full px-6 md:px-16 pb-12 md:pb-16">
+    <div
+      id="hero"
+      class="relative z-10 mt-auto w-full px-6 md:px-16 pb-12 md:pb-16"
+    >
       <h1
-        :class="['text-4xl leading-normal md:text-6xl font-bold font-delight text-left testing', long ? 'max-w-[30ch]' : 'max-w-[15ch]']">
+        :class="['text-4xl leading-normal md:text-6xl font-bold font-delight text-left testing', long ? 'max-w-[30ch]' : 'max-w-[15ch]']"
+      >
         {{ heading }}
       </h1>
-      <div v-if="description" class="text-lg md:text-2xl switzer opacity-50 text-left mt-3 md:mt-4">
+      <div
+        v-if="description"
+        class="text-lg md:text-2xl switzer opacity-50 text-left mt-1"
+      >
         {{ description }}
       </div>
     </div>

@@ -37,24 +37,35 @@ useHead({
     <UContainer
       class="relative z-10 flex flex-col items-center md:items-start justify-center h-full gap-2 md:gap-4 w-full mb-[40px] md:mb-0 text-center md:text-left"
     >
-      <h1 class="text-7xl md:text-8xl delight-black">
+      <h1
+        class="text-stone-300 text-xl md:text-3xl max-w-[35ch] opacity-50 font-black  transition-all duration-300 leading-snug pb-2 md:pb-0 "
+      >
+
+        WEB
+        DESIGN,
+        DEVELOPMENT
+        &
+        SEO SERVICES
+        IN
+        SCRANTON
+        AND
+        NYC
+      </h1>
+      <h2 class="text-7xl md:text-8xl delight-black">
         A <span class="gradient-text !font-black delight-black">FUTURE</span> WORTH BUILDING <span
           class="hidden md:inline delight-black"
         >FOR
         </span>
-      </h1>
-      <p
-        class="text-stone-300 text-xl md:text-3xl max-w-[40ch] !leading-relaxed hover:leading-[200px] transition-all duration-300 hidden md:block">
-        Shaping Tomorrow So You Can Enjoy Today
-      </p>
+      </h2>
+
       <UButton
-        to="https://calendly.com/formworkstudios/free-strategy-call"
-        target="_blank"
+        to="tel:+18006576893"
         class="w-auto rounded-none text-white font-bold bg-juju-700 hover:bg-juju-600 py-3 px-4 border border-juju-600 mt-4 justify-center items-center flex"
         size="xl"
-        icon="i-mdi-calendar"
+        icon="i-mdi-phone"
+        aria-label="Call Formwork Studios at (800) 657-6893"
       >
-        <span class="text-center whitespace-nowrap">Book My Free Consultation</span>
+        <span class="text-center whitespace-nowrap">Call (800) 657-6893</span>
       </UButton>
     </UContainer>
     <HomeHeroBottomStrip class="w-full fixed bottom-0" />

@@ -1,26 +1,51 @@
-<script setup lang="ts"></script>
+<script
+  setup
+  lang="ts"
+>
+// Static selection of three showcase images with similar landscape aspect ratios
+const showcaseImages = [
+  { src: '/dashboard.webp', alt: 'Dashboard UI' },
+  { src: '/historical-society-nyc.webp', alt: 'NYC Non-profit Website' },
+  { src: '/video-photography-website.webp', alt: 'Video & Photography Website' },
+]
+</script>
 
 <template>
   <div>
-    <main class="text-white">
-      <ServicesHeader title="Website Design"
-        description="Creating beautiful, user-centered designs that captivate and convert." />
+    <main class="text-white min-h-screen">
+      <!-- Hero section: full viewport height on md+, two rows (header + showcase) -->
+  <section class="md:h-screen md:grid md:grid-rows-[1fr,1fr] overflow-hidden">
+        <!-- Top: Header (always visible) -->
+        <div>
+          <ServicesHeader
+            title="Website Design"
+            description="Creating beautiful, user-centered designs that captivate and convert."
+          />
+        </div>
+        <!-- Bottom: image showcase (hidden on mobile) -->
+        <div
+          id="top-area"
+          class="hidden md:block bg-stone-950/50 border border-stone-800/50 p-4 overflow-hidden"
+        >
+          <div class="h-full grid grid-cols-3 gap-4">
+            <div
+              v-for="(img, i) in showcaseImages"
+              :key="i"
+              class="w-full h-full border border-stone-500/40 bg-stone-900/30 p-3 flex items-center justify-center overflow-hidden"
+            >
+              <NuxtImg
+                :src="img.src"
+                :alt="img.alt"
+                class="h-full w-full object-contain select-none pointer-events-none"
+                draggable="false"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
       <SharedPageWrapper>
         <div>
-          <div id="top-area"
-            class="flex flex-col-reverse md:flex-row-reverse gap-6 md:gap-10 bg-stone-900/50 border border-stone-800/50 p-4 md:p-6">
-            <div class="w-full md:w-1/2 flex flex-col justify-between">
-              <h2 class="text-xl md:text-2xl lg:text-3xl font-bold text-left md:text-right leading-relaxed">Website
-                Design for Small Business,
-                E-Commerce
-                Brands & More
-              </h2>
-              <div class="font-mono text-left md:text-right text-stone-600 mt-4 md:mt-0">WIREFRAME - MOCKUPS - FULL
-                DESIGN</div>
-            </div>
-            <Nuxt-img src="/serum-mockup.png" alt="Serum Mockup" width="800" height="600"
-              class="rounded-lg shadow-lg w-full md:w-1/2 max-w-md md:max-w-none" />
-          </div>
+
 
           <!-- Our Process Section -->
           <div class="mt-12">
@@ -29,7 +54,7 @@
             <div class="flex flex-col gap-12">
               <!-- Step 1 -->
               <div class="flex gap-8">
-                <div class="text-4xl font-bold text-stone-400 flex-shrink-0 font-mono">01</div>
+                <div class="text-4xl font-bold text-stone-400 shrink-0 font-mono">01</div>
                 <div class="flex flex-col">
                   <h3 class="text-xl font-bold mb-3">Discovery & Research</h3>
                   <p class="text-stone-400 leading-relaxed">
@@ -42,7 +67,7 @@
 
               <!-- Step 2 -->
               <div class="flex gap-8">
-                <div class="text-4xl font-bold text-stone-400 flex-shrink-0 font-mono">02</div>
+                <div class="text-4xl font-bold text-stone-400 shrink-0 font-mono">02</div>
                 <div class="flex flex-col">
                   <h3 class="text-xl font-bold mb-3">Wireframes & Mockups</h3>
                   <p class="text-stone-400 leading-relaxed">
@@ -54,7 +79,7 @@
 
               <!-- Step 3 -->
               <div class="flex gap-8">
-                <div class="font-mono text-4xl font-bold text-stone-400 flex-shrink-0">03</div>
+                <div class="font-mono text-4xl font-bold text-stone-400 shrink-0">03</div>
                 <div class="flex flex-col">
                   <h3 class="text-xl font-bold mb-3">Design & Refinement</h3>
                   <p class="text-stone-400 leading-relaxed">

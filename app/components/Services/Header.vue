@@ -1,4 +1,7 @@
-<script setup lang="ts">
+<script
+  setup
+  lang="ts"
+>
 defineProps({
   title: {
     type: String,
@@ -16,7 +19,8 @@ defineProps({
 
 <template>
   <div
-    class="w-full h-[50vh] md:h-[66vh] relative flex flex-col bg-gradient-to-b from-dino-950 to-stone-900 overflow-hidden">
+    class="w-full h-[50vh] md:h-[66vh] relative flex flex-col bg-gradient-to-b from-dino-950 to-stone-900 overflow-hidden"
+  >
     <!-- Background image with blur effect -->
     <div class="absolute inset-0 bg-image opacity-90 blur-image !bg-fixed" />
 
@@ -24,13 +28,20 @@ defineProps({
     <div class="absolute inset-0 bg-dino-950/70" />
 
     <!-- Content positioned at the bottom of the hero section -->
-    <div id="hero" class="relative z-10 mt-auto w-full px-6 md:px-16 pb-12 md:pb-16">
-      <UIcon v-if="icon" :name="icon" class="size-16" />
+    <div
+      id="hero"
+      class="relative z-10 mt-auto w-full px-6 md:px-16 pb-12 md:pb-16"
+    >
+      <UIcon
+        v-if="icon"
+        :name="icon"
+        class="size-16"
+      />
 
       <h1 class="text-4xl md:text-6xl font-bold font-delight text-left">
         {{ title }}
       </h1>
-      <div class="text-lg md:text-2xl switzer opacity-50 text-left mt-3 md:mt-4">
+      <div class="text-lg md:text-2xl switzer opacity-50 text-left mt-3 md:mt-4 max-w-[40ch] md:mx-w-[60ch]">
         {{ description }}
       </div>
     </div>
