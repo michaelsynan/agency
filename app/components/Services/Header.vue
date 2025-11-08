@@ -18,19 +18,20 @@ defineProps({
 </script>
 
 <template>
-  <div
-    class="w-full h-[50vh] md:h-[66vh] relative flex flex-col bg-gradient-to-b from-dino-950 to-stone-900 overflow-hidden"
-  >
-    <!-- Background image with blur effect -->
-    <div class="absolute inset-0 bg-image opacity-90 blur-image !bg-fixed" />
-
-    <!-- Dark overlay for better text readability -->
-    <div class="absolute inset-0 bg-dino-950/70" />
+  <div class="w-full h-[50vh] md:h-[66vh] relative flex flex-col overflow-hidden">
+    <!-- Fixed background image spanning the viewport -->
+    <div
+      class="fixed inset-0 z-0 pointer-events-none bg-top bg-cover"
+      style="background-image:url('/manhattan-skyline-nyc.jpg')"
+      aria-hidden="true"
+    />
+    <!-- Overlay for readability over the header area -->
+    <div class="absolute inset-0 z-10 bg-dino-950/40" />
 
     <!-- Content positioned at the bottom of the hero section -->
     <div
       id="hero"
-      class="relative z-10 mt-auto w-full px-6 md:px-16 pb-12 md:pb-16"
+      class="relative z-20 mt-auto w-full px-6 md:px-16 pb-12 md:pb-16"
     >
       <UIcon
         v-if="icon"
@@ -49,21 +50,5 @@ defineProps({
 </template>
 
 <style scoped>
-.bg-image {
-  background-image: url('/manhattan-skyline-nyc.jpg');
-  background-size: cover;
-  background-position: bottom;
-  background-attachment: fixed;
-  /* Makes the background fixed */
-  height: 100%;
-  width: 100%;
-}
-
-.blur-image {
-  /* Multiple blur approaches for browser compatibility */
-  filter: blur(8px);
-  -webkit-filter: blur(0px);
-  transform: scale(1.1);
-  /* Prevent blur edges */
-}
+/* Fixed background handled via a fixed, full-viewport layer for cross-browser reliability. */
 </style>

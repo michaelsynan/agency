@@ -14,7 +14,7 @@ const showcaseImages = [
   <div>
     <main class="text-white min-h-screen">
       <!-- Hero section: full viewport height on md+, two rows (header + showcase) -->
-  <section class="md:h-screen md:grid md:grid-rows-[1fr,1fr] overflow-hidden">
+      <section class="md:h-screen md:grid md:grid-rows-[1fr,1fr] overflow-hidden">
         <!-- Top: Header (always visible) -->
         <div>
           <ServicesHeader

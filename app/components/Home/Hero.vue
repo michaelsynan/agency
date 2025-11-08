@@ -38,14 +38,14 @@ useHead({
       class="relative z-10 flex flex-col items-center md:items-start justify-center h-full gap-2 md:gap-4 w-full mb-[40px] md:mb-0 text-center md:text-left"
     >
       <h1
-        class="text-stone-300 text-xl md:text-3xl max-w-[35ch] opacity-50 font-black  transition-all duration-300 leading-snug pb-2 md:pb-0 "
+        class="text-stone-300 text-lg md:text-2xl max-w-[90ch] opacity-50 font-black  transition-all duration-300 leading-snug pb-2 md:pb-0 "
       >
 
         WEB
         DESIGN,
         DEVELOPMENT
         &
-        SEO SERVICES
+        SEO
         IN
         SCRANTON
         AND

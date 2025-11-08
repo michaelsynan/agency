@@ -46,12 +46,14 @@ onBeforeUnmount(() => {
       { 'navbar-hidden': !show },
     ]"
   >
-    <div class="w-full bg-gradient-to-r from-dino-700 to-dino-900 text-center py-2.5 md:py-1 text-sm font-bold">
+    <div
+      class="w-full bg-gradient-to-r from-dino-700 to-dino-900 text-center py-2.5 md:py-1 text-sm font-bold border-b border-stone-500/60"
+    >
       <a
         href="tel:18006576893"
         class="text-white hover:underline"
       >
-        Call Now: 1-800-657-6893
+        Call Now (800) 657-6893
       </a>
     </div>
     <div class="w-full flex flex-col md:flex-row justify-between text-lg">
@@ -125,7 +127,7 @@ onBeforeUnmount(() => {
         :class="{ 'opacity-0 pointer-events-none': !menuOpen, 'opacity-100 pointer-events-auto': menuOpen }"
         class="fixed inset-0 transition-opacity duration-300 ease-in-out z-40"
       >
-        <div class="w-screen h-screen bg-stone-950 flex flex-col px-6 py-8 text-2xl">
+        <div class="w-screen h-screen bg-stone-950 flex flex-col px-3 py-8 text-2xl">
           <div
             id="mobile-items"
             class="flex flex-col items-start gap-8 mt-20"

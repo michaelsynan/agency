@@ -4,8 +4,8 @@ definePageMeta({
 });
 
 useSeoMeta({
-  title: 'Website Design, Development & Digital Marketing',
-  description: 'Professional web design, development, and digital marketing services. We create custom websites and digital solutions that help your business grow and succeed online.',
+  title: 'Website Design, Development & Digital Marketing in Scranton and NYC',
+  description: 'Professional web design, development, and digital marketing services in Scranton and NYC. We create custom websites and digital solutions that help your business grow and succeed online.',
 });
 
 defineOgImageComponent('Page', {
@@ -22,7 +22,7 @@ defineOgImageComponent('Page', {
       <HomeAbout class="py-48 h-screen border-t border-stone-500" />
       <LazySharedFinalCTA2 class="" />
       <nav
-        class=" tracking-widest border-b text-sm md:text-base bg-linear-to-r from-dino-950/90 via-dino-900/80 to-dino-800/85 border-b-stone-500/50 py-4 justify-between flex flex-row px-10 text-stone-200/70 backdrop-brightness-50"
+        class=" tracking-widest border-b text-sm md:text-base bg-linear-to-r from-dino-950/90 via-dino-900/80 to-dino-800/85 border-b-stone-500/50 py-4 justify-between flex flex-row px-4 md:px-10 text-stone-200/70 backdrop-brightness-50"
       >
         <NuxtLink
           to="/services/website-design"
