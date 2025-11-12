@@ -24,6 +24,29 @@
       </div>
 
       <div>
+        <h2 class="text-2xl md:text-3xl font-black mb-8 text-stone-200 font-delight tracking-wide">Data Sharing
+        </h2>
+        <ul class="text-base md:text-lg text-stone-400 switzer font-switzer leading-8 font-light list-disc ml-8">
+          <li>Customer data is not shared with 3rd parties for promotional or marketing purposes.</li>
+          <li>Mobile opt-in and consent are never shared with anyone for any purpose. Any information sharing that may be mentioned elsewhere in this policy excludes mobile opt-in data.</li>
+        </ul>
+      </div>
+
+      <div>
+        <h2 class="text-2xl md:text-3xl font-black mb-8 text-stone-200 font-delight tracking-wide">Messaging Terms and Conditions
+        </h2>
+        <ul class="text-base md:text-lg text-stone-400 switzer font-switzer leading-8 font-light list-disc ml-8">
+          <li>By providing your phone number and agreeing to receive texts, you consent to receive text messages from Formwork Studios LLC, from 1-631-942-0582 regarding customer care.</li>
+          <li>Consent is not a condition of purchase.</li>
+          <li>Message frequency varies.</li>
+          <li>Message & data rates may apply.</li>
+          <li>You can reply STOP to unsubscribe at any time or HELP for assistance.</li>
+          <li>You can also contact us at 1-631-942-0582 or hello@formworkstudios.com.</li>
+          <li>Mobile opt-in information is never shared with third parties.</li>
+        </ul>
+      </div>
+
+      <div>
         <h2 class="text-2xl md:text-3xl font-black mb-8 text-stone-200 font-delight tracking-wide">Your Privacy Matters
         </h2>
         <p class="text-base md:text-lg text-stone-400 switzer font-switzer leading-8 font-light">
