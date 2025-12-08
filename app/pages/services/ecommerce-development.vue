@@ -62,6 +62,52 @@
         </div>
 
         <ServicesCTA />
+
+        <!-- Related Services -->
+        <div class="mt-10 border-t border-stone-500/50 pt-10">
+          <h3 class="text-2xl md:text-3xl font-bold mb-6 text-stone-200 font-delight">Related Services</h3>
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <NuxtLink to="/services/digital-marketing" class="group block p-6 border border-stone-700/60 bg-stone-900/40 hover:bg-stone-900/60 transition-colors">
+              <div class="flex items-start gap-3">
+                <UIcon name="i-mdi-chart-line" class="h-6 w-6 text-stone-400 group-hover:text-stone-300" />
+                <div>
+                  <div class="font-bold text-stone-200">Digital Marketing</div>
+                  <div class="text-stone-400 mt-1">Performance marketing to fuel store growth.</div>
+                </div>
+              </div>
+            </NuxtLink>
+
+            <NuxtLink to="/services/website-design" class="group block p-6 border border-stone-700/60 bg-stone-900/40 hover:bg-stone-900/60 transition-colors">
+              <div class="flex items-start gap-3">
+                <UIcon name="i-mdi-palette-swatch" class="h-6 w-6 text-stone-400 group-hover:text-stone-300" />
+                <div>
+                  <div class="font-bold text-stone-200">Website Design</div>
+                  <div class="text-stone-400 mt-1">Craft product pages that convert and delight.</div>
+                </div>
+              </div>
+            </NuxtLink>
+
+            <NuxtLink to="/services/website-development" class="group block p-6 border border-stone-700/60 bg-stone-900/40 hover:bg-stone-900/60 transition-colors">
+              <div class="flex items-start gap-3">
+                <UIcon name="i-mdi-nodejs" class="h-6 w-6 text-stone-400 group-hover:text-stone-300" />
+                <div>
+                  <div class="font-bold text-stone-200">Website Development</div>
+                  <div class="text-stone-400 mt-1">Build fast stores with reliable infrastructure.</div>
+                </div>
+              </div>
+            </NuxtLink>
+
+            <NuxtLink to="/services/seo-services" class="group block p-6 border border-stone-700/60 bg-stone-900/40 hover:bg-stone-900/60 transition-colors">
+              <div class="flex items-start gap-3">
+                <UIcon name="i-mdi-target" class="h-6 w-6 text-stone-400 group-hover:text-stone-300" />
+                <div>
+                  <div class="font-bold text-stone-200">SEO Services</div>
+                  <div class="text-stone-400 mt-1">Grow organic sales with technical and content SEO.</div>
+                </div>
+              </div>
+            </NuxtLink>
+          </div>
+        </div>
       </SharedPageWrapper>
     </main>
   </div>

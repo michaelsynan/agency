@@ -59,6 +59,12 @@ const services = [
     link: '/services/nuxt-web-app-development'
   },
   {
+    id: 'mobile-app-development',
+    title: 'Mobile App Development',
+    description: 'High-performance iOS & Android app development. Strategy, human‑centric design, and reliable engineering to launch quickly and scale sustainably.',
+    link: '/services/mobile-app-development'
+  },
+  {
     id: 'software-development',
     title: 'Software Development',
     description: 'We provide end-to-end software development services, creating custom solutions tailored to your business needs. From initial concept to deployment, we ensure quality, scalability, and performance.',
@@ -71,10 +77,10 @@ const services = [
   <main class="text-white">
     <!-- Header with blurred background image -->
     <div
-      class="w-full h-[50vh] md:h-[66vh] relative flex flex-col bg-gradient-to-b from-dino-950 to-stone-900 overflow-hidden"
+      class="w-full h-[50vh] md:h-[66vh] relative flex flex-col bg-linear-to-b from-dino-950 to-stone-900 overflow-hidden"
     >
       <!-- Background image with blur effect -->
-      <div class="absolute inset-0 bg-image opacity-70 blur-image !bg-fixed"></div>
+      <div class="absolute inset-0 bg-image opacity-70 blur-image bg-fixed!"></div>
 
       <!-- Dark overlay for better text readability -->
       <div class="absolute inset-0 bg-dino-950/70"></div>
@@ -90,7 +96,7 @@ const services = [
       </div>
     </div>
 
-    <div class="bg-stone-950 p-6 md:p-16 !py-20 relative">
+    <div class="bg-stone-950 p-6 md:p-16 py-20! relative">
       <!-- Stack all services vertically with max width -->
       <div
         class="flex flex-col gap-8 max-w-4xl mx-auto"

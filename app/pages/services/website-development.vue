@@ -61,6 +61,52 @@
         </div>
 
         <ServicesCTA />
+
+        <!-- Related Services -->
+        <div class="mt-10 border-t border-stone-500/50 pt-10">
+          <h3 class="text-2xl md:text-3xl font-bold mb-6 text-stone-200 font-delight">Related Services</h3>
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <NuxtLink to="/services/website-design" class="group block p-6 border border-stone-700/60 bg-stone-900/40 hover:bg-stone-900/60 transition-colors">
+              <div class="flex items-start gap-3">
+                <UIcon name="i-mdi-palette-swatch" class="h-6 w-6 text-stone-400 group-hover:text-stone-300" />
+                <div>
+                  <div class="font-bold text-stone-200">Website Design</div>
+                  <div class="text-stone-400 mt-1">Interface design that improves usability and conversion.</div>
+                </div>
+              </div>
+            </NuxtLink>
+
+            <NuxtLink to="/services/nuxt-web-app-development" class="group block p-6 border border-stone-700/60 bg-stone-900/40 hover:bg-stone-900/60 transition-colors">
+              <div class="flex items-start gap-3">
+                <UIcon name="i-mdi-lightning-bolt" class="h-6 w-6 text-stone-400 group-hover:text-stone-300" />
+                <div>
+                  <div class="font-bold text-stone-200">Nuxt Web App Development</div>
+                  <div class="text-stone-400 mt-1">Modern app foundations with SSR and performance.</div>
+                </div>
+              </div>
+            </NuxtLink>
+
+            <NuxtLink to="/services/software-development" class="group block p-6 border border-stone-700/60 bg-stone-900/40 hover:bg-stone-900/60 transition-colors">
+              <div class="flex items-start gap-3">
+                <UIcon name="i-mdi-cog" class="h-6 w-6 text-stone-400 group-hover:text-stone-300" />
+                <div>
+                  <div class="font-bold text-stone-200">Software Development</div>
+                  <div class="text-stone-400 mt-1">APIs, integrations, and scalable backend services.</div>
+                </div>
+              </div>
+            </NuxtLink>
+
+            <NuxtLink to="/services/seo-services" class="group block p-6 border border-stone-700/60 bg-stone-900/40 hover:bg-stone-900/60 transition-colors">
+              <div class="flex items-start gap-3">
+                <UIcon name="i-mdi-target" class="h-6 w-6 text-stone-400 group-hover:text-stone-300" />
+                <div>
+                  <div class="font-bold text-stone-200">SEO Services</div>
+                  <div class="text-stone-400 mt-1">Technical improvements that improve search visibility.</div>
+                </div>
+              </div>
+            </NuxtLink>
+          </div>
+        </div>
       </SharedPageWrapper>
     </main>
   </div>
