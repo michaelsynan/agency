@@ -1,24 +1,61 @@
-<script setup lang="ts"></script>
+<script
+  setup
+  lang="ts"
+></script>
 
 <template>
   <div>
     <main class="text-white">
-      <ServicesHeader title="AI Automation Services"
-        description="Leveraging artificial intelligence to streamline and optimize your business processes." />
+      <ServicesHeader
+        title="AI Automation Services"
+        description="Leveraging artificial intelligence to streamline and optimize your business processes."
+      />
       <SharedPageWrapper>
         <div>
+          <!-- Intro -->
+          <div class="mb-8">
+            <p class="text-stone-300 text-xl md:text-2xl leading-8">
+              AI automation is most valuable when it removes real friction—handoffs, repetitive admin, and copy/paste
+              work that slows your team down. We design practical automations that connect the tools you already use,
+              keep humans in the loop where it matters, and produce measurable time savings.
+            </p>
+          </div>
+
           <!-- AI Automation Technology Icons -->
           <div class="border-y border-stone-500/50 py-8 mb-8">
             <div class="grid grid-cols-3 md:flex md:justify-between items-center gap-4 md:gap-0">
-              <UIcon name="i-mdi-robot" class="text-4xl md:text-5xl text-stone-400 justify-self-center" />
-              <UIcon name="i-mdi-brain" class="text-4xl md:text-5xl text-stone-400 justify-self-center" />
-              <UIcon name="i-mdi-cog-sync" class="text-4xl md:text-5xl text-stone-400 justify-self-center" />
-              <UIcon name="i-mdi-api" class="text-4xl md:text-5xl text-stone-400 justify-self-center" />
-              <UIcon name="i-mdi-chart-timeline-variant"
-                class="text-4xl md:text-5xl text-stone-400 justify-self-center" />
-              <UIcon name="i-mdi-cloud-sync" class="text-4xl md:text-5xl text-stone-400 justify-self-center" />
-              <UIcon name="i-mdi-lightning-bolt" class="text-4xl md:text-5xl text-stone-400 justify-self-center" />
-              <UIcon name="i-mdi-auto-fix" class="text-4xl md:text-5xl text-stone-400 justify-self-center" />
+              <UIcon
+                name="i-mdi-robot"
+                class="text-4xl md:text-5xl text-stone-400 justify-self-center"
+              />
+              <UIcon
+                name="i-mdi-brain"
+                class="text-4xl md:text-5xl text-stone-400 justify-self-center"
+              />
+              <UIcon
+                name="i-mdi-cog-sync"
+                class="text-4xl md:text-5xl text-stone-400 justify-self-center"
+              />
+              <UIcon
+                name="i-mdi-api"
+                class="text-4xl md:text-5xl text-stone-400 justify-self-center"
+              />
+              <UIcon
+                name="i-mdi-chart-timeline-variant"
+                class="text-4xl md:text-5xl text-stone-400 justify-self-center"
+              />
+              <UIcon
+                name="i-mdi-cloud-sync"
+                class="text-4xl md:text-5xl text-stone-400 justify-self-center"
+              />
+              <UIcon
+                name="i-mdi-lightning-bolt"
+                class="text-4xl md:text-5xl text-stone-400 justify-self-center"
+              />
+              <UIcon
+                name="i-mdi-auto-fix"
+                class="text-4xl md:text-5xl text-stone-400 justify-self-center"
+              />
             </div>
           </div>
 
@@ -63,7 +100,7 @@
             </div>
 
             <!-- Custom AI Solutions -->
-            <div class="border-t border-stone-500/50 border-b border-stone-500/50 pt-8 pb-8">
+            <div class="border-t border-stone-500/50 pt-8 pb-8">
               <h3 class="text-2xl font-bold mb-4">Custom AI Solutions</h3>
               <p class="text-stone-400 text-lg">Tailored artificial intelligence solutions designed specifically for
                 your industry and business needs, from chatbots to intelligent document processing and MCP server
@@ -75,12 +112,18 @@
         <ServicesCTA />
 
         <!-- Related Services -->
-        <div class="mt-10 border-t border-stone-500/50 pt-10">
+        <div class="mt-10 pt-10">
           <h3 class="text-2xl md:text-3xl font-bold mb-6 text-stone-200 font-delight">Related Services</h3>
           <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-            <NuxtLink to="/services/software-development" class="group block p-6 border border-stone-700/60 bg-stone-900/40 hover:bg-stone-900/60 transition-colors">
+            <NuxtLink
+              to="/services/software-development"
+              class="group block p-6 border border-stone-700/60 bg-stone-900/40 hover:bg-stone-900/60 transition-colors"
+            >
               <div class="flex items-start gap-3">
-                <UIcon name="i-mdi-cog" class="h-6 w-6 text-stone-400 group-hover:text-stone-300" />
+                <UIcon
+                  name="i-mdi-cog"
+                  class="h-6 w-6 text-stone-400 group-hover:text-stone-300"
+                />
                 <div>
                   <div class="font-bold text-stone-200">Software Development</div>
                   <div class="text-stone-400 mt-1">Custom systems and integrations to operationalize AI.</div>
@@ -88,9 +131,15 @@
               </div>
             </NuxtLink>
 
-            <NuxtLink to="/services/digital-marketing" class="group block p-6 border border-stone-700/60 bg-stone-900/40 hover:bg-stone-900/60 transition-colors">
+            <NuxtLink
+              to="/services/digital-marketing"
+              class="group block p-6 border border-stone-700/60 bg-stone-900/40 hover:bg-stone-900/60 transition-colors"
+            >
               <div class="flex items-start gap-3">
-                <UIcon name="i-mdi-chart-timeline-variant" class="h-6 w-6 text-stone-400 group-hover:text-stone-300" />
+                <UIcon
+                  name="i-mdi-chart-timeline-variant"
+                  class="h-6 w-6 text-stone-400 group-hover:text-stone-300"
+                />
                 <div>
                   <div class="font-bold text-stone-200">Digital Marketing</div>
                   <div class="text-stone-400 mt-1">Automate campaigns and leverage data for growth.</div>
@@ -98,9 +147,15 @@
               </div>
             </NuxtLink>
 
-            <NuxtLink to="/services/nuxt-web-app-development" class="group block p-6 border border-stone-700/60 bg-stone-900/40 hover:bg-stone-900/60 transition-colors">
+            <NuxtLink
+              to="/services/nuxt-web-app-development"
+              class="group block p-6 border border-stone-700/60 bg-stone-900/40 hover:bg-stone-900/60 transition-colors"
+            >
               <div class="flex items-start gap-3">
-                <UIcon name="i-mdi-lightning-bolt" class="h-6 w-6 text-stone-400 group-hover:text-stone-300" />
+                <UIcon
+                  name="i-mdi-lightning-bolt"
+                  class="h-6 w-6 text-stone-400 group-hover:text-stone-300"
+                />
                 <div>
                   <div class="font-bold text-stone-200">Nuxt Web App Development</div>
                   <div class="text-stone-400 mt-1">Build AI-enabled web apps with modern tooling.</div>
@@ -108,9 +163,15 @@
               </div>
             </NuxtLink>
 
-            <NuxtLink to="/services/seo-services" class="group block p-6 border border-stone-700/60 bg-stone-900/40 hover:bg-stone-900/60 transition-colors">
+            <NuxtLink
+              to="/services/seo-services"
+              class="group block p-6 border border-stone-700/60 bg-stone-900/40 hover:bg-stone-900/60 transition-colors"
+            >
               <div class="flex items-start gap-3">
-                <UIcon name="i-mdi-target" class="h-6 w-6 text-stone-400 group-hover:text-stone-300" />
+                <UIcon
+                  name="i-mdi-target"
+                  class="h-6 w-6 text-stone-400 group-hover:text-stone-300"
+                />
                 <div>
                   <div class="font-bold text-stone-200">SEO Services</div>
                   <div class="text-stone-400 mt-1">Improve discoverability with structured and smart content.</div>

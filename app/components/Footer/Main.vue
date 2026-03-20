@@ -20,6 +20,10 @@
           <NuxtLink to="/locations">
             Locations
           </NuxtLink>
+          |
+          <NuxtLink to="/clients/local-nepa-businesses">
+            NEPA Businesses
+          </NuxtLink>
         </div>
         <div>
           &copy; {{ new Date().getFullYear() }} Formwork Studios. All rights reserved.

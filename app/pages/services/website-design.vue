@@ -46,7 +46,14 @@ const showcaseImages = [
       <SharedPageWrapper>
         <div>
 
-
+          <!-- Intro -->
+          <div class="mt-12 mb-12">
+            <p class="text-stone-300 text-xl md:text-2xl leading-8">
+              Great website design makes your value obvious in seconds. We create clean, modern interfaces that guide
+              visitors to the right action—while keeping your brand consistent, your content readable, and your
+              experience enjoyable on mobile.
+            </p>
+          </div>
           <!-- Our Process Section -->
           <div class="mt-12">
             <h2 class="text-3xl md:text-4xl font-bold font-delight mb-12">Our Process</h2>
@@ -96,12 +103,18 @@ const showcaseImages = [
         <ServicesCTA />
 
         <!-- Related Services -->
-        <div class="mt-10 border-t border-stone-500/50 pt-10">
+        <div class="mt-10 pt-10">
           <h3 class="text-2xl md:text-3xl font-bold mb-6 text-stone-200 font-delight">Related Services</h3>
           <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-            <NuxtLink to="/services/website-development" class="group block p-6 border border-stone-700/60 bg-stone-900/40 hover:bg-stone-900/60 transition-colors">
+            <NuxtLink
+              to="/services/website-development"
+              class="group block p-6 border border-stone-700/60 bg-stone-900/40 hover:bg-stone-900/60 transition-colors"
+            >
               <div class="flex items-start gap-3">
-                <UIcon name="i-mdi-nodejs" class="h-6 w-6 text-stone-400 group-hover:text-stone-300" />
+                <UIcon
+                  name="i-mdi-nodejs"
+                  class="h-6 w-6 text-stone-400 group-hover:text-stone-300"
+                />
                 <div>
                   <div class="font-bold text-stone-200">Website Development</div>
                   <div class="text-stone-400 mt-1">Build reliable sites that bring designs to life.</div>
@@ -109,9 +122,15 @@ const showcaseImages = [
               </div>
             </NuxtLink>
 
-            <NuxtLink to="/services/digital-marketing" class="group block p-6 border border-stone-700/60 bg-stone-900/40 hover:bg-stone-900/60 transition-colors">
+            <NuxtLink
+              to="/services/digital-marketing"
+              class="group block p-6 border border-stone-700/60 bg-stone-900/40 hover:bg-stone-900/60 transition-colors"
+            >
               <div class="flex items-start gap-3">
-                <UIcon name="i-mdi-chart-line" class="h-6 w-6 text-stone-400 group-hover:text-stone-300" />
+                <UIcon
+                  name="i-mdi-chart-line"
+                  class="h-6 w-6 text-stone-400 group-hover:text-stone-300"
+                />
                 <div>
                   <div class="font-bold text-stone-200">Digital Marketing</div>
                   <div class="text-stone-400 mt-1">Turn great design into measurable growth.</div>
@@ -119,9 +138,15 @@ const showcaseImages = [
               </div>
             </NuxtLink>
 
-            <NuxtLink to="/services/seo-services" class="group block p-6 border border-stone-700/60 bg-stone-900/40 hover:bg-stone-900/60 transition-colors">
+            <NuxtLink
+              to="/services/seo-services"
+              class="group block p-6 border border-stone-700/60 bg-stone-900/40 hover:bg-stone-900/60 transition-colors"
+            >
               <div class="flex items-start gap-3">
-                <UIcon name="i-mdi-target" class="h-6 w-6 text-stone-400 group-hover:text-stone-300" />
+                <UIcon
+                  name="i-mdi-target"
+                  class="h-6 w-6 text-stone-400 group-hover:text-stone-300"
+                />
                 <div>
                   <div class="font-bold text-stone-200">SEO Services</div>
                   <div class="text-stone-400 mt-1">Design content that ranks and converts.</div>
@@ -129,9 +154,15 @@ const showcaseImages = [
               </div>
             </NuxtLink>
 
-            <NuxtLink to="/services/ecommerce-development" class="group block p-6 border border-stone-700/60 bg-stone-900/40 hover:bg-stone-900/60 transition-colors">
+            <NuxtLink
+              to="/services/ecommerce-development"
+              class="group block p-6 border border-stone-700/60 bg-stone-900/40 hover:bg-stone-900/60 transition-colors"
+            >
               <div class="flex items-start gap-3">
-                <UIcon name="i-mdi-storefront" class="h-6 w-6 text-stone-400 group-hover:text-stone-300" />
+                <UIcon
+                  name="i-mdi-storefront"
+                  class="h-6 w-6 text-stone-400 group-hover:text-stone-300"
+                />
                 <div>
                   <div class="font-bold text-stone-200">E‑Commerce</div>
                   <div class="text-stone-400 mt-1">Product storytelling that drives online sales.</div>

@@ -24,6 +24,12 @@ const services = [
     link: '/services/digital-marketing'
   },
   {
+    id: 'reputation-management',
+    title: 'Reputation Management',
+    description: 'Build trust and win more customers with a practical reputation management system. We help you improve Google Reviews, respond consistently, and strengthen local visibility with measurable progress over time.',
+    link: '/services/reputation-management'
+  },
+  {
     id: 'ai',
     title: 'AI & Automation',
     description: 'Leverage the power of artificial intelligence to streamline your business operations. From chatbots and automated customer service to data analysis and predictive modeling, we implement AI solutions that save time, reduce costs, and improve decision-making.',

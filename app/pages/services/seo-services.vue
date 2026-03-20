@@ -1,6 +1,9 @@
-<script setup lang="ts">
+<script
+  setup
+  lang="ts"
+>
 useSeoMeta({
-  title: 'SEO Services | Formwork Studios',
+  title: 'SEO Services',
   description: 'Expert SEO services to improve your website visibility, drive organic traffic, and increase your search engine rankings. Get a customized SEO strategy for your business.',
 })
 </script>
@@ -8,37 +11,73 @@ useSeoMeta({
 <template>
   <div>
     <main class="text-white">
-      <ServicesHeader title="SEO SERVICES" description="Search Engine Optimization & Digital Visibility" />
+      <ServicesHeader
+        title="SEO SERVICES"
+        description="Search Engine Optimization & Digital Visibility"
+      />
 
       <SharedPageWrapper>
         <!-- Main content container -->
         <div class="max-w-4xl mx-auto">
+          <!-- Intro -->
+          <div class="mb-12">
+            <p class="text-stone-300 text-xl md:text-2xl leading-8">
+              SEO is a compounding asset: better visibility, steadier demand, and lower dependence on paid traffic.
+              We focus on practical improvements—technical foundations, content that matches intent, and local signals
+              that help the right customers find you.
+            </p>
+          </div>
+
           <!-- SEO Platform Icons -->
           <section class="mb-16">
             <div class="grid grid-cols-3 md:grid-cols-8 gap-8 border-b border-stone-500/50 pb-16">
               <div class="flex flex-col items-center space-y-2">
-                <Icon name="i-logos-google" class="text-4xl text-stone-400" />
+                <Icon
+                  name="i-logos-google"
+                  class="text-4xl text-stone-400"
+                />
               </div>
               <div class="flex flex-col items-center space-y-2">
-                <Icon name="i-mdi-search-web" class="text-4xl text-stone-400" />
+                <Icon
+                  name="i-mdi-search-web"
+                  class="text-4xl text-stone-400"
+                />
               </div>
               <div class="flex flex-col items-center space-y-2">
-                <Icon name="i-mdi-chart-line" class="text-4xl text-stone-400" />
+                <Icon
+                  name="i-mdi-chart-line"
+                  class="text-4xl text-stone-400"
+                />
               </div>
               <div class="flex flex-col items-center space-y-2">
-                <Icon name="i-mdi-target" class="text-4xl text-stone-400" />
+                <Icon
+                  name="i-mdi-target"
+                  class="text-4xl text-stone-400"
+                />
               </div>
               <div class="flex flex-col items-center space-y-2">
-                <Icon name="i-mdi-file-document" class="text-4xl text-stone-400" />
+                <Icon
+                  name="i-mdi-file-document"
+                  class="text-4xl text-stone-400"
+                />
               </div>
               <div class="flex flex-col items-center space-y-2">
-                <Icon name="i-mdi-link" class="text-4xl text-stone-400" />
+                <Icon
+                  name="i-mdi-link"
+                  class="text-4xl text-stone-400"
+                />
               </div>
               <div class="flex flex-col items-center space-y-2">
-                <Icon name="i-mdi-map-marker" class="text-4xl text-stone-400" />
+                <Icon
+                  name="i-mdi-map-marker"
+                  class="text-4xl text-stone-400"
+                />
               </div>
               <div class="flex flex-col items-center space-y-2">
-                <Icon name="i-mdi-speedometer" class="text-4xl text-stone-400" />
+                <Icon
+                  name="i-mdi-speedometer"
+                  class="text-4xl text-stone-400"
+                />
               </div>
             </div>
           </section>
@@ -105,7 +144,7 @@ useSeoMeta({
           </section>
 
           <!-- Local SEO & Visibility -->
-          <section class="py-16 border-t border-b border-stone-500/50">
+          <section class="py-16 border-t border-stone-500/50">
             <h2 class="text-3xl md:text-4xl font-bold font-delight mb-8">
               Local SEO & Visibility
             </h2>
@@ -123,12 +162,18 @@ useSeoMeta({
         <ServicesCTA />
 
         <!-- Related Services -->
-        <div class="mt-10 border-t border-stone-500/50 pt-10">
+        <div class="mt-10 pt-10">
           <h3 class="text-2xl md:text-3xl font-bold mb-6 text-stone-200 font-delight">Related Services</h3>
           <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-            <NuxtLink to="/services/digital-marketing" class="group block p-6 border border-stone-700/60 bg-stone-900/40 hover:bg-stone-900/60 transition-colors">
+            <NuxtLink
+              to="/services/digital-marketing"
+              class="group block p-6 border border-stone-700/60 bg-stone-900/40 hover:bg-stone-900/60 transition-colors"
+            >
               <div class="flex items-start gap-3">
-                <UIcon name="i-mdi-chart-line" class="h-6 w-6 text-stone-400 group-hover:text-stone-300" />
+                <UIcon
+                  name="i-mdi-chart-line"
+                  class="h-6 w-6 text-stone-400 group-hover:text-stone-300"
+                />
                 <div>
                   <div class="font-bold text-stone-200">Digital Marketing</div>
                   <div class="text-stone-400 mt-1">Drive growth across channels with measurable impact.</div>
@@ -136,9 +181,15 @@ useSeoMeta({
               </div>
             </NuxtLink>
 
-            <NuxtLink to="/services/website-design" class="group block p-6 border border-stone-700/60 bg-stone-900/40 hover:bg-stone-900/60 transition-colors">
+            <NuxtLink
+              to="/services/website-design"
+              class="group block p-6 border border-stone-700/60 bg-stone-900/40 hover:bg-stone-900/60 transition-colors"
+            >
               <div class="flex items-start gap-3">
-                <UIcon name="i-mdi-palette-swatch" class="h-6 w-6 text-stone-400 group-hover:text-stone-300" />
+                <UIcon
+                  name="i-mdi-palette-swatch"
+                  class="h-6 w-6 text-stone-400 group-hover:text-stone-300"
+                />
                 <div>
                   <div class="font-bold text-stone-200">Website Design</div>
                   <div class="text-stone-400 mt-1">Create content and UX that satisfy search intent.</div>
@@ -146,9 +197,15 @@ useSeoMeta({
               </div>
             </NuxtLink>
 
-            <NuxtLink to="/services/website-development" class="group block p-6 border border-stone-700/60 bg-stone-900/40 hover:bg-stone-900/60 transition-colors">
+            <NuxtLink
+              to="/services/website-development"
+              class="group block p-6 border border-stone-700/60 bg-stone-900/40 hover:bg-stone-900/60 transition-colors"
+            >
               <div class="flex items-start gap-3">
-                <UIcon name="i-mdi-nodejs" class="h-6 w-6 text-stone-400 group-hover:text-stone-300" />
+                <UIcon
+                  name="i-mdi-nodejs"
+                  class="h-6 w-6 text-stone-400 group-hover:text-stone-300"
+                />
                 <div>
                   <div class="font-bold text-stone-200">Website Development</div>
                   <div class="text-stone-400 mt-1">Technical foundations that improve crawl and speed.</div>
@@ -156,9 +213,15 @@ useSeoMeta({
               </div>
             </NuxtLink>
 
-            <NuxtLink to="/services/nuxt-web-app-development" class="group block p-6 border border-stone-700/60 bg-stone-900/40 hover:bg-stone-900/60 transition-colors">
+            <NuxtLink
+              to="/services/nuxt-web-app-development"
+              class="group block p-6 border border-stone-700/60 bg-stone-900/40 hover:bg-stone-900/60 transition-colors"
+            >
               <div class="flex items-start gap-3">
-                <UIcon name="i-mdi-lightning-bolt" class="h-6 w-6 text-stone-400 group-hover:text-stone-300" />
+                <UIcon
+                  name="i-mdi-lightning-bolt"
+                  class="h-6 w-6 text-stone-400 group-hover:text-stone-300"
+                />
                 <div>
                   <div class="font-bold text-stone-200">Nuxt Web App Development</div>
                   <div class="text-stone-400 mt-1">SSR and performance for search visibility.</div>

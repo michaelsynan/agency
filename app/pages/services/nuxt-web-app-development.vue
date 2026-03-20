@@ -1,6 +1,9 @@
-<script setup lang="ts">
+<script
+  setup
+  lang="ts"
+>
 useSeoMeta({
-  title: 'Nuxt Web App Development | Formwork Studios',
+  title: 'Nuxt Web App Development',
   description: 'Build high-performance web applications with Nuxt.js. Our expertise in Vue.js and Nuxt delivers fast, SEO-friendly, and scalable web solutions for your business.',
 })
 </script>
@@ -8,38 +11,74 @@ useSeoMeta({
 <template>
   <div>
     <main class="text-white">
-      <ServicesHeader title="Nuxt Web App Development"
-        description="Develop performant web apps with the meta-framework Nuxt" icon="i-tabler-brand-nuxt" />
+      <ServicesHeader
+        title="Nuxt Web App Development"
+        description="Develop performant web apps with the meta-framework Nuxt"
+        icon="i-tabler-brand-nuxt"
+      />
 
       <SharedPageWrapper>
         <!-- Main content container -->
         <div class="max-w-4xl mx-auto">
+          <!-- Intro -->
+          <div class="mb-12">
+            <p class="text-stone-300 text-xl md:text-2xl leading-8">
+              Nuxt is a great fit when you want a fast, SEO-friendly site or app without sacrificing flexibility.
+              We build Nuxt experiences that load quickly, scale cleanly, and feel polished—so your website can both
+              rank well and convert.
+            </p>
+          </div>
+
           <!-- Nuxt Technology Icons -->
           <section class="mb-16">
             <div class="grid grid-cols-3 md:grid-cols-8 gap-8 border-b border-stone-500/50 pb-16">
               <div class="flex flex-col items-center space-y-2">
-                <Icon name="i-logos-nuxt-icon" class="text-4xl text-stone-400" />
+                <Icon
+                  name="i-logos-nuxt-icon"
+                  class="text-4xl text-stone-400"
+                />
               </div>
               <div class="flex flex-col items-center space-y-2">
-                <Icon name="i-logos-vue" class="text-4xl text-stone-400" />
+                <Icon
+                  name="i-logos-vue"
+                  class="text-4xl text-stone-400"
+                />
               </div>
               <div class="flex flex-col items-center space-y-2">
-                <Icon name="i-logos-typescript-icon" class="text-4xl text-stone-400" />
+                <Icon
+                  name="i-logos-typescript-icon"
+                  class="text-4xl text-stone-400"
+                />
               </div>
               <div class="flex flex-col items-center space-y-2">
-                <Icon name="i-mdi-rocket-launch" class="text-4xl text-stone-400" />
+                <Icon
+                  name="i-mdi-rocket-launch"
+                  class="text-4xl text-stone-400"
+                />
               </div>
               <div class="flex flex-col items-center space-y-2">
-                <Icon name="i-mdi-search-web" class="text-4xl text-stone-400" />
+                <Icon
+                  name="i-mdi-search-web"
+                  class="text-4xl text-stone-400"
+                />
               </div>
               <div class="flex flex-col items-center space-y-2">
-                <Icon name="i-logos-pwa" class="text-4xl text-stone-400" />
+                <Icon
+                  name="i-logos-pwa"
+                  class="text-4xl text-stone-400"
+                />
               </div>
               <div class="flex flex-col items-center space-y-2">
-                <Icon name="i-mdi-api" class="text-4xl text-stone-400" />
+                <Icon
+                  name="i-mdi-api"
+                  class="text-4xl text-stone-400"
+                />
               </div>
               <div class="flex flex-col items-center space-y-2">
-                <Icon name="i-mdi-cloud" class="text-4xl text-stone-400" />
+                <Icon
+                  name="i-mdi-cloud"
+                  class="text-4xl text-stone-400"
+                />
               </div>
             </div>
           </section>
@@ -237,12 +276,18 @@ useSeoMeta({
         <ServicesCTA />
 
         <!-- Related Services -->
-        <div class="mt-10 border-t border-stone-500/50 pt-10">
+        <div class="mt-10 pt-10">
           <h3 class="text-2xl md:text-3xl font-bold mb-6 text-stone-200 font-delight">Related Services</h3>
           <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-            <NuxtLink to="/services/website-development" class="group block p-6 border border-stone-700/60 bg-stone-900/40 hover:bg-stone-900/60 transition-colors">
+            <NuxtLink
+              to="/services/website-development"
+              class="group block p-6 border border-stone-700/60 bg-stone-900/40 hover:bg-stone-900/60 transition-colors"
+            >
               <div class="flex items-start gap-3">
-                <UIcon name="i-mdi-nodejs" class="h-6 w-6 text-stone-400 group-hover:text-stone-300" />
+                <UIcon
+                  name="i-mdi-nodejs"
+                  class="h-6 w-6 text-stone-400 group-hover:text-stone-300"
+                />
                 <div>
                   <div class="font-bold text-stone-200">Website Development</div>
                   <div class="text-stone-400 mt-1">Robust backends and infrastructure for modern apps.</div>
@@ -250,9 +295,15 @@ useSeoMeta({
               </div>
             </NuxtLink>
 
-            <NuxtLink to="/services/software-development" class="group block p-6 border border-stone-700/60 bg-stone-900/40 hover:bg-stone-900/60 transition-colors">
+            <NuxtLink
+              to="/services/software-development"
+              class="group block p-6 border border-stone-700/60 bg-stone-900/40 hover:bg-stone-900/60 transition-colors"
+            >
               <div class="flex items-start gap-3">
-                <UIcon name="i-mdi-cog" class="h-6 w-6 text-stone-400 group-hover:text-stone-300" />
+                <UIcon
+                  name="i-mdi-cog"
+                  class="h-6 w-6 text-stone-400 group-hover:text-stone-300"
+                />
                 <div>
                   <div class="font-bold text-stone-200">Software Development</div>
                   <div class="text-stone-400 mt-1">Full‑stack solutions and integrations at scale.</div>
@@ -260,9 +311,15 @@ useSeoMeta({
               </div>
             </NuxtLink>
 
-            <NuxtLink to="/services/seo-services" class="group block p-6 border border-stone-700/60 bg-stone-900/40 hover:bg-stone-900/60 transition-colors">
+            <NuxtLink
+              to="/services/seo-services"
+              class="group block p-6 border border-stone-700/60 bg-stone-900/40 hover:bg-stone-900/60 transition-colors"
+            >
               <div class="flex items-start gap-3">
-                <UIcon name="i-mdi-target" class="h-6 w-6 text-stone-400 group-hover:text-stone-300" />
+                <UIcon
+                  name="i-mdi-target"
+                  class="h-6 w-6 text-stone-400 group-hover:text-stone-300"
+                />
                 <div>
                   <div class="font-bold text-stone-200">SEO Services</div>
                   <div class="text-stone-400 mt-1">Improve visibility with SSR and smart content.</div>
@@ -270,9 +327,15 @@ useSeoMeta({
               </div>
             </NuxtLink>
 
-            <NuxtLink to="/services/digital-marketing" class="group block p-6 border border-stone-700/60 bg-stone-900/40 hover:bg-stone-900/60 transition-colors">
+            <NuxtLink
+              to="/services/digital-marketing"
+              class="group block p-6 border border-stone-700/60 bg-stone-900/40 hover:bg-stone-900/60 transition-colors"
+            >
               <div class="flex items-start gap-3">
-                <UIcon name="i-mdi-chart-line" class="h-6 w-6 text-stone-400 group-hover:text-stone-300" />
+                <UIcon
+                  name="i-mdi-chart-line"
+                  class="h-6 w-6 text-stone-400 group-hover:text-stone-300"
+                />
                 <div>
                   <div class="font-bold text-stone-200">Digital Marketing</div>
                   <div class="text-stone-400 mt-1">Acquire and retain users with data‑driven growth.</div>

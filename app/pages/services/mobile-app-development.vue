@@ -19,7 +19,7 @@ useSeoMeta({
         <div>
           <!-- Small Business Value Intro -->
           <div class="mb-8">
-            <p class="text-stone-300 text-lg leading-8">
+            <p class="text-stone-300 text-xl md:text-2xl leading-8">
               Mobile apps help small businesses deepen customer relationships, drive repeat revenue, and
               streamline operations. From easy reordering and loyalty programs to on‑the‑go bookings,
               secure payments, and real‑time notifications, an app keeps your brand close at hand and
@@ -103,7 +103,7 @@ useSeoMeta({
             </div>
 
             <!-- Deployment & Support -->
-            <div class="border-y border-stone-500/50 pt-8 pb-8">
+            <div class="border-t border-stone-500/50 pt-8 pb-8">
               <h3 class="text-2xl font-bold mb-4">Deployment & Support</h3>
               <p class="text-stone-400 text-lg">App store readiness, performance budgets, and monitoring. We keep your
                 app healthy, secure, and easy to evolve.</p>
@@ -114,12 +114,18 @@ useSeoMeta({
         <ServicesCTA />
 
         <!-- Related Services -->
-        <div class="mt-10 border-t border-stone-500/50 pt-10">
+        <div class="mt-10 pt-10">
           <h3 class="text-2xl md:text-3xl font-bold mb-6 text-stone-200 font-delight">Related Services</h3>
           <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-            <NuxtLink to="/services/website-design" class="group block p-6 border border-stone-700/60 bg-stone-900/40 hover:bg-stone-900/60 transition-colors">
+            <NuxtLink
+              to="/services/website-design"
+              class="group block p-6 border border-stone-700/60 bg-stone-900/40 hover:bg-stone-900/60 transition-colors"
+            >
               <div class="flex items-start gap-3">
-                <UIcon name="i-mdi-palette-swatch" class="h-6 w-6 text-stone-400 group-hover:text-stone-300" />
+                <UIcon
+                  name="i-mdi-palette-swatch"
+                  class="h-6 w-6 text-stone-400 group-hover:text-stone-300"
+                />
                 <div>
                   <div class="font-bold text-stone-200">Website Design</div>
                   <div class="text-stone-400 mt-1">Human‑centric web design focused on clarity and conversion.</div>
@@ -127,9 +133,15 @@ useSeoMeta({
               </div>
             </NuxtLink>
 
-            <NuxtLink to="/services/nuxt-web-app-development" class="group block p-6 border border-stone-700/60 bg-stone-900/40 hover:bg-stone-900/60 transition-colors">
+            <NuxtLink
+              to="/services/nuxt-web-app-development"
+              class="group block p-6 border border-stone-700/60 bg-stone-900/40 hover:bg-stone-900/60 transition-colors"
+            >
               <div class="flex items-start gap-3">
-                <UIcon name="i-mdi-lightning-bolt" class="h-6 w-6 text-stone-400 group-hover:text-stone-300" />
+                <UIcon
+                  name="i-mdi-lightning-bolt"
+                  class="h-6 w-6 text-stone-400 group-hover:text-stone-300"
+                />
                 <div>
                   <div class="font-bold text-stone-200">Nuxt Web App Development</div>
                   <div class="text-stone-400 mt-1">High‑performance web applications with modern tooling.</div>
@@ -137,9 +149,15 @@ useSeoMeta({
               </div>
             </NuxtLink>
 
-            <NuxtLink to="/services/software-development" class="group block p-6 border border-stone-700/60 bg-stone-900/40 hover:bg-stone-900/60 transition-colors">
+            <NuxtLink
+              to="/services/software-development"
+              class="group block p-6 border border-stone-700/60 bg-stone-900/40 hover:bg-stone-900/60 transition-colors"
+            >
               <div class="flex items-start gap-3">
-                <UIcon name="i-mdi-cog" class="h-6 w-6 text-stone-400 group-hover:text-stone-300" />
+                <UIcon
+                  name="i-mdi-cog"
+                  class="h-6 w-6 text-stone-400 group-hover:text-stone-300"
+                />
                 <div>
                   <div class="font-bold text-stone-200">Software Development</div>
                   <div class="text-stone-400 mt-1">Custom software from concept through deployment and support.</div>
@@ -147,9 +165,15 @@ useSeoMeta({
               </div>
             </NuxtLink>
 
-            <NuxtLink to="/services/digital-marketing" class="group block p-6 border border-stone-700/60 bg-stone-900/40 hover:bg-stone-900/60 transition-colors">
+            <NuxtLink
+              to="/services/digital-marketing"
+              class="group block p-6 border border-stone-700/60 bg-stone-900/40 hover:bg-stone-900/60 transition-colors"
+            >
               <div class="flex items-start gap-3">
-                <UIcon name="i-mdi-chart-timeline-variant" class="h-6 w-6 text-stone-400 group-hover:text-stone-300" />
+                <UIcon
+                  name="i-mdi-chart-timeline-variant"
+                  class="h-6 w-6 text-stone-400 group-hover:text-stone-300"
+                />
                 <div>
                   <div class="font-bold text-stone-200">Digital Marketing</div>
                   <div class="text-stone-400 mt-1">Acquire and retain users with data‑driven growth.
