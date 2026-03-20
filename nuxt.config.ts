@@ -17,10 +17,16 @@ export default defineNuxtConfig({
     "@nuxtjs/tailwindcss",
   ],
   ssr: true,
+  image: {
+    // On Vercel, prefer the Vercel Image Optimization API instead of Nuxt's IPX route.
+    // This avoids broken `/_ipx/*` image URLs when the runtime handler isn't available.
+    provider: process.env.VERCEL ? "vercel" : "ipx",
+  },
   content: {
     experimental: { nativeSqlite: true },
   },
   nitro: {
+    ...(process.env.VERCEL ? { preset: "vercel" } : {}),
     compressPublicAssets: true,
     prerender: {
       // Pre-render the homepage
