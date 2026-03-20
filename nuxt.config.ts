@@ -10,7 +10,6 @@ export default defineNuxtConfig({
     "@nuxt/content",
     "@nuxt/content",
     "@nuxt/eslint",
-    "@nuxthub/core",
     "@nuxtjs/sitemap",
     "@vueuse/nuxt",
     "@nuxtjs/seo",
